@@ -1,0 +1,11 @@
+data_config:
+    name: cifar10
+    data_path: $SCRATCH/pytorch-cifar10/data
+
+experiment_config:
+    name: cifar10
+    output_dir: $SCRATCH/pytorch-cifar10/output
+
+train_config:
+    batch_size: 64
+    n_epochs: 1
