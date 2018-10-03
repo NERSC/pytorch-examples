@@ -21,7 +21,7 @@ def parse_args():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser('main.py')
     add_arg = parser.add_argument
-    add_arg('config', nargs='?', default='configs/cifar10.yaml')
+    add_arg('config', nargs='?', default='configs/hello.yaml')
     add_arg('-d', '--distributed', action='store_true')
     add_arg('--show-config', action='store_true')
     add_arg('--interactive', action='store_true')

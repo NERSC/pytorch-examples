@@ -7,5 +7,5 @@ experiment_config:
     name: hello
 
 train_config:
-    batch_size: 64
+    batch_size: 128
     n_epochs: 1
