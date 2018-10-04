@@ -16,9 +16,8 @@ from models.hepcnn import HEPCNNClassifier
 class HEPCNNTrainer(BaseTrainer):
     """Trainer code for the HEP-CNN classifier."""
 
-    def __init__(self, distributed=False, **kwargs):
+    def __init__(self, **kwargs):
         super(HEPCNNTrainer, self).__init__(**kwargs)
-        self.distributed = distributed
 
     def build_model(self, input_shape, conv_sizes, dense_sizes, dropout,
                     optimizer='Adam', learning_rate=0.001):

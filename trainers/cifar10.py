@@ -15,9 +15,8 @@ from models import get_model
 class Cifar10Trainer(BaseTrainer):
     """Trainer code for the CIFAR10 classification problem."""
 
-    def __init__(self, distributed=False, **kwargs):
+    def __init__(self, **kwargs):
         super(Cifar10Trainer, self).__init__(**kwargs)
-        self.distributed = distributed
 
     def build_model(self, model_type='resnet50_cifar10',
                     optimizer='Adam', learning_rate=0.001):
