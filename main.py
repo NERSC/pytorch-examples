@@ -23,6 +23,7 @@ def parse_args():
     add_arg = parser.add_argument
     add_arg('config', nargs='?', default='configs/hello.yaml')
     add_arg('-d', '--distributed', action='store_true')
+    add_arg('-v', '--verbose', action='store_true')
     add_arg('--show-config', action='store_true')
     add_arg('--interactive', action='store_true')
     return parser.parse_args()
@@ -35,7 +36,8 @@ def main():
 
     # Setup logging
     log_format = '%(asctime)s %(levelname)s %(message)s'
-    logging.basicConfig(level=logging.INFO, format=log_format)
+    log_level = logging.DEBUG if args.verbose else logging.INFO
+    logging.basicConfig(level=log_level, format=log_format)
     logging.info('Initializing')
     if args.show_config:
         logging.info('Command line config: %s' % args)
