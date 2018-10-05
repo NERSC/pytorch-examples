@@ -70,7 +70,7 @@ class Cifar10Trainer(BaseTrainer):
             batch_input = batch_input.to(self.device)
             batch_target = batch_target.to(self.device)
             batch_output = self.model(batch_input)
-            sum_loss += self.loss_func(batch_output, batch_target)
+            sum_loss += self.loss_func(batch_output, batch_target).item()
             # Count number of correct predictions
             _, batch_preds = torch.max(batch_output, 1)
             sum_correct += (batch_preds == batch_target).sum().item()

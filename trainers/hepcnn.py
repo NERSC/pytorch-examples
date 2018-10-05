@@ -68,7 +68,7 @@ class HEPCNNTrainer(BaseTrainer):
             batch_input = batch_input.to(self.device)
             batch_target = batch_target.to(self.device)
             batch_output = self.model(batch_input)
-            sum_loss += self.loss_func(batch_output, batch_target)
+            sum_loss += self.loss_func(batch_output, batch_target).item()
             # Count number of correct predictions
             preds, labels = batch_output > 0.5, batch_target > 0.5
             sum_correct += preds.eq(labels).sum().item()
