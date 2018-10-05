@@ -1,0 +1,200 @@
+*** WARNING: This is an experimental installation of pytorch built specifically for MPI / distributed running ***
+0: 2018-10-04 17:39:12,909 INFO Initializing
+1: 2018-10-04 17:39:12,960 INFO Initializing
+1: 2018-10-04 17:39:13,005 INFO MPI rank 1
+0: 2018-10-04 17:39:13,004 INFO MPI rank 0
+0: 2018-10-04 17:39:13,008 INFO Configuration: {'data_config': {'name': 'cifar10', 'data_path': '$SCRATCH/pytorch-cifar10/data', 'n_train': 16384, 'n_valid': 10000}, 'experiment_config': {'name': 'cifar10', 'output_dir': '$SCRATCH/pytorch-cifar10/output'}, 'model_config': {'model_type': 'resnet50_cifar10', 'optimizer': 'Adam', 'learning_rate': 0.001}, 'train_config': {'batch_size': 128, 'n_epochs': 1}}
+1: 2018-10-04 17:39:15,702 INFO Loaded 16384 training samples and 10000 validation samples
+0: 2018-10-04 17:39:15,712 INFO Loaded 16384 training samples and 10000 validation samples
+1: 2018-10-04 17:39:15,921 INFO Epoch 0
+0: 2018-10-04 17:39:15,922 INFO Model: 
+0: DistributedDataParallelCPU(
+0:   (module): ResNet(
+0:     (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:     (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:     (layer1): Sequential(
+0:       (0): Bottleneck(
+0:         (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential(
+0:           (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:           (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         )
+0:       )
+0:       (1): Bottleneck(
+0:         (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:       (2): Bottleneck(
+0:         (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:     )
+0:     (layer2): Sequential(
+0:       (0): Bottleneck(
+0:         (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential(
+0:           (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+0:           (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         )
+0:       )
+0:       (1): Bottleneck(
+0:         (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:       (2): Bottleneck(
+0:         (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:       (3): Bottleneck(
+0:         (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:     )
+0:     (layer3): Sequential(
+0:       (0): Bottleneck(
+0:         (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential(
+0:           (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+0:           (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         )
+0:       )
+0:       (1): Bottleneck(
+0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:       (2): Bottleneck(
+0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:       (3): Bottleneck(
+0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:       (4): Bottleneck(
+0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:       (5): Bottleneck(
+0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:     )
+0:     (layer4): Sequential(
+0:       (0): Bottleneck(
+0:         (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential(
+0:           (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+0:           (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         )
+0:       )
+0:       (1): Bottleneck(
+0:         (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:       (2): Bottleneck(
+0:         (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+0:         (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+0:         (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+0:         (shortcut): Sequential()
+0:       )
+0:     )
+0:     (linear): Linear(in_features=2048, out_features=10, bias=True)
+0:   )
+0: )
+0: Parameters: 23520842
+0: 2018-10-04 17:39:15,922 INFO Epoch 0
+1: 2018-10-04 17:46:22,144 INFO   Training loss: 1.833
+0: 2018-10-04 17:46:22,143 INFO   Training loss: 1.850
+1: 2018-10-04 17:48:36,214 INFO   Validation loss: 1.606 acc: 0.418
+0: 2018-10-04 17:48:36,655 INFO   Validation loss: 1.623 acc: 0.417
+0: 2018-10-04 17:48:37,040 INFO Saving summaries to /global/cscratch1/sd/sfarrell/pytorch-cifar10/output/summaries.npz
+0: 2018-10-04 17:48:37,052 INFO Finished training
+0: 2018-10-04 17:48:37,052 INFO Train samples 8192 time 426.221s rate 19.2201 samples/s
+0: 2018-10-04 17:48:37,052 INFO Valid rate: 74.3465 samples/s
+0: 2018-10-04 17:48:37,052 INFO All done!
+0: Files already downloaded and verified
+0: Files already downloaded and verified
+1: 2018-10-04 17:48:37,920 INFO Finished training
+1: 2018-10-04 17:48:37,920 INFO Train samples 8192 time 426.222s rate 19.22 samples/s
+1: 2018-10-04 17:48:37,920 INFO Valid rate: 74.5885 samples/s
+1: 2018-10-04 17:48:37,920 INFO All done!
+1: Files already downloaded and verified
+1: Files already downloaded and verified

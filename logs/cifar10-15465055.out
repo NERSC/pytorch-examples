@@ -1,0 +1,560 @@
+*** WARNING: This is an experimental installation of pytorch built specifically for MPI / distributed running ***
+13: 2018-10-04 18:27:05,039 INFO Initializing
+ 4: 2018-10-04 18:27:05,046 INFO Initializing
+14: 2018-10-04 18:27:05,056 INFO Initializing
+ 7: 2018-10-04 18:27:05,057 INFO Initializing
+15: 2018-10-04 18:27:05,057 INFO Initializing
+10: 2018-10-04 18:27:05,058 INFO Initializing
+20: 2018-10-04 18:27:05,059 INFO Initializing
+12: 2018-10-04 18:27:05,062 INFO Initializing
+ 8: 2018-10-04 18:27:05,062 INFO Initializing
+24: 2018-10-04 18:27:05,064 INFO Initializing
+17: 2018-10-04 18:27:05,063 INFO Initializing
+31: 2018-10-04 18:27:05,064 INFO Initializing
+23: 2018-10-04 18:27:05,065 INFO Initializing
+ 5: 2018-10-04 18:27:05,065 INFO Initializing
+ 3: 2018-10-04 18:27:05,065 INFO Initializing
+ 6: 2018-10-04 18:27:05,066 INFO Initializing
+18: 2018-10-04 18:27:05,070 INFO Initializing
+27: 2018-10-04 18:27:05,070 INFO Initializing
+ 9: 2018-10-04 18:27:05,075 INFO Initializing
+25: 2018-10-04 18:27:05,075 INFO Initializing
+16: 2018-10-04 18:27:05,075 INFO Initializing
+21: 2018-10-04 18:27:05,076 INFO Initializing
+11: 2018-10-04 18:27:05,078 INFO Initializing
+28: 2018-10-04 18:27:05,079 INFO Initializing
+30: 2018-10-04 18:27:05,078 INFO Initializing
+ 0: 2018-10-04 18:27:05,082 INFO Initializing
+ 2: 2018-10-04 18:27:05,081 INFO Initializing
+22: 2018-10-04 18:27:05,084 INFO Initializing
+ 1: 2018-10-04 18:27:05,094 INFO Initializing
+29: 2018-10-04 18:27:05,094 INFO Initializing
+19: 2018-10-04 18:27:05,122 INFO Initializing
+26: 2018-10-04 18:27:05,425 INFO Initializing
+ 1: 2018-10-04 18:27:05,472 INFO MPI rank 1
+25: 2018-10-04 18:27:05,472 INFO MPI rank 25
+13: 2018-10-04 18:27:05,472 INFO MPI rank 13
+ 5: 2018-10-04 18:27:05,472 INFO MPI rank 5
+29: 2018-10-04 18:27:05,472 INFO MPI rank 29
+14: 2018-10-04 18:27:05,471 INFO MPI rank 14
+17: 2018-10-04 18:27:05,471 INFO MPI rank 17
+ 3: 2018-10-04 18:27:05,471 INFO MPI rank 3
+ 7: 2018-10-04 18:27:05,471 INFO MPI rank 7
+ 9: 2018-10-04 18:27:05,472 INFO MPI rank 9
+18: 2018-10-04 18:27:05,472 INFO MPI rank 18
+21: 2018-10-04 18:27:05,471 INFO MPI rank 21
+19: 2018-10-04 18:27:05,470 INFO MPI rank 19
+24: 2018-10-04 18:27:05,473 INFO MPI rank 24
+10: 2018-10-04 18:27:05,471 INFO MPI rank 10
+11: 2018-10-04 18:27:05,473 INFO MPI rank 11
+15: 2018-10-04 18:27:05,471 INFO MPI rank 15
+20: 2018-10-04 18:27:05,472 INFO MPI rank 20
+12: 2018-10-04 18:27:05,472 INFO MPI rank 12
+ 2: 2018-10-04 18:27:05,471 INFO MPI rank 2
+26: 2018-10-04 18:27:05,472 INFO MPI rank 26
+ 6: 2018-10-04 18:27:05,472 INFO MPI rank 6
+ 4: 2018-10-04 18:27:05,471 INFO MPI rank 4
+ 8: 2018-10-04 18:27:05,471 INFO MPI rank 8
+28: 2018-10-04 18:27:05,472 INFO MPI rank 28
+16: 2018-10-04 18:27:05,472 INFO MPI rank 16
+30: 2018-10-04 18:27:05,471 INFO MPI rank 30
+31: 2018-10-04 18:27:05,472 INFO MPI rank 31
+23: 2018-10-04 18:27:05,472 INFO MPI rank 23
+27: 2018-10-04 18:27:05,471 INFO MPI rank 27
+22: 2018-10-04 18:27:05,472 INFO MPI rank 22
+ 0: 2018-10-04 18:27:05,472 INFO MPI rank 0
+ 0: 2018-10-04 18:27:05,477 INFO Configuration: {'data_config': {'name': 'cifar10', 'data_path': '$SCRATCH/pytorch-cifar10/data', 'n_train': 16384, 'n_valid': 10000}, 'experiment_config': {'name': 'cifar10', 'output_dir': '$SCRATCH/pytorch-cifar10/output'}, 'model_config': {'model_type': 'resnet50_cifar10', 'optimizer': 'Adam', 'learning_rate': 0.001}, 'train_config': {'batch_size': 128, 'n_epochs': 1}}
+10: 2018-10-04 18:27:08,276 INFO Loaded 16384 training samples and 10000 validation samples
+22: 2018-10-04 18:27:08,295 INFO Loaded 16384 training samples and 10000 validation samples
+ 2: 2018-10-04 18:27:08,311 INFO Loaded 16384 training samples and 10000 validation samples
+23: 2018-10-04 18:27:08,313 INFO Loaded 16384 training samples and 10000 validation samples
+16: 2018-10-04 18:27:08,319 INFO Loaded 16384 training samples and 10000 validation samples
+26: 2018-10-04 18:27:08,323 INFO Loaded 16384 training samples and 10000 validation samples
+ 9: 2018-10-04 18:27:08,323 INFO Loaded 16384 training samples and 10000 validation samples
+13: 2018-10-04 18:27:08,324 INFO Loaded 16384 training samples and 10000 validation samples
+29: 2018-10-04 18:27:08,329 INFO Loaded 16384 training samples and 10000 validation samples
+20: 2018-10-04 18:27:08,329 INFO Loaded 16384 training samples and 10000 validation samples
+17: 2018-10-04 18:27:08,331 INFO Loaded 16384 training samples and 10000 validation samples
+30: 2018-10-04 18:27:08,333 INFO Loaded 16384 training samples and 10000 validation samples
+31: 2018-10-04 18:27:08,343 INFO Loaded 16384 training samples and 10000 validation samples
+21: 2018-10-04 18:27:08,346 INFO Loaded 16384 training samples and 10000 validation samples
+ 3: 2018-10-04 18:27:08,350 INFO Loaded 16384 training samples and 10000 validation samples
+28: 2018-10-04 18:27:08,353 INFO Loaded 16384 training samples and 10000 validation samples
+ 7: 2018-10-04 18:27:08,359 INFO Loaded 16384 training samples and 10000 validation samples
+ 8: 2018-10-04 18:27:08,360 INFO Loaded 16384 training samples and 10000 validation samples
+12: 2018-10-04 18:27:08,362 INFO Loaded 16384 training samples and 10000 validation samples
+15: 2018-10-04 18:27:08,372 INFO Loaded 16384 training samples and 10000 validation samples
+11: 2018-10-04 18:27:08,374 INFO Loaded 16384 training samples and 10000 validation samples
+14: 2018-10-04 18:27:08,379 INFO Loaded 16384 training samples and 10000 validation samples
+ 0: 2018-10-04 18:27:08,382 INFO Loaded 16384 training samples and 10000 validation samples
+ 1: 2018-10-04 18:27:08,386 INFO Loaded 16384 training samples and 10000 validation samples
+25: 2018-10-04 18:27:08,389 INFO Loaded 16384 training samples and 10000 validation samples
+ 5: 2018-10-04 18:27:08,392 INFO Loaded 16384 training samples and 10000 validation samples
+27: 2018-10-04 18:27:08,395 INFO Loaded 16384 training samples and 10000 validation samples
+24: 2018-10-04 18:27:08,404 INFO Loaded 16384 training samples and 10000 validation samples
+ 4: 2018-10-04 18:27:08,407 INFO Loaded 16384 training samples and 10000 validation samples
+19: 2018-10-04 18:27:08,408 INFO Loaded 16384 training samples and 10000 validation samples
+ 6: 2018-10-04 18:27:08,414 INFO Loaded 16384 training samples and 10000 validation samples
+18: 2018-10-04 18:27:08,417 INFO Loaded 16384 training samples and 10000 validation samples
+11: 2018-10-04 18:27:08,693 INFO Epoch 0
+20: 2018-10-04 18:27:08,692 INFO Epoch 0
+13: 2018-10-04 18:27:08,693 INFO Epoch 0
+ 4: 2018-10-04 18:27:08,691 INFO Epoch 0
+ 8: 2018-10-04 18:27:08,692 INFO Epoch 0
+ 5: 2018-10-04 18:27:08,692 INFO Epoch 0
+24: 2018-10-04 18:27:08,693 INFO Epoch 0
+10: 2018-10-04 18:27:08,692 INFO Epoch 0
+25: 2018-10-04 18:27:08,692 INFO Epoch 0
+17: 2018-10-04 18:27:08,692 INFO Epoch 0
+15: 2018-10-04 18:27:08,692 INFO Epoch 0
+ 3: 2018-10-04 18:27:08,692 INFO Epoch 0
+12: 2018-10-04 18:27:08,693 INFO Epoch 0
+ 2: 2018-10-04 18:27:08,692 INFO Epoch 0
+26: 2018-10-04 18:27:08,693 INFO Epoch 0
+ 6: 2018-10-04 18:27:08,693 INFO Epoch 0
+ 9: 2018-10-04 18:27:08,693 INFO Epoch 0
+18: 2018-10-04 18:27:08,693 INFO Epoch 0
+28: 2018-10-04 18:27:08,693 INFO Epoch 0
+16: 2018-10-04 18:27:08,692 INFO Epoch 0
+23: 2018-10-04 18:27:08,693 INFO Epoch 0
+19: 2018-10-04 18:27:08,691 INFO Epoch 0
+22: 2018-10-04 18:27:08,693 INFO Epoch 0
+ 1: 2018-10-04 18:27:08,693 INFO Epoch 0
+14: 2018-10-04 18:27:08,692 INFO Epoch 0
+ 7: 2018-10-04 18:27:08,692 INFO Epoch 0
+29: 2018-10-04 18:27:08,693 INFO Epoch 0
+21: 2018-10-04 18:27:08,692 INFO Epoch 0
+30: 2018-10-04 18:27:08,692 INFO Epoch 0
+31: 2018-10-04 18:27:08,693 INFO Epoch 0
+27: 2018-10-04 18:27:08,692 INFO Epoch 0
+ 0: 2018-10-04 18:27:08,695 INFO Model: 
+ 0: DistributedDataParallelCPU(
+ 0:   (module): ResNet(
+ 0:     (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:     (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:     (layer1): Sequential(
+ 0:       (0): Bottleneck(
+ 0:         (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential(
+ 0:           (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:           (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         )
+ 0:       )
+ 0:       (1): Bottleneck(
+ 0:         (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:       (2): Bottleneck(
+ 0:         (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:     )
+ 0:     (layer2): Sequential(
+ 0:       (0): Bottleneck(
+ 0:         (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential(
+ 0:           (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+ 0:           (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         )
+ 0:       )
+ 0:       (1): Bottleneck(
+ 0:         (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:       (2): Bottleneck(
+ 0:         (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:       (3): Bottleneck(
+ 0:         (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:     )
+ 0:     (layer3): Sequential(
+ 0:       (0): Bottleneck(
+ 0:         (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential(
+ 0:           (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+ 0:           (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         )
+ 0:       )
+ 0:       (1): Bottleneck(
+ 0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:       (2): Bottleneck(
+ 0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:       (3): Bottleneck(
+ 0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:       (4): Bottleneck(
+ 0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:       (5): Bottleneck(
+ 0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:     )
+ 0:     (layer4): Sequential(
+ 0:       (0): Bottleneck(
+ 0:         (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential(
+ 0:           (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+ 0:           (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         )
+ 0:       )
+ 0:       (1): Bottleneck(
+ 0:         (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:       (2): Bottleneck(
+ 0:         (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+ 0:         (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+ 0:         (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:         (shortcut): Sequential()
+ 0:       )
+ 0:     )
+ 0:     (linear): Linear(in_features=2048, out_features=10, bias=True)
+ 0:   )
+ 0: )
+ 0: Parameters: 23520842
+ 0: 2018-10-04 18:27:08,695 INFO Epoch 0
+10: 2018-10-04 18:27:37,799 INFO   Training loss: 2.803
+27: 2018-10-04 18:27:37,799 INFO   Training loss: 2.531
+20: 2018-10-04 18:27:37,802 INFO   Training loss: 2.499
+15: 2018-10-04 18:27:37,801 INFO   Training loss: 2.643
+ 1: 2018-10-04 18:27:37,803 INFO   Training loss: 2.609
+14: 2018-10-04 18:27:37,802 INFO   Training loss: 2.597
+11: 2018-10-04 18:27:37,803 INFO   Training loss: 2.481
+17: 2018-10-04 18:27:37,802 INFO   Training loss: 2.640
+ 3: 2018-10-04 18:27:37,802 INFO   Training loss: 2.550
+12: 2018-10-04 18:27:37,803 INFO   Training loss: 2.838
+28: 2018-10-04 18:27:37,803 INFO   Training loss: 2.632
+31: 2018-10-04 18:27:37,802 INFO   Training loss: 2.676
+23: 2018-10-04 18:27:37,803 INFO   Training loss: 2.561
+ 6: 2018-10-04 18:27:37,803 INFO   Training loss: 2.534
+29: 2018-10-04 18:27:37,803 INFO   Training loss: 2.640
+19: 2018-10-04 18:27:37,801 INFO   Training loss: 2.514
+25: 2018-10-04 18:27:37,802 INFO   Training loss: 2.510
+13: 2018-10-04 18:27:37,803 INFO   Training loss: 2.588
+ 5: 2018-10-04 18:27:37,802 INFO   Training loss: 2.634
+24: 2018-10-04 18:27:37,804 INFO   Training loss: 2.755
+26: 2018-10-04 18:27:37,803 INFO   Training loss: 2.613
+ 8: 2018-10-04 18:27:37,802 INFO   Training loss: 2.759
+30: 2018-10-04 18:27:37,802 INFO   Training loss: 2.517
+ 2: 2018-10-04 18:27:37,802 INFO   Training loss: 2.742
+ 9: 2018-10-04 18:27:37,803 INFO   Training loss: 2.585
+ 4: 2018-10-04 18:27:37,802 INFO   Training loss: 2.560
+18: 2018-10-04 18:27:37,803 INFO   Training loss: 2.553
+22: 2018-10-04 18:27:37,803 INFO   Training loss: 2.713
+ 7: 2018-10-04 18:27:37,803 INFO   Training loss: 2.581
+21: 2018-10-04 18:27:37,803 INFO   Training loss: 2.608
+16: 2018-10-04 18:27:37,803 INFO   Training loss: 2.580
+ 0: 2018-10-04 18:27:37,804 INFO   Training loss: 2.573
+25: 2018-10-04 18:29:13,297 INFO   Validation loss: 2.317 acc: 0.100
+11: 2018-10-04 18:29:13,301 INFO   Validation loss: 2.316 acc: 0.100
+23: 2018-10-04 18:29:13,447 INFO   Validation loss: 2.316 acc: 0.100
+22: 2018-10-04 18:29:13,466 INFO   Validation loss: 2.318 acc: 0.100
+16: 2018-10-04 18:29:13,621 INFO   Validation loss: 2.317 acc: 0.100
+17: 2018-10-04 18:29:13,856 INFO   Validation loss: 2.316 acc: 0.100
+24: 2018-10-04 18:29:13,905 INFO   Validation loss: 2.316 acc: 0.100
+26: 2018-10-04 18:29:14,361 INFO   Validation loss: 2.316 acc: 0.100
+21: 2018-10-04 18:29:14,749 INFO   Validation loss: 2.317 acc: 0.100
+23: 2018-10-04 18:29:14,962 INFO Finished training
+23: 2018-10-04 18:29:14,962 INFO Train samples 512 time 29.1094s rate 17.5888 samples/s
+23: 2018-10-04 18:29:14,962 INFO Valid rate: 104.555 samples/s
+23: 2018-10-04 18:29:14,962 INFO All done!
+27: 2018-10-04 18:29:14,971 INFO   Validation loss: 2.316 acc: 0.100
+23: Files already downloaded and verified
+23: Files already downloaded and verified
+30: 2018-10-04 18:29:15,233 INFO   Validation loss: 2.317 acc: 0.100
+10: 2018-10-04 18:29:15,726 INFO   Validation loss: 2.318 acc: 0.100
+ 5: 2018-10-04 18:29:17,867 INFO   Validation loss: 2.317 acc: 0.100
+22: 2018-10-04 18:29:19,727 INFO Finished training
+22: 2018-10-04 18:29:19,728 INFO Train samples 512 time 29.1099s rate 17.5885 samples/s
+22: 2018-10-04 18:29:19,728 INFO Valid rate: 104.543 samples/s
+22: 2018-10-04 18:29:19,728 INFO All done!
+22: Files already downloaded and verified
+22: Files already downloaded and verified
+31: 2018-10-04 18:29:20,638 INFO   Validation loss: 2.316 acc: 0.100
+13: 2018-10-04 18:29:20,768 INFO   Validation loss: 2.317 acc: 0.100
+26: 2018-10-04 18:29:21,086 INFO Finished training
+26: 2018-10-04 18:29:21,087 INFO Train samples 512 time 29.1098s rate 17.5886 samples/s
+26: 2018-10-04 18:29:21,087 INFO Valid rate: 103.566 samples/s
+26: 2018-10-04 18:29:21,087 INFO All done!
+26: Files already downloaded and verified
+26: Files already downloaded and verified
+ 2: 2018-10-04 18:29:21,166 INFO   Validation loss: 2.317 acc: 0.100
+ 0: 2018-10-04 18:29:21,435 INFO   Validation loss: 2.316 acc: 0.100
+ 8: 2018-10-04 18:29:21,497 INFO   Validation loss: 2.318 acc: 0.100
+18: 2018-10-04 18:29:21,879 INFO   Validation loss: 2.317 acc: 0.100
+ 3: 2018-10-04 18:29:21,909 INFO   Validation loss: 2.316 acc: 0.100
+ 9: 2018-10-04 18:29:22,963 INFO   Validation loss: 2.318 acc: 0.100
+ 4: 2018-10-04 18:29:23,397 INFO   Validation loss: 2.316 acc: 0.100
+ 4: 2018-10-04 18:29:26,712 INFO Finished training
+ 4: 2018-10-04 18:29:26,713 INFO Train samples 512 time 29.1099s rate 17.5885 samples/s
+ 4: 2018-10-04 18:29:26,713 INFO Valid rate: 94.7024 samples/s
+ 4: 2018-10-04 18:29:26,713 INFO All done!
+ 4: Files already downloaded and verified
+ 4: Files already downloaded and verified
+28: 2018-10-04 18:29:31,802 INFO   Validation loss: 2.318 acc: 0.100
+ 1: 2018-10-04 18:29:32,612 INFO   Validation loss: 2.317 acc: 0.100
+20: 2018-10-04 18:29:33,468 INFO   Validation loss: 2.316 acc: 0.100
+ 6: 2018-10-04 18:29:33,520 INFO   Validation loss: 2.318 acc: 0.100
+29: 2018-10-04 18:29:33,546 INFO   Validation loss: 2.317 acc: 0.100
+ 7: 2018-10-04 18:29:37,365 INFO   Validation loss: 2.317 acc: 0.100
+15: 2018-10-04 18:29:47,881 INFO   Validation loss: 2.316 acc: 0.100
+12: 2018-10-04 18:29:47,883 INFO   Validation loss: 2.318 acc: 0.100
+19: 2018-10-04 18:29:48,357 INFO   Validation loss: 2.316 acc: 0.100
+14: 2018-10-04 18:29:48,755 INFO   Validation loss: 2.316 acc: 0.100
+11: 2018-10-04 18:31:39,322 INFO Finished training
+11: 2018-10-04 18:31:39,323 INFO Train samples 512 time 29.1092s rate 17.5889 samples/s
+11: 2018-10-04 18:31:39,323 INFO Valid rate: 104.722 samples/s
+11: 2018-10-04 18:31:39,323 INFO All done!
+11: Files already downloaded and verified
+11: Files already downloaded and verified
+25: 2018-10-04 18:31:39,572 INFO Finished training
+25: 2018-10-04 18:31:39,572 INFO Train samples 512 time 29.1096s rate 17.5887 samples/s
+25: 2018-10-04 18:31:39,572 INFO Valid rate: 104.72 samples/s
+25: 2018-10-04 18:31:39,573 INFO All done!
+25: Files already downloaded and verified
+25: Files already downloaded and verified
+16: 2018-10-04 18:31:39,826 INFO Finished training
+16: 2018-10-04 18:31:39,827 INFO Train samples 512 time 29.1102s rate 17.5883 samples/s
+16: 2018-10-04 18:31:39,827 INFO Valid rate: 104.366 samples/s
+16: 2018-10-04 18:31:39,827 INFO All done!
+16: Files already downloaded and verified
+16: Files already downloaded and verified
+ 2: 2018-10-04 18:31:49,410 INFO Finished training
+ 2: 2018-10-04 18:31:49,410 INFO Train samples 512 time 29.1098s rate 17.5886 samples/s
+ 2: 2018-10-04 18:31:49,411 INFO Valid rate: 96.7462 samples/s
+ 2: 2018-10-04 18:31:49,411 INFO All done!
+ 2: Files already downloaded and verified
+ 2: Files already downloaded and verified
+17: 2018-10-04 18:31:49,534 INFO Finished training
+17: 2018-10-04 18:31:49,534 INFO Train samples 512 time 29.1093s rate 17.5889 samples/s
+17: 2018-10-04 18:31:49,534 INFO Valid rate: 104.109 samples/s
+17: 2018-10-04 18:31:49,534 INFO All done!
+17: Files already downloaded and verified
+17: Files already downloaded and verified
+24: 2018-10-04 18:31:49,771 INFO Finished training
+24: 2018-10-04 18:31:49,772 INFO Train samples 512 time 29.1097s rate 17.5886 samples/s
+24: 2018-10-04 18:31:49,772 INFO Valid rate: 104.063 samples/s
+24: 2018-10-04 18:31:49,772 INFO All done!
+24: Files already downloaded and verified
+24: Files already downloaded and verified
+21: 2018-10-04 18:31:50,130 INFO Finished training
+21: 2018-10-04 18:31:50,131 INFO Train samples 512 time 29.1102s rate 17.5883 samples/s
+21: 2018-10-04 18:31:50,131 INFO Valid rate: 103.151 samples/s
+21: 2018-10-04 18:31:50,131 INFO All done!
+21: Files already downloaded and verified
+21: Files already downloaded and verified
+27: 2018-10-04 18:31:50,441 INFO Finished training
+27: 2018-10-04 18:31:50,442 INFO Train samples 512 time 29.1069s rate 17.5903 samples/s
+27: 2018-10-04 18:31:50,442 INFO Valid rate: 102.912 samples/s
+27: 2018-10-04 18:31:50,442 INFO All done!
+27: Files already downloaded and verified
+27: Files already downloaded and verified
+30: 2018-10-04 18:31:51,568 INFO Finished training
+30: 2018-10-04 18:31:51,568 INFO Train samples 512 time 29.1097s rate 17.5887 samples/s
+30: 2018-10-04 18:31:51,568 INFO Valid rate: 102.638 samples/s
+30: 2018-10-04 18:31:51,568 INFO All done!
+30: Files already downloaded and verified
+30: Files already downloaded and verified
+10: 2018-10-04 18:31:52,094 INFO Finished training
+10: 2018-10-04 18:31:52,094 INFO Train samples 512 time 29.1066s rate 17.5905 samples/s
+10: 2018-10-04 18:31:52,094 INFO Valid rate: 102.118 samples/s
+10: 2018-10-04 18:31:52,094 INFO All done!
+10: Files already downloaded and verified
+10: Files already downloaded and verified
+ 5: 2018-10-04 18:31:52,480 INFO Finished training
+ 5: 2018-10-04 18:31:52,480 INFO Train samples 512 time 29.1096s rate 17.5887 samples/s
+ 5: 2018-10-04 18:31:52,481 INFO Valid rate: 99.9365 samples/s
+ 5: 2018-10-04 18:31:52,481 INFO All done!
+ 5: Files already downloaded and verified
+ 5: Files already downloaded and verified
+31: 2018-10-04 18:31:52,938 INFO Finished training
+31: 2018-10-04 18:31:52,938 INFO Train samples 512 time 29.1092s rate 17.5889 samples/s
+31: 2018-10-04 18:31:52,938 INFO Valid rate: 97.2433 samples/s
+31: 2018-10-04 18:31:52,938 INFO All done!
+31: Files already downloaded and verified
+31: Files already downloaded and verified
+28: 2018-10-04 18:31:53,270 INFO Finished training
+28: 2018-10-04 18:31:53,271 INFO Train samples 512 time 29.1093s rate 17.5889 samples/s
+28: 2018-10-04 18:31:53,271 INFO Valid rate: 87.7301 samples/s
+28: 2018-10-04 18:31:53,271 INFO All done!
+28: Files already downloaded and verified
+28: Files already downloaded and verified
+29: 2018-10-04 18:31:53,504 INFO Finished training
+29: 2018-10-04 18:31:53,505 INFO Train samples 512 time 29.1094s rate 17.5888 samples/s
+29: 2018-10-04 18:31:53,505 INFO Valid rate: 86.4039 samples/s
+29: 2018-10-04 18:31:53,505 INFO All done!
+29: Files already downloaded and verified
+29: Files already downloaded and verified
+ 7: 2018-10-04 18:31:53,987 INFO Finished training
+ 7: 2018-10-04 18:31:53,987 INFO Train samples 512 time 29.11s rate 17.5885 samples/s
+ 7: 2018-10-04 18:31:53,987 INFO Valid rate: 83.6637 samples/s
+ 7: 2018-10-04 18:31:53,987 INFO All done!
+ 7: Files already downloaded and verified
+ 7: Files already downloaded and verified
+13: 2018-10-04 18:31:54,046 INFO Finished training
+13: 2018-10-04 18:31:54,047 INFO Train samples 512 time 29.1097s rate 17.5887 samples/s
+13: 2018-10-04 18:31:54,047 INFO Valid rate: 97.1216 samples/s
+13: 2018-10-04 18:31:54,047 INFO All done!
+13: Files already downloaded and verified
+13: Files already downloaded and verified
+ 3: 2018-10-04 18:31:57,805 INFO Finished training
+ 3: 2018-10-04 18:31:57,805 INFO Train samples 512 time 29.1093s rate 17.5889 samples/s
+ 3: 2018-10-04 18:31:57,805 INFO Valid rate: 96.0562 samples/s
+ 3: 2018-10-04 18:31:57,805 INFO All done!
+ 3: Files already downloaded and verified
+ 3: Files already downloaded and verified
+ 0: 2018-10-04 18:31:58,055 INFO Saving summaries to /global/cscratch1/sd/sfarrell/pytorch-cifar10/output/summaries.npz
+ 0: 2018-10-04 18:31:58,067 INFO Finished training
+ 0: 2018-10-04 18:31:58,067 INFO Train samples 512 time 29.1083s rate 17.5895 samples/s
+ 0: 2018-10-04 18:31:58,067 INFO Valid rate: 96.4976 samples/s
+ 0: 2018-10-04 18:31:58,067 INFO All done!
+ 0: Files already downloaded and verified
+ 0: Files already downloaded and verified
+ 8: 2018-10-04 18:31:58,079 INFO Finished training
+ 8: 2018-10-04 18:31:58,079 INFO Train samples 512 time 29.1098s rate 17.5886 samples/s
+ 8: 2018-10-04 18:31:58,079 INFO Valid rate: 96.4376 samples/s
+ 8: 2018-10-04 18:31:58,079 INFO All done!
+ 8: Files already downloaded and verified
+ 8: Files already downloaded and verified
+18: 2018-10-04 18:31:58,242 INFO Finished training
+18: 2018-10-04 18:31:58,242 INFO Train samples 512 time 29.1099s rate 17.5885 samples/s
+18: 2018-10-04 18:31:58,243 INFO Valid rate: 96.0908 samples/s
+18: 2018-10-04 18:31:58,243 INFO All done!
+18: Files already downloaded and verified
+18: Files already downloaded and verified
+ 1: 2018-10-04 18:31:58,897 INFO Finished training
+ 1: 2018-10-04 18:31:58,898 INFO Train samples 512 time 29.1092s rate 17.5889 samples/s
+ 1: 2018-10-04 18:31:58,898 INFO Valid rate: 87.1018 samples/s
+ 1: 2018-10-04 18:31:58,898 INFO All done!
+ 1: Files already downloaded and verified
+ 1: Files already downloaded and verified
+ 9: 2018-10-04 18:31:58,926 INFO Finished training
+ 9: 2018-10-04 18:31:58,927 INFO Train samples 512 time 29.1099s rate 17.5885 samples/s
+ 9: 2018-10-04 18:31:58,927 INFO Valid rate: 95.0945 samples/s
+ 9: 2018-10-04 18:31:58,927 INFO All done!
+ 9: Files already downloaded and verified
+ 9: Files already downloaded and verified
+12: 2018-10-04 18:31:59,022 INFO Finished training
+12: 2018-10-04 18:31:59,022 INFO Train samples 512 time 29.1093s rate 17.5889 samples/s
+12: 2018-10-04 18:31:59,022 INFO Valid rate: 76.8759 samples/s
+12: 2018-10-04 18:31:59,022 INFO All done!
+12: Files already downloaded and verified
+12: Files already downloaded and verified
+20: 2018-10-04 18:31:59,098 INFO Finished training
+20: 2018-10-04 18:31:59,098 INFO Train samples 512 time 29.1091s rate 17.589 samples/s
+20: 2018-10-04 18:31:59,099 INFO Valid rate: 86.4569 samples/s
+20: 2018-10-04 18:31:59,099 INFO All done!
+20: Files already downloaded and verified
+20: Files already downloaded and verified
+ 6: 2018-10-04 18:31:59,197 INFO Finished training
+ 6: 2018-10-04 18:31:59,197 INFO Train samples 512 time 29.1095s rate 17.5888 samples/s
+ 6: 2018-10-04 18:31:59,197 INFO Valid rate: 86.418 samples/s
+ 6: 2018-10-04 18:31:59,198 INFO All done!
+ 6: Files already downloaded and verified
+ 6: Files already downloaded and verified
+15: 2018-10-04 18:31:59,214 INFO Finished training
+15: 2018-10-04 18:31:59,214 INFO Train samples 512 time 29.1092s rate 17.589 samples/s
+15: 2018-10-04 18:31:59,215 INFO Valid rate: 76.8921 samples/s
+15: 2018-10-04 18:31:59,215 INFO All done!
+15: Files already downloaded and verified
+15: Files already downloaded and verified
+19: 2018-10-04 18:32:00,647 INFO Finished training
+19: 2018-10-04 18:32:00,647 INFO Train samples 512 time 29.1095s rate 17.5887 samples/s
+19: 2018-10-04 18:32:00,647 INFO Valid rate: 76.6088 samples/s
+19: 2018-10-04 18:32:00,647 INFO All done!
+19: Files already downloaded and verified
+19: Files already downloaded and verified
+14: 2018-10-04 18:32:00,688 INFO Finished training
+14: 2018-10-04 18:32:00,688 INFO Train samples 512 time 29.1093s rate 17.5889 samples/s
+14: 2018-10-04 18:32:00,688 INFO Valid rate: 76.3638 samples/s
+14: 2018-10-04 18:32:00,688 INFO All done!
+14: Files already downloaded and verified
+14: Files already downloaded and verified
