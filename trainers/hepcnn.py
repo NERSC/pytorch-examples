@@ -49,9 +49,10 @@ class HEPCNNTrainer(BaseTrainer):
             batch_loss.backward()
             self.optimizer.step()
             sum_loss += batch_loss.item()
-        self.logger.debug('  Processed %i batches' % (i + 1))
         summary['train_time'] = time.time() - start_time
         summary['train_loss'] = sum_loss / (i + 1)
+        self.logger.debug(' Processed %i samples in %i batches',
+                          len(data_loader.sampler), i + 1)
         self.logger.info('  Training loss: %.3f' % summary['train_loss'])
         return summary
 
@@ -75,6 +76,8 @@ class HEPCNNTrainer(BaseTrainer):
         summary['valid_time'] = time.time() - start_time
         summary['valid_loss'] = sum_loss / (i + 1)
         summary['valid_acc'] = sum_correct / len(data_loader.sampler)
+        self.logger.debug(' Processed %i samples in %i batches',
+                          len(data_loader.sampler), i + 1)
         self.logger.info('  Validation loss: %.3f acc: %.3f' %
                          (summary['valid_loss'], summary['valid_acc']))
         return summary
