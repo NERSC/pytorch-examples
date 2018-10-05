@@ -20,15 +20,15 @@ class Cifar10Trainer(BaseTrainer):
         super(Cifar10Trainer, self).__init__(**kwargs)
 
     def build_model(self, model_type='resnet50_cifar10',
-                    optimizer='Adam', learning_rate=0.001):
+                    optimizer='Adam', learning_rate=0.001,
+                    **model_args):
         """
         Instantiate our model.
         Just supporting resnet50 directly for this first pass.
         """
-        model = get_model(model_type)
+        self.model = get_model(name=model_type, **model_args).to(self.device)
         if self.distributed:
-            model = nn.parallel.DistributedDataParallelCPU(model)
-        self.model = model.to(self.device)
+            self.model = nn.parallel.DistributedDataParallelCPU(self.model)
         opt_type = dict(Adam=torch.optim.Adam)[optimizer]
         self.optimizer = opt_type(self.model.parameters(), lr=learning_rate)
         self.loss_func = torch.nn.CrossEntropyLoss()
