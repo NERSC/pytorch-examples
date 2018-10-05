@@ -24,6 +24,7 @@ All examples are run with the generic training script, `main.py`.
 This package currently contains the following examples:
 - CIFAR10 classification with ResNet50 or generic CNN model.
 - HEP-CNN classification (https://arxiv.org/abs/1711.03573).
+- Minimal Hello World example.
 
 ## How to run
 
@@ -31,6 +32,4 @@ To run the examples on the Cori supercomputer, you may use the provided
 example SLURM batch script. Here's how to run the ResNet50 CIFAR10 example
 on 4 Haswell nodes:
 
-```bash
-sbatch -N 4 scripts/batchScript.sh configs/cifar10.yaml
-```
+`sbatch -N 4 scripts/batchScript.sh configs/cifar10.yaml`
