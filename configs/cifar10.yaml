@@ -2,7 +2,7 @@ data_config:
     name: cifar10
     data_path: $SCRATCH/pytorch-cifar10/data
     n_train: 16384
-    n_valid: 16384
+    n_valid: 10000
 
 experiment_config:
     name: cifar10
