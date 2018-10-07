@@ -12,5 +12,8 @@ def get_model(name, **model_args):
     elif name == 'cnn_classifier':
         from .cnn_classifier import CNNClassifier
         return CNNClassifier(**model_args)
+    elif name == 'dcgan':
+        from .dcgan import get_gan
+        return get_gan(**model_args)
     else:
         raise Exception('Model %s unknown' % name)
