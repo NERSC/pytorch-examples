@@ -18,5 +18,8 @@ def get_trainer(name, **trainer_args):
     elif name == 'hepcnn':
         from .hepcnn import HEPCNNTrainer
         return HEPCNNTrainer(**trainer_args)
+    elif name == 'rpvgan':
+        from .gan_trainer import GANTrainer
+        return GANTrainer(**trainer_args)
     else:
         raise Exception('Trainer %s unknown' % name)
