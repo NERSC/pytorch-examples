@@ -62,9 +62,12 @@ def main():
     train_sampler = DistributedSampler(train_dataset) if args.distributed else None
     train_data_loader = DataLoader(train_dataset, batch_size=batch_size,
                                    sampler=train_sampler)
-    valid_data_loader = DataLoader(valid_dataset, batch_size=batch_size)
-    logging.info('Loaded %g training samples and %g validation samples',
-                 len(train_dataset), len(valid_dataset))
+    logging.info('Loaded %g training samples', len(train_dataset))
+    if valid_dataset is not None:
+        valid_data_loader = DataLoader(valid_dataset, batch_size=batch_size)
+        logging.info('Loaded %g validation samples', len(valid_dataset))
+    else:
+        valid_data_loader = None
 
     # Load the trainer
     trainer = get_trainer(distributed=args.distributed,
@@ -83,13 +86,15 @@ def main():
 
     # Print some conclusions
     n_train_samples = len(train_data_loader.sampler)
-    n_valid_samples = len(valid_data_loader.sampler)
     logging.info('Finished training')
     train_time = np.mean(summary['train_time'])
-    logging.info('Train samples %g time %gs rate %g samples/s' % (
-        n_train_samples, train_time, n_train_samples / train_time))
-    valid_time = np.mean(summary['valid_time'])
-    logging.info('Valid rate: %g samples/s' % (n_valid_samples / valid_time))
+    logging.info('Train samples %g time %gs rate %g samples/s',
+                 n_train_samples, train_time, n_train_samples / train_time)
+    if valid_data_loader is not None:
+        n_valid_samples = len(valid_data_loader.sampler)
+        valid_time = np.mean(summary['valid_time'])
+        logging.info('Valid samples %g time %g s rate %g samples/s',
+                     n_valid_samples, valid_time, n_valid_samples / valid_time)
 
     # Drop to IPython interactive shell
     if args.interactive:
