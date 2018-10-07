@@ -12,5 +12,8 @@ def get_datasets(name, **data_args):
     elif name == 'hep_images':
         from .hep_images import get_datasets
         return get_datasets(**data_args)
+    elif name == 'rpv_images':
+        from .rpv_images import get_datasets
+        return get_datasets(**data_args)
     else:
         raise Exception('Dataset %s unknown' % name)

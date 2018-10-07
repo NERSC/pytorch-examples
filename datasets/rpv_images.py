@@ -8,6 +8,7 @@ Maybe eventually we can unify things.
 """
 
 # External imports
+import numpy as np
 import torch
 from torch.utils.data import Dataset
 
@@ -23,7 +24,7 @@ class RPVImages(Dataset):
 
     def __init__(self, input_file, n_samples, scale=None):
         # Load the data
-        self.data = load_file(input_file)
+        self.data = load_file(input_file, n_samples=n_samples)
         if scale is not None:
             self.data = self.data / scale
 
@@ -32,3 +33,9 @@ class RPVImages(Dataset):
     
     def __len__(self):
         return self.data.size(0)
+
+def get_datasets(train_file, n_train, scale=None):
+    # No validation set yet
+    train_dataset = RPVImages(train_file, n_train, scale)
+    valid_dataset = None
+    return train_dataset, valid_dataset
