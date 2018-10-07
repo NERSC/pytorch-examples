@@ -5,8 +5,8 @@ config=configs/${name}.yaml
 #nodes="1 2 4 8 16"
 #nodes="32 64"
 nodes="128 256 512"
-qos="regular"
-t="10"
+qos="premium"
+t="45"
 
 mkdir -p logs
 
