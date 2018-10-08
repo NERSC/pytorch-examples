@@ -1,0 +1,1712 @@
+*** WARNING: This is an experimental installation of pytorch built specifically for MPI / distributed running ***
+ 60: 2018-10-08 08:33:36,082 INFO Initializing
+ 85: 2018-10-08 08:33:36,081 INFO Initializing
+ 77: 2018-10-08 08:33:36,083 INFO Initializing
+  9: 2018-10-08 08:33:36,084 INFO Initializing
+ 92: 2018-10-08 08:33:36,082 INFO Initializing
+ 49: 2018-10-08 08:33:36,084 INFO Initializing
+ 30: 2018-10-08 08:33:36,086 INFO Initializing
+ 69: 2018-10-08 08:33:36,082 INFO Initializing
+ 32: 2018-10-08 08:33:36,084 INFO Initializing
+ 44: 2018-10-08 08:33:36,087 INFO Initializing
+ 89: 2018-10-08 08:33:36,084 INFO Initializing
+ 38: 2018-10-08 08:33:36,088 INFO Initializing
+117: 2018-10-08 08:33:36,082 INFO Initializing
+ 88: 2018-10-08 08:33:36,084 INFO Initializing
+ 51: 2018-10-08 08:33:36,086 INFO Initializing
+ 87: 2018-10-08 08:33:36,083 INFO Initializing
+ 23: 2018-10-08 08:33:36,085 INFO Initializing
+103: 2018-10-08 08:33:36,082 INFO Initializing
+109: 2018-10-08 08:33:36,084 INFO Initializing
+113: 2018-10-08 08:33:36,082 INFO Initializing
+ 31: 2018-10-08 08:33:36,085 INFO Initializing
+ 82: 2018-10-08 08:33:36,085 INFO Initializing
+ 73: 2018-10-08 08:33:36,086 INFO Initializing
+ 62: 2018-10-08 08:33:36,086 INFO Initializing
+ 45: 2018-10-08 08:33:36,087 INFO Initializing
+123: 2018-10-08 08:33:36,082 INFO Initializing
+ 12: 2018-10-08 08:33:36,088 INFO Initializing
+ 97: 2018-10-08 08:33:36,084 INFO Initializing
+ 40: 2018-10-08 08:33:36,085 INFO Initializing
+ 91: 2018-10-08 08:33:36,086 INFO Initializing
+ 10: 2018-10-08 08:33:36,084 INFO Initializing
+119: 2018-10-08 08:33:36,083 INFO Initializing
+ 74: 2018-10-08 08:33:36,086 INFO Initializing
+ 16: 2018-10-08 08:33:36,084 INFO Initializing
+  2: 2018-10-08 08:33:36,084 INFO Initializing
+ 63: 2018-10-08 08:33:36,085 INFO Initializing
+ 68: 2018-10-08 08:33:36,086 INFO Initializing
+105: 2018-10-08 08:33:36,086 INFO Initializing
+ 59: 2018-10-08 08:33:36,084 INFO Initializing
+115: 2018-10-08 08:33:36,083 INFO Initializing
+ 29: 2018-10-08 08:33:36,089 INFO Initializing
+ 81: 2018-10-08 08:33:36,085 INFO Initializing
+ 94: 2018-10-08 08:33:36,086 INFO Initializing
+ 79: 2018-10-08 08:33:36,085 INFO Initializing
+  7: 2018-10-08 08:33:36,085 INFO Initializing
+ 67: 2018-10-08 08:33:36,085 INFO Initializing
+116: 2018-10-08 08:33:36,087 INFO Initializing
+ 25: 2018-10-08 08:33:36,086 INFO Initializing
+102: 2018-10-08 08:33:36,085 INFO Initializing
+122: 2018-10-08 08:33:36,086 INFO Initializing
+ 93: 2018-10-08 08:33:36,085 INFO Initializing
+  8: 2018-10-08 08:33:36,088 INFO Initializing
+125: 2018-10-08 08:33:36,084 INFO Initializing
+ 48: 2018-10-08 08:33:36,088 INFO Initializing
+112: 2018-10-08 08:33:36,087 INFO Initializing
+  5: 2018-10-08 08:33:36,087 INFO Initializing
+ 98: 2018-10-08 08:33:36,086 INFO Initializing
+  1: 2018-10-08 08:33:36,087 INFO Initializing
+ 19: 2018-10-08 08:33:36,088 INFO Initializing
+ 20: 2018-10-08 08:33:36,088 INFO Initializing
+ 86: 2018-10-08 08:33:36,086 INFO Initializing
+ 95: 2018-10-08 08:33:36,086 INFO Initializing
+ 27: 2018-10-08 08:33:36,088 INFO Initializing
+ 71: 2018-10-08 08:33:36,087 INFO Initializing
+107: 2018-10-08 08:33:36,087 INFO Initializing
+ 90: 2018-10-08 08:33:36,086 INFO Initializing
+ 64: 2018-10-08 08:33:36,088 INFO Initializing
+111: 2018-10-08 08:33:36,088 INFO Initializing
+ 99: 2018-10-08 08:33:36,089 INFO Initializing
+ 28: 2018-10-08 08:33:36,090 INFO Initializing
+ 26: 2018-10-08 08:33:36,090 INFO Initializing
+ 58: 2018-10-08 08:33:36,086 INFO Initializing
+ 39: 2018-10-08 08:33:36,087 INFO Initializing
+126: 2018-10-08 08:33:36,087 INFO Initializing
+ 55: 2018-10-08 08:33:36,085 INFO Initializing
+ 36: 2018-10-08 08:33:36,088 INFO Initializing
+ 53: 2018-10-08 08:33:36,086 INFO Initializing
+ 11: 2018-10-08 08:33:36,088 INFO Initializing
+ 21: 2018-10-08 08:33:36,089 INFO Initializing
+  6: 2018-10-08 08:33:36,089 INFO Initializing
+114: 2018-10-08 08:33:36,089 INFO Initializing
+108: 2018-10-08 08:33:36,089 INFO Initializing
+118: 2018-10-08 08:33:36,087 INFO Initializing
+ 18: 2018-10-08 08:33:36,087 INFO Initializing
+101: 2018-10-08 08:33:36,087 INFO Initializing
+ 13: 2018-10-08 08:33:36,087 INFO Initializing
+100: 2018-10-08 08:33:36,089 INFO Initializing
+ 46: 2018-10-08 08:33:36,090 INFO Initializing
+ 43: 2018-10-08 08:33:36,087 INFO Initializing
+ 41: 2018-10-08 08:33:36,088 INFO Initializing
+ 37: 2018-10-08 08:33:36,091 INFO Initializing
+ 54: 2018-10-08 08:33:36,087 INFO Initializing
+ 75: 2018-10-08 08:33:36,089 INFO Initializing
+ 66: 2018-10-08 08:33:36,086 INFO Initializing
+ 83: 2018-10-08 08:33:36,090 INFO Initializing
+  4: 2018-10-08 08:33:36,091 INFO Initializing
+120: 2018-10-08 08:33:36,087 INFO Initializing
+ 65: 2018-10-08 08:33:36,087 INFO Initializing
+ 57: 2018-10-08 08:33:36,089 INFO Initializing
+ 34: 2018-10-08 08:33:36,090 INFO Initializing
+ 15: 2018-10-08 08:33:36,092 INFO Initializing
+ 17: 2018-10-08 08:33:36,092 INFO Initializing
+ 35: 2018-10-08 08:33:36,090 INFO Initializing
+ 76: 2018-10-08 08:33:36,087 INFO Initializing
+ 33: 2018-10-08 08:33:36,088 INFO Initializing
+ 72: 2018-10-08 08:33:36,087 INFO Initializing
+ 47: 2018-10-08 08:33:36,088 INFO Initializing
+ 84: 2018-10-08 08:33:36,089 INFO Initializing
+  3: 2018-10-08 08:33:36,090 INFO Initializing
+124: 2018-10-08 08:33:36,088 INFO Initializing
+  0: 2018-10-08 08:33:36,091 INFO Initializing
+ 61: 2018-10-08 08:33:36,090 INFO Initializing
+ 56: 2018-10-08 08:33:36,090 INFO Initializing
+110: 2018-10-08 08:33:36,090 INFO Initializing
+121: 2018-10-08 08:33:36,112 INFO Initializing
+ 14: 2018-10-08 08:33:36,112 INFO Initializing
+ 70: 2018-10-08 08:33:36,112 INFO Initializing
+ 42: 2018-10-08 08:33:36,115 INFO Initializing
+ 96: 2018-10-08 08:33:36,111 INFO Initializing
+ 24: 2018-10-08 08:33:36,132 INFO Initializing
+ 80: 2018-10-08 08:33:36,130 INFO Initializing
+106: 2018-10-08 08:33:36,132 INFO Initializing
+ 50: 2018-10-08 08:33:36,135 INFO Initializing
+ 78: 2018-10-08 08:33:36,129 INFO Initializing
+ 52: 2018-10-08 08:33:36,129 INFO Initializing
+ 22: 2018-10-08 08:33:36,131 INFO Initializing
+104: 2018-10-08 08:33:36,130 INFO Initializing
+127: 2018-10-08 08:33:36,133 INFO Initializing
+ 96: 2018-10-08 08:33:36,181 INFO MPI rank 96
+  0: 2018-10-08 08:33:36,184 INFO MPI rank 0
+  1: 2018-10-08 08:33:36,182 INFO MPI rank 1
+ 82: 2018-10-08 08:33:36,183 INFO MPI rank 82
+ 90: 2018-10-08 08:33:36,180 INFO MPI rank 90
+ 32: 2018-10-08 08:33:36,183 INFO MPI rank 32
+116: 2018-10-08 08:33:36,183 INFO MPI rank 116
+ 91: 2018-10-08 08:33:36,183 INFO MPI rank 91
+112: 2018-10-08 08:33:36,182 INFO MPI rank 112
+ 72: 2018-10-08 08:33:36,181 INFO MPI rank 72
+ 66: 2018-10-08 08:33:36,180 INFO MPI rank 66
+  8: 2018-10-08 08:33:36,184 INFO MPI rank 8
+ 74: 2018-10-08 08:33:36,183 INFO MPI rank 74
+100: 2018-10-08 08:33:36,183 INFO MPI rank 100
+ 80: 2018-10-08 08:33:36,181 INFO MPI rank 80
+ 64: 2018-10-08 08:33:36,183 INFO MPI rank 64
+ 44: 2018-10-08 08:33:36,185 INFO MPI rank 44
+  9: 2018-10-08 08:33:36,183 INFO MPI rank 9
+ 43: 2018-10-08 08:33:36,180 INFO MPI rank 43
+ 84: 2018-10-08 08:33:36,182 INFO MPI rank 84
+ 40: 2018-10-08 08:33:36,182 INFO MPI rank 40
+  4: 2018-10-08 08:33:36,185 INFO MPI rank 4
+ 70: 2018-10-08 08:33:36,182 INFO MPI rank 70
+ 76: 2018-10-08 08:33:36,181 INFO MPI rank 76
+ 52: 2018-10-08 08:33:36,179 INFO MPI rank 52
+ 16: 2018-10-08 08:33:36,181 INFO MPI rank 16
+ 36: 2018-10-08 08:33:36,182 INFO MPI rank 36
+ 42: 2018-10-08 08:33:36,185 INFO MPI rank 42
+120: 2018-10-08 08:33:36,180 INFO MPI rank 120
+ 81: 2018-10-08 08:33:36,181 INFO MPI rank 81
+ 24: 2018-10-08 08:33:36,184 INFO MPI rank 24
+ 14: 2018-10-08 08:33:36,182 INFO MPI rank 14
+104: 2018-10-08 08:33:36,180 INFO MPI rank 104
+ 68: 2018-10-08 08:33:36,183 INFO MPI rank 68
+ 65: 2018-10-08 08:33:36,181 INFO MPI rank 65
+ 50: 2018-10-08 08:33:36,186 INFO MPI rank 50
+ 38: 2018-10-08 08:33:36,186 INFO MPI rank 38
+ 48: 2018-10-08 08:33:36,184 INFO MPI rank 48
+  3: 2018-10-08 08:33:36,183 INFO MPI rank 3
+ 69: 2018-10-08 08:33:36,180 INFO MPI rank 69
+ 12: 2018-10-08 08:33:36,186 INFO MPI rank 12
+ 99: 2018-10-08 08:33:36,183 INFO MPI rank 99
+102: 2018-10-08 08:33:36,181 INFO MPI rank 102
+105: 2018-10-08 08:33:36,183 INFO MPI rank 105
+ 18: 2018-10-08 08:33:36,181 INFO MPI rank 18
+106: 2018-10-08 08:33:36,184 INFO MPI rank 106
+ 25: 2018-10-08 08:33:36,182 INFO MPI rank 25
+ 73: 2018-10-08 08:33:36,183 INFO MPI rank 73
+ 88: 2018-10-08 08:33:36,182 INFO MPI rank 88
+ 10: 2018-10-08 08:33:36,181 INFO MPI rank 10
+ 97: 2018-10-08 08:33:36,182 INFO MPI rank 97
+  6: 2018-10-08 08:33:36,183 INFO MPI rank 6
+114: 2018-10-08 08:33:36,184 INFO MPI rank 114
+108: 2018-10-08 08:33:36,183 INFO MPI rank 108
+ 86: 2018-10-08 08:33:36,181 INFO MPI rank 86
+101: 2018-10-08 08:33:36,181 INFO MPI rank 101
+ 20: 2018-10-08 08:33:36,183 INFO MPI rank 20
+ 67: 2018-10-08 08:33:36,181 INFO MPI rank 67
+109: 2018-10-08 08:33:36,183 INFO MPI rank 109
+121: 2018-10-08 08:33:36,183 INFO MPI rank 121
+113: 2018-10-08 08:33:36,181 INFO MPI rank 113
+122: 2018-10-08 08:33:36,182 INFO MPI rank 122
+ 92: 2018-10-08 08:33:36,181 INFO MPI rank 92
+ 98: 2018-10-08 08:33:36,181 INFO MPI rank 98
+ 83: 2018-10-08 08:33:36,184 INFO MPI rank 83
+ 45: 2018-10-08 08:33:36,184 INFO MPI rank 45
+ 49: 2018-10-08 08:33:36,183 INFO MPI rank 49
+ 46: 2018-10-08 08:33:36,184 INFO MPI rank 46
+ 60: 2018-10-08 08:33:36,183 INFO MPI rank 60
+ 61: 2018-10-08 08:33:36,183 INFO MPI rank 61
+ 41: 2018-10-08 08:33:36,182 INFO MPI rank 41
+ 35: 2018-10-08 08:33:36,184 INFO MPI rank 35
+ 85: 2018-10-08 08:33:36,181 INFO MPI rank 85
+ 37: 2018-10-08 08:33:36,185 INFO MPI rank 37
+ 31: 2018-10-08 08:33:36,183 INFO MPI rank 31
+ 22: 2018-10-08 08:33:36,181 INFO MPI rank 22
+ 58: 2018-10-08 08:33:36,180 INFO MPI rank 58
+ 19: 2018-10-08 08:33:36,183 INFO MPI rank 19
+ 55: 2018-10-08 08:33:36,180 INFO MPI rank 55
+ 63: 2018-10-08 08:33:36,182 INFO MPI rank 63
+ 15: 2018-10-08 08:33:36,186 INFO MPI rank 15
+ 39: 2018-10-08 08:33:36,182 INFO MPI rank 39
+ 93: 2018-10-08 08:33:36,181 INFO MPI rank 93
+ 54: 2018-10-08 08:33:36,181 INFO MPI rank 54
+123: 2018-10-08 08:33:36,179 INFO MPI rank 123
+ 27: 2018-10-08 08:33:36,183 INFO MPI rank 27
+ 30: 2018-10-08 08:33:36,185 INFO MPI rank 30
+ 33: 2018-10-08 08:33:36,181 INFO MPI rank 33
+ 77: 2018-10-08 08:33:36,182 INFO MPI rank 77
+ 17: 2018-10-08 08:33:36,185 INFO MPI rank 17
+ 71: 2018-10-08 08:33:36,182 INFO MPI rank 71
+ 89: 2018-10-08 08:33:36,182 INFO MPI rank 89
+ 53: 2018-10-08 08:33:36,180 INFO MPI rank 53
+ 11: 2018-10-08 08:33:36,182 INFO MPI rank 11
+119: 2018-10-08 08:33:36,180 INFO MPI rank 119
+ 75: 2018-10-08 08:33:36,182 INFO MPI rank 75
+ 57: 2018-10-08 08:33:36,183 INFO MPI rank 57
+ 21: 2018-10-08 08:33:36,183 INFO MPI rank 21
+117: 2018-10-08 08:33:36,180 INFO MPI rank 117
+126: 2018-10-08 08:33:36,181 INFO MPI rank 126
+111: 2018-10-08 08:33:36,182 INFO MPI rank 111
+ 94: 2018-10-08 08:33:36,182 INFO MPI rank 94
+ 79: 2018-10-08 08:33:36,181 INFO MPI rank 79
+  7: 2018-10-08 08:33:36,181 INFO MPI rank 7
+ 28: 2018-10-08 08:33:36,185 INFO MPI rank 28
+124: 2018-10-08 08:33:36,181 INFO MPI rank 124
+ 34: 2018-10-08 08:33:36,184 INFO MPI rank 34
+127: 2018-10-08 08:33:36,183 INFO MPI rank 127
+ 51: 2018-10-08 08:33:36,184 INFO MPI rank 51
+ 87: 2018-10-08 08:33:36,182 INFO MPI rank 87
+ 78: 2018-10-08 08:33:36,179 INFO MPI rank 78
+ 47: 2018-10-08 08:33:36,182 INFO MPI rank 47
+125: 2018-10-08 08:33:36,180 INFO MPI rank 125
+ 23: 2018-10-08 08:33:36,183 INFO MPI rank 23
+ 26: 2018-10-08 08:33:36,185 INFO MPI rank 26
+ 59: 2018-10-08 08:33:36,181 INFO MPI rank 59
+ 56: 2018-10-08 08:33:36,184 INFO MPI rank 56
+107: 2018-10-08 08:33:36,181 INFO MPI rank 107
+  5: 2018-10-08 08:33:36,182 INFO MPI rank 5
+110: 2018-10-08 08:33:36,183 INFO MPI rank 110
+ 29: 2018-10-08 08:33:36,185 INFO MPI rank 29
+ 13: 2018-10-08 08:33:36,181 INFO MPI rank 13
+103: 2018-10-08 08:33:36,181 INFO MPI rank 103
+115: 2018-10-08 08:33:36,179 INFO MPI rank 115
+118: 2018-10-08 08:33:36,181 INFO MPI rank 118
+ 95: 2018-10-08 08:33:36,182 INFO MPI rank 95
+ 62: 2018-10-08 08:33:36,184 INFO MPI rank 62
+  2: 2018-10-08 08:33:36,181 INFO MPI rank 2
+  0: 2018-10-08 08:33:36,210 INFO Configuration: {'data_config': {'name': 'cifar10', 'data_path': '$SCRATCH/pytorch-cifar10/data', 'n_train': 32768, 'n_valid': 8192}, 'experiment_config': {'name': 'cifar10', 'output_dir': '$SCRATCH/pytorch-cifar10/output'}, 'model_config': {'model_type': 'resnet50_cifar10', 'optimizer': 'Adam', 'learning_rate': 0.001}, 'train_config': {'batch_size': 64, 'n_epochs': 1}}
+ 12: 2018-10-08 08:33:39,146 INFO Loaded 32768 training samples and 8192 validation samples
+ 20: 2018-10-08 08:33:39,165 INFO Loaded 32768 training samples and 8192 validation samples
+  5: 2018-10-08 08:33:39,173 INFO Loaded 32768 training samples and 8192 validation samples
+ 72: 2018-10-08 08:33:39,178 INFO Loaded 32768 training samples and 8192 validation samples
+107: 2018-10-08 08:33:39,181 INFO Loaded 32768 training samples and 8192 validation samples
+ 64: 2018-10-08 08:33:39,191 INFO Loaded 32768 training samples and 8192 validation samples
+ 90: 2018-10-08 08:33:39,192 INFO Loaded 32768 training samples and 8192 validation samples
+  7: 2018-10-08 08:33:39,208 INFO Loaded 32768 training samples and 8192 validation samples
+ 21: 2018-10-08 08:33:39,214 INFO Loaded 32768 training samples and 8192 validation samples
+ 60: 2018-10-08 08:33:39,230 INFO Loaded 32768 training samples and 8192 validation samples
+ 61: 2018-10-08 08:33:39,245 INFO Loaded 32768 training samples and 8192 validation samples
+101: 2018-10-08 08:33:39,246 INFO Loaded 32768 training samples and 8192 validation samples
+ 10: 2018-10-08 08:33:39,248 INFO Loaded 32768 training samples and 8192 validation samples
+124: 2018-10-08 08:33:39,258 INFO Loaded 32768 training samples and 8192 validation samples
+ 91: 2018-10-08 08:33:39,266 INFO Loaded 32768 training samples and 8192 validation samples
+123: 2018-10-08 08:33:39,266 INFO Loaded 32768 training samples and 8192 validation samples
+ 24: 2018-10-08 08:33:39,278 INFO Loaded 32768 training samples and 8192 validation samples
+ 47: 2018-10-08 08:33:39,277 INFO Loaded 32768 training samples and 8192 validation samples
+116: 2018-10-08 08:33:39,287 INFO Loaded 32768 training samples and 8192 validation samples
+ 28: 2018-10-08 08:33:39,298 INFO Loaded 32768 training samples and 8192 validation samples
+ 34: 2018-10-08 08:33:39,300 INFO Loaded 32768 training samples and 8192 validation samples
+108: 2018-10-08 08:33:39,305 INFO Loaded 32768 training samples and 8192 validation samples
+ 54: 2018-10-08 08:33:39,322 INFO Loaded 32768 training samples and 8192 validation samples
+ 87: 2018-10-08 08:33:39,328 INFO Loaded 32768 training samples and 8192 validation samples
+  3: 2018-10-08 08:33:39,337 INFO Loaded 32768 training samples and 8192 validation samples
+110: 2018-10-08 08:33:39,339 INFO Loaded 32768 training samples and 8192 validation samples
+ 94: 2018-10-08 08:33:39,340 INFO Loaded 32768 training samples and 8192 validation samples
+ 80: 2018-10-08 08:33:39,357 INFO Loaded 32768 training samples and 8192 validation samples
+ 68: 2018-10-08 08:33:39,364 INFO Loaded 32768 training samples and 8192 validation samples
+ 75: 2018-10-08 08:33:39,374 INFO Loaded 32768 training samples and 8192 validation samples
+ 86: 2018-10-08 08:33:39,373 INFO Loaded 32768 training samples and 8192 validation samples
+ 53: 2018-10-08 08:33:39,388 INFO Loaded 32768 training samples and 8192 validation samples
+ 57: 2018-10-08 08:33:39,408 INFO Loaded 32768 training samples and 8192 validation samples
+114: 2018-10-08 08:33:39,424 INFO Loaded 32768 training samples and 8192 validation samples
+119: 2018-10-08 08:33:39,434 INFO Loaded 32768 training samples and 8192 validation samples
+  2: 2018-10-08 08:33:39,450 INFO Loaded 32768 training samples and 8192 validation samples
+ 77: 2018-10-08 08:33:39,460 INFO Loaded 32768 training samples and 8192 validation samples
+ 93: 2018-10-08 08:33:39,460 INFO Loaded 32768 training samples and 8192 validation samples
+ 38: 2018-10-08 08:33:39,474 INFO Loaded 32768 training samples and 8192 validation samples
+ 81: 2018-10-08 08:33:39,470 INFO Loaded 32768 training samples and 8192 validation samples
+ 73: 2018-10-08 08:33:39,479 INFO Loaded 32768 training samples and 8192 validation samples
+ 65: 2018-10-08 08:33:39,484 INFO Loaded 32768 training samples and 8192 validation samples
+ 63: 2018-10-08 08:33:39,505 INFO Loaded 32768 training samples and 8192 validation samples
+  6: 2018-10-08 08:33:39,512 INFO Loaded 32768 training samples and 8192 validation samples
+120: 2018-10-08 08:33:39,511 INFO Loaded 32768 training samples and 8192 validation samples
+  4: 2018-10-08 08:33:39,524 INFO Loaded 32768 training samples and 8192 validation samples
+122: 2018-10-08 08:33:39,523 INFO Loaded 32768 training samples and 8192 validation samples
+ 32: 2018-10-08 08:33:39,531 INFO Loaded 32768 training samples and 8192 validation samples
+ 19: 2018-10-08 08:33:39,535 INFO Loaded 32768 training samples and 8192 validation samples
+ 89: 2018-10-08 08:33:39,543 INFO Loaded 32768 training samples and 8192 validation samples
+ 79: 2018-10-08 08:33:39,554 INFO Loaded 32768 training samples and 8192 validation samples
+ 76: 2018-10-08 08:33:39,556 INFO Loaded 32768 training samples and 8192 validation samples
+ 17: 2018-10-08 08:33:39,580 INFO Loaded 32768 training samples and 8192 validation samples
+ 70: 2018-10-08 08:33:39,577 INFO Loaded 32768 training samples and 8192 validation samples
+  1: 2018-10-08 08:33:39,591 INFO Loaded 32768 training samples and 8192 validation samples
+ 92: 2018-10-08 08:33:39,601 INFO Loaded 32768 training samples and 8192 validation samples
+ 15: 2018-10-08 08:33:39,611 INFO Loaded 32768 training samples and 8192 validation samples
+ 55: 2018-10-08 08:33:39,613 INFO Loaded 32768 training samples and 8192 validation samples
+ 43: 2018-10-08 08:33:39,624 INFO Loaded 32768 training samples and 8192 validation samples
+ 62: 2018-10-08 08:33:39,635 INFO Loaded 32768 training samples and 8192 validation samples
+ 36: 2018-10-08 08:33:39,637 INFO Loaded 32768 training samples and 8192 validation samples
+ 39: 2018-10-08 08:33:39,637 INFO Loaded 32768 training samples and 8192 validation samples
+ 51: 2018-10-08 08:33:39,651 INFO Loaded 32768 training samples and 8192 validation samples
+ 44: 2018-10-08 08:33:39,666 INFO Loaded 32768 training samples and 8192 validation samples
+117: 2018-10-08 08:33:39,664 INFO Loaded 32768 training samples and 8192 validation samples
+ 16: 2018-10-08 08:33:39,677 INFO Loaded 32768 training samples and 8192 validation samples
+ 82: 2018-10-08 08:33:39,687 INFO Loaded 32768 training samples and 8192 validation samples
+ 45: 2018-10-08 08:33:39,699 INFO Loaded 32768 training samples and 8192 validation samples
+ 85: 2018-10-08 08:33:39,708 INFO Loaded 32768 training samples and 8192 validation samples
+ 40: 2018-10-08 08:33:39,713 INFO Loaded 32768 training samples and 8192 validation samples
+105: 2018-10-08 08:33:39,718 INFO Loaded 32768 training samples and 8192 validation samples
+ 37: 2018-10-08 08:33:39,725 INFO Loaded 32768 training samples and 8192 validation samples
+  8: 2018-10-08 08:33:39,725 INFO Loaded 32768 training samples and 8192 validation samples
+ 83: 2018-10-08 08:33:39,734 INFO Loaded 32768 training samples and 8192 validation samples
+ 58: 2018-10-08 08:33:39,730 INFO Loaded 32768 training samples and 8192 validation samples
+ 66: 2018-10-08 08:33:39,740 INFO Loaded 32768 training samples and 8192 validation samples
+ 29: 2018-10-08 08:33:39,747 INFO Loaded 32768 training samples and 8192 validation samples
+126: 2018-10-08 08:33:39,745 INFO Loaded 32768 training samples and 8192 validation samples
+ 25: 2018-10-08 08:33:39,767 INFO Loaded 32768 training samples and 8192 validation samples
+ 52: 2018-10-08 08:33:39,765 INFO Loaded 32768 training samples and 8192 validation samples
+  0: 2018-10-08 08:33:39,774 INFO Loaded 32768 training samples and 8192 validation samples
+ 41: 2018-10-08 08:33:39,782 INFO Loaded 32768 training samples and 8192 validation samples
+ 88: 2018-10-08 08:33:39,800 INFO Loaded 32768 training samples and 8192 validation samples
+ 23: 2018-10-08 08:33:39,805 INFO Loaded 32768 training samples and 8192 validation samples
+  9: 2018-10-08 08:33:39,813 INFO Loaded 32768 training samples and 8192 validation samples
+ 95: 2018-10-08 08:33:39,813 INFO Loaded 32768 training samples and 8192 validation samples
+121: 2018-10-08 08:33:39,819 INFO Loaded 32768 training samples and 8192 validation samples
+118: 2018-10-08 08:33:39,822 INFO Loaded 32768 training samples and 8192 validation samples
+115: 2018-10-08 08:33:39,831 INFO Loaded 32768 training samples and 8192 validation samples
+ 96: 2018-10-08 08:33:39,834 INFO Loaded 32768 training samples and 8192 validation samples
+ 27: 2018-10-08 08:33:39,838 INFO Loaded 32768 training samples and 8192 validation samples
+ 22: 2018-10-08 08:33:39,844 INFO Loaded 32768 training samples and 8192 validation samples
+ 78: 2018-10-08 08:33:39,852 INFO Loaded 32768 training samples and 8192 validation samples
+109: 2018-10-08 08:33:39,863 INFO Loaded 32768 training samples and 8192 validation samples
+ 26: 2018-10-08 08:33:39,871 INFO Loaded 32768 training samples and 8192 validation samples
+103: 2018-10-08 08:33:39,873 INFO Loaded 32768 training samples and 8192 validation samples
+ 18: 2018-10-08 08:33:39,880 INFO Loaded 32768 training samples and 8192 validation samples
+125: 2018-10-08 08:33:39,882 INFO Loaded 32768 training samples and 8192 validation samples
+ 35: 2018-10-08 08:33:39,888 INFO Loaded 32768 training samples and 8192 validation samples
+ 50: 2018-10-08 08:33:39,900 INFO Loaded 32768 training samples and 8192 validation samples
+102: 2018-10-08 08:33:39,914 INFO Loaded 32768 training samples and 8192 validation samples
+106: 2018-10-08 08:33:39,919 INFO Loaded 32768 training samples and 8192 validation samples
+104: 2018-10-08 08:33:39,923 INFO Loaded 32768 training samples and 8192 validation samples
+ 13: 2018-10-08 08:33:39,940 INFO Loaded 32768 training samples and 8192 validation samples
+ 14: 2018-10-08 08:33:39,948 INFO Loaded 32768 training samples and 8192 validation samples
+127: 2018-10-08 08:33:39,950 INFO Loaded 32768 training samples and 8192 validation samples
+ 31: 2018-10-08 08:33:39,957 INFO Loaded 32768 training samples and 8192 validation samples
+113: 2018-10-08 08:33:39,976 INFO Loaded 32768 training samples and 8192 validation samples
+ 56: 2018-10-08 08:33:39,981 INFO Loaded 32768 training samples and 8192 validation samples
+112: 2018-10-08 08:33:39,988 INFO Loaded 32768 training samples and 8192 validation samples
+ 67: 2018-10-08 08:33:39,989 INFO Loaded 32768 training samples and 8192 validation samples
+ 71: 2018-10-08 08:33:39,991 INFO Loaded 32768 training samples and 8192 validation samples
+ 46: 2018-10-08 08:33:40,005 INFO Loaded 32768 training samples and 8192 validation samples
+ 98: 2018-10-08 08:33:40,005 INFO Loaded 32768 training samples and 8192 validation samples
+ 30: 2018-10-08 08:33:40,016 INFO Loaded 32768 training samples and 8192 validation samples
+ 59: 2018-10-08 08:33:40,031 INFO Loaded 32768 training samples and 8192 validation samples
+ 84: 2018-10-08 08:33:40,034 INFO Loaded 32768 training samples and 8192 validation samples
+ 99: 2018-10-08 08:33:40,035 INFO Loaded 32768 training samples and 8192 validation samples
+ 97: 2018-10-08 08:33:40,045 INFO Loaded 32768 training samples and 8192 validation samples
+ 74: 2018-10-08 08:33:40,047 INFO Loaded 32768 training samples and 8192 validation samples
+ 69: 2018-10-08 08:33:40,045 INFO Loaded 32768 training samples and 8192 validation samples
+ 33: 2018-10-08 08:33:40,061 INFO Loaded 32768 training samples and 8192 validation samples
+ 49: 2018-10-08 08:33:40,067 INFO Loaded 32768 training samples and 8192 validation samples
+ 48: 2018-10-08 08:33:40,078 INFO Loaded 32768 training samples and 8192 validation samples
+ 42: 2018-10-08 08:33:40,080 INFO Loaded 32768 training samples and 8192 validation samples
+ 11: 2018-10-08 08:33:40,077 INFO Loaded 32768 training samples and 8192 validation samples
+100: 2018-10-08 08:33:40,085 INFO Loaded 32768 training samples and 8192 validation samples
+111: 2018-10-08 08:33:40,095 INFO Loaded 32768 training samples and 8192 validation samples
+ 61: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 35: 2018-10-08 08:33:40,418 INFO Epoch 0
+ 36: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 42: 2018-10-08 08:33:40,419 INFO Epoch 0
+ 50: 2018-10-08 08:33:40,419 INFO Epoch 0
+ 47: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 62: 2018-10-08 08:33:40,418 INFO Epoch 0
+ 45: 2018-10-08 08:33:40,418 INFO Epoch 0
+ 49: 2018-10-08 08:33:40,417 INFO Epoch 0
+  9: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 43: 2018-10-08 08:33:40,414 INFO Epoch 0
+ 37: 2018-10-08 08:33:40,419 INFO Epoch 0
+  1: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 52: 2018-10-08 08:33:40,413 INFO Epoch 0
+ 22: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 54: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 33: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 32: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 65: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 38: 2018-10-08 08:33:40,420 INFO Epoch 0
+  3: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 91: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 34: 2018-10-08 08:33:40,418 INFO Epoch 0
+ 87: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 26: 2018-10-08 08:33:40,418 INFO Epoch 0
+ 59: 2018-10-08 08:33:40,414 INFO Epoch 0
+  5: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 13: 2018-10-08 08:33:40,415 INFO Epoch 0
+  2: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 46: 2018-10-08 08:33:40,418 INFO Epoch 0
+ 84: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 41: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 85: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 40: 2018-10-08 08:33:40,416 INFO Epoch 0
+  4: 2018-10-08 08:33:40,419 INFO Epoch 0
+ 82: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 58: 2018-10-08 08:33:40,414 INFO Epoch 0
+ 55: 2018-10-08 08:33:40,413 INFO Epoch 0
+ 63: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 39: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 90: 2018-10-08 08:33:40,414 INFO Epoch 0
+ 27: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 14: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 77: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 17: 2018-10-08 08:33:40,419 INFO Epoch 0
+ 71: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 68: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 89: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 53: 2018-10-08 08:33:40,414 INFO Epoch 0
+ 11: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 75: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 48: 2018-10-08 08:33:40,418 INFO Epoch 0
+ 57: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 21: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 12: 2018-10-08 08:33:40,420 INFO Epoch 0
+ 99: 2018-10-08 08:33:40,417 INFO Epoch 0
+106: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 25: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 73: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 51: 2018-10-08 08:33:40,418 INFO Epoch 0
+ 66: 2018-10-08 08:33:40,413 INFO Epoch 0
+ 23: 2018-10-08 08:33:40,417 INFO Epoch 0
+107: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 29: 2018-10-08 08:33:40,419 INFO Epoch 0
+ 86: 2018-10-08 08:33:40,415 INFO Epoch 0
+109: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 80: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 92: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 64: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 44: 2018-10-08 08:33:40,419 INFO Epoch 0
+ 60: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 31: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 70: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 76: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 16: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 19: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 15: 2018-10-08 08:33:40,419 INFO Epoch 0
+ 93: 2018-10-08 08:33:40,414 INFO Epoch 0
+123: 2018-10-08 08:33:40,413 INFO Epoch 0
+ 30: 2018-10-08 08:33:40,419 INFO Epoch 0
+120: 2018-10-08 08:33:40,414 INFO Epoch 0
+ 81: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 24: 2018-10-08 08:33:40,418 INFO Epoch 0
+116: 2018-10-08 08:33:40,416 INFO Epoch 0
+104: 2018-10-08 08:33:40,414 INFO Epoch 0
+119: 2018-10-08 08:33:40,414 INFO Epoch 0
+ 69: 2018-10-08 08:33:40,414 INFO Epoch 0
+117: 2018-10-08 08:33:40,414 INFO Epoch 0
+126: 2018-10-08 08:33:40,415 INFO Epoch 0
+111: 2018-10-08 08:33:40,416 INFO Epoch 0
+102: 2018-10-08 08:33:40,414 INFO Epoch 0
+ 96: 2018-10-08 08:33:40,415 INFO Epoch 0
+105: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 18: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 94: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 79: 2018-10-08 08:33:40,415 INFO Epoch 0
+  7: 2018-10-08 08:33:40,415 INFO Epoch 0
+112: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 28: 2018-10-08 08:33:40,419 INFO Epoch 0
+124: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 88: 2018-10-08 08:33:40,416 INFO Epoch 0
+127: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 10: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 97: 2018-10-08 08:33:40,416 INFO Epoch 0
+  6: 2018-10-08 08:33:40,417 INFO Epoch 0
+114: 2018-10-08 08:33:40,417 INFO Epoch 0
+108: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 78: 2018-10-08 08:33:40,413 INFO Epoch 0
+ 72: 2018-10-08 08:33:40,415 INFO Epoch 0
+  8: 2018-10-08 08:33:40,418 INFO Epoch 0
+125: 2018-10-08 08:33:40,414 INFO Epoch 0
+ 56: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 74: 2018-10-08 08:33:40,417 INFO Epoch 0
+110: 2018-10-08 08:33:40,417 INFO Epoch 0
+101: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 20: 2018-10-08 08:33:40,417 INFO Epoch 0
+ 67: 2018-10-08 08:33:40,415 INFO Epoch 0
+103: 2018-10-08 08:33:40,414 INFO Epoch 0
+115: 2018-10-08 08:33:40,413 INFO Epoch 0
+118: 2018-10-08 08:33:40,415 INFO Epoch 0
+121: 2018-10-08 08:33:40,417 INFO Epoch 0
+100: 2018-10-08 08:33:40,417 INFO Epoch 0
+113: 2018-10-08 08:33:40,414 INFO Epoch 0
+122: 2018-10-08 08:33:40,416 INFO Epoch 0
+ 95: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 98: 2018-10-08 08:33:40,415 INFO Epoch 0
+ 83: 2018-10-08 08:33:40,418 INFO Epoch 0
+  0: 2018-10-08 08:33:40,420 INFO Model: 
+  0: DistributedDataParallelCPU(
+  0:   (module): ResNet(
+  0:     (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:     (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:     (layer1): Sequential(
+  0:       (0): Bottleneck(
+  0:         (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential(
+  0:           (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:           (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         )
+  0:       )
+  0:       (1): Bottleneck(
+  0:         (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:       (2): Bottleneck(
+  0:         (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:     )
+  0:     (layer2): Sequential(
+  0:       (0): Bottleneck(
+  0:         (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential(
+  0:           (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+  0:           (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         )
+  0:       )
+  0:       (1): Bottleneck(
+  0:         (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:       (2): Bottleneck(
+  0:         (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:       (3): Bottleneck(
+  0:         (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:     )
+  0:     (layer3): Sequential(
+  0:       (0): Bottleneck(
+  0:         (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential(
+  0:           (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+  0:           (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         )
+  0:       )
+  0:       (1): Bottleneck(
+  0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:       (2): Bottleneck(
+  0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:       (3): Bottleneck(
+  0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:       (4): Bottleneck(
+  0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:       (5): Bottleneck(
+  0:         (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:     )
+  0:     (layer4): Sequential(
+  0:       (0): Bottleneck(
+  0:         (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential(
+  0:           (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+  0:           (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         )
+  0:       )
+  0:       (1): Bottleneck(
+  0:         (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:       (2): Bottleneck(
+  0:         (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  0:         (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  0:         (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  0:         (shortcut): Sequential()
+  0:       )
+  0:     )
+  0:     (linear): Linear(in_features=2048, out_features=10, bias=True)
+  0:   )
+  0: )
+  0: Parameters: 23520842
+  0: 2018-10-08 08:33:40,420 INFO Epoch 0
+ 22: 2018-10-08 08:33:54,283 INFO   Training loss: 2.625
+ 36: 2018-10-08 08:33:54,284 INFO   Training loss: 2.796
+ 38: 2018-10-08 08:33:54,288 INFO   Training loss: 2.731
+ 45: 2018-10-08 08:33:54,286 INFO   Training loss: 2.591
+ 35: 2018-10-08 08:33:54,286 INFO   Training loss: 2.801
+ 37: 2018-10-08 08:33:54,287 INFO   Training loss: 2.707
+ 39: 2018-10-08 08:33:54,283 INFO   Training loss: 2.815
+ 21: 2018-10-08 08:33:54,285 INFO   Training loss: 2.672
+ 79: 2018-10-08 08:33:54,283 INFO   Training loss: 2.459
+106: 2018-10-08 08:33:54,286 INFO   Training loss: 2.521
+ 72: 2018-10-08 08:33:54,283 INFO   Training loss: 2.615
+ 49: 2018-10-08 08:33:54,286 INFO   Training loss: 2.550
+  9: 2018-10-08 08:33:54,286 INFO   Training loss: 2.612
+ 70: 2018-10-08 08:33:54,285 INFO   Training loss: 2.669
+ 58: 2018-10-08 08:33:54,282 INFO   Training loss: 2.680
+ 19: 2018-10-08 08:33:54,286 INFO   Training loss: 2.685
+ 15: 2018-10-08 08:33:54,288 INFO   Training loss: 2.683
+ 42: 2018-10-08 08:33:54,287 INFO   Training loss: 2.527
+ 14: 2018-10-08 08:33:54,284 INFO   Training loss: 2.435
+104: 2018-10-08 08:33:54,282 INFO   Training loss: 2.501
+ 89: 2018-10-08 08:33:54,284 INFO   Training loss: 2.719
+ 50: 2018-10-08 08:33:54,288 INFO   Training loss: 2.658
+117: 2018-10-08 08:33:54,282 INFO   Training loss: 2.806
+126: 2018-10-08 08:33:54,283 INFO   Training loss: 2.810
+111: 2018-10-08 08:33:54,285 INFO   Training loss: 2.766
+ 91: 2018-10-08 08:33:54,286 INFO   Training loss: 2.532
+ 88: 2018-10-08 08:33:54,285 INFO   Training loss: 2.552
+108: 2018-10-08 08:33:54,285 INFO   Training loss: 2.608
+110: 2018-10-08 08:33:54,285 INFO   Training loss: 2.748
+113: 2018-10-08 08:33:54,283 INFO   Training loss: 2.700
+ 95: 2018-10-08 08:33:54,284 INFO   Training loss: 2.743
+ 83: 2018-10-08 08:33:54,286 INFO   Training loss: 2.589
+ 60: 2018-10-08 08:33:54,285 INFO   Training loss: 2.616
+ 61: 2018-10-08 08:33:54,285 INFO   Training loss: 2.524
+ 84: 2018-10-08 08:33:54,285 INFO   Training loss: 2.760
+ 85: 2018-10-08 08:33:54,283 INFO   Training loss: 2.616
+ 40: 2018-10-08 08:33:54,285 INFO   Training loss: 2.515
+  4: 2018-10-08 08:33:54,287 INFO   Training loss: 2.667
+ 90: 2018-10-08 08:33:54,283 INFO   Training loss: 2.786
+ 71: 2018-10-08 08:33:54,284 INFO   Training loss: 2.753
+ 75: 2018-10-08 08:33:54,285 INFO   Training loss: 2.673
+102: 2018-10-08 08:33:54,283 INFO   Training loss: 2.453
+ 18: 2018-10-08 08:33:54,283 INFO   Training loss: 2.729
+ 73: 2018-10-08 08:33:54,286 INFO   Training loss: 2.705
+124: 2018-10-08 08:33:54,284 INFO   Training loss: 2.667
+ 34: 2018-10-08 08:33:54,286 INFO   Training loss: 2.527
+ 97: 2018-10-08 08:33:54,284 INFO   Training loss: 2.672
+  6: 2018-10-08 08:33:54,285 INFO   Training loss: 2.618
+ 51: 2018-10-08 08:33:54,287 INFO   Training loss: 2.541
+ 87: 2018-10-08 08:33:54,284 INFO   Training loss: 2.879
+103: 2018-10-08 08:33:54,283 INFO   Training loss: 2.529
+115: 2018-10-08 08:33:54,282 INFO   Training loss: 2.818
+ 64: 2018-10-08 08:33:54,285 INFO   Training loss: 2.463
+ 52: 2018-10-08 08:33:54,282 INFO   Training loss: 2.607
+ 55: 2018-10-08 08:33:54,282 INFO   Training loss: 2.540
+ 93: 2018-10-08 08:33:54,283 INFO   Training loss: 2.866
+ 27: 2018-10-08 08:33:54,286 INFO   Training loss: 2.735
+120: 2018-10-08 08:33:54,283 INFO   Training loss: 2.628
+ 32: 2018-10-08 08:33:54,285 INFO   Training loss: 2.684
+ 17: 2018-10-08 08:33:54,288 INFO   Training loss: 2.780
+  3: 2018-10-08 08:33:54,286 INFO   Training loss: 2.342
+  8: 2018-10-08 08:33:54,287 INFO   Training loss: 2.493
+ 56: 2018-10-08 08:33:54,286 INFO   Training loss: 2.769
+ 80: 2018-10-08 08:33:54,284 INFO   Training loss: 2.602
+ 92: 2018-10-08 08:33:54,284 INFO   Training loss: 2.648
+ 10: 2018-10-08 08:33:54,284 INFO   Training loss: 2.535
+121: 2018-10-08 08:33:54,286 INFO   Training loss: 2.626
+122: 2018-10-08 08:33:54,285 INFO   Training loss: 2.488
+ 46: 2018-10-08 08:33:54,288 INFO   Training loss: 2.445
+ 31: 2018-10-08 08:33:54,288 INFO   Training loss: 2.651
+116: 2018-10-08 08:33:54,287 INFO   Training loss: 2.558
+ 28: 2018-10-08 08:33:54,289 INFO   Training loss: 2.508
+ 23: 2018-10-08 08:33:54,288 INFO   Training loss: 2.842
+ 44: 2018-10-08 08:33:54,290 INFO   Training loss: 2.508
+ 43: 2018-10-08 08:33:54,285 INFO   Training loss: 2.750
+ 41: 2018-10-08 08:33:54,287 INFO   Training loss: 2.913
+ 82: 2018-10-08 08:33:54,288 INFO   Training loss: 2.858
+ 33: 2018-10-08 08:33:54,286 INFO   Training loss: 2.544
+ 24: 2018-10-08 08:33:54,289 INFO   Training loss: 2.563
+ 48: 2018-10-08 08:33:54,289 INFO   Training loss: 2.810
+ 94: 2018-10-08 08:33:54,287 INFO   Training loss: 2.583
+  7: 2018-10-08 08:33:54,286 INFO   Training loss: 2.573
+ 47: 2018-10-08 08:33:54,286 INFO   Training loss: 2.866
+ 26: 2018-10-08 08:33:54,289 INFO   Training loss: 2.709
+107: 2018-10-08 08:33:54,286 INFO   Training loss: 2.772
+ 29: 2018-10-08 08:33:54,290 INFO   Training loss: 2.579
+101: 2018-10-08 08:33:54,286 INFO   Training loss: 2.608
+ 20: 2018-10-08 08:33:54,288 INFO   Training loss: 2.731
+ 67: 2018-10-08 08:33:54,286 INFO   Training loss: 2.766
+ 63: 2018-10-08 08:33:54,287 INFO   Training loss: 2.604
+ 54: 2018-10-08 08:33:54,286 INFO   Training loss: 2.744
+ 30: 2018-10-08 08:33:54,290 INFO   Training loss: 2.716
+ 12: 2018-10-08 08:33:54,291 INFO   Training loss: 2.778
+ 99: 2018-10-08 08:33:54,288 INFO   Training loss: 2.755
+ 96: 2018-10-08 08:33:54,286 INFO   Training loss: 2.635
+127: 2018-10-08 08:33:54,288 INFO   Training loss: 2.546
+ 78: 2018-10-08 08:33:54,285 INFO   Training loss: 2.587
+ 66: 2018-10-08 08:33:54,285 INFO   Training loss: 2.683
+125: 2018-10-08 08:33:54,285 INFO   Training loss: 2.924
+ 59: 2018-10-08 08:33:54,286 INFO   Training loss: 2.774
+118: 2018-10-08 08:33:54,286 INFO   Training loss: 2.578
+109: 2018-10-08 08:33:54,288 INFO   Training loss: 2.541
+100: 2018-10-08 08:33:54,288 INFO   Training loss: 2.712
+ 98: 2018-10-08 08:33:54,286 INFO   Training loss: 2.664
+ 16: 2018-10-08 08:33:54,286 INFO   Training loss: 2.507
+123: 2018-10-08 08:33:54,284 INFO   Training loss: 2.274
+ 81: 2018-10-08 08:33:54,286 INFO   Training loss: 2.569
+ 77: 2018-10-08 08:33:54,288 INFO   Training loss: 2.595
+ 65: 2018-10-08 08:33:54,286 INFO   Training loss: 2.405
+ 53: 2018-10-08 08:33:54,285 INFO   Training loss: 2.740
+ 11: 2018-10-08 08:33:54,287 INFO   Training loss: 2.665
+105: 2018-10-08 08:33:54,288 INFO   Training loss: 2.650
+112: 2018-10-08 08:33:54,288 INFO   Training loss: 2.604
+  5: 2018-10-08 08:33:54,288 INFO   Training loss: 2.676
+ 74: 2018-10-08 08:33:54,289 INFO   Training loss: 2.573
+ 86: 2018-10-08 08:33:54,286 INFO   Training loss: 2.592
+  1: 2018-10-08 08:33:54,288 INFO   Training loss: 2.432
+ 68: 2018-10-08 08:33:54,288 INFO   Training loss: 2.681
+119: 2018-10-08 08:33:54,286 INFO   Training loss: 2.636
+ 69: 2018-10-08 08:33:54,286 INFO   Training loss: 2.689
+ 57: 2018-10-08 08:33:54,289 INFO   Training loss: 2.562
+ 25: 2018-10-08 08:33:54,288 INFO   Training loss: 2.601
+ 13: 2018-10-08 08:33:54,287 INFO   Training loss: 2.673
+ 76: 2018-10-08 08:33:54,287 INFO   Training loss: 2.659
+114: 2018-10-08 08:33:54,290 INFO   Training loss: 2.445
+ 62: 2018-10-08 08:33:54,290 INFO   Training loss: 2.594
+  2: 2018-10-08 08:33:54,287 INFO   Training loss: 2.638
+  0: 2018-10-08 08:33:54,290 INFO   Training loss: 2.487
+111: 2018-10-08 08:35:15,512 INFO   Validation loss: 2.316 acc: 0.101
+111: 2018-10-08 08:35:15,512 INFO Finished training
+111: 2018-10-08 08:35:15,512 INFO Train samples 256 time 13.8679s rate 18.4599 samples/s
+111: 2018-10-08 08:35:15,512 INFO Valid rate: 100.888 samples/s
+111: 2018-10-08 08:35:15,512 INFO All done!
+111: Files already downloaded and verified
+111: Files already downloaded and verified
+ 28: 2018-10-08 08:35:15,586 INFO   Validation loss: 2.317 acc: 0.101
+ 28: 2018-10-08 08:35:15,586 INFO Finished training
+ 28: 2018-10-08 08:35:15,586 INFO Train samples 256 time 13.8702s rate 18.4569 samples/s
+ 28: 2018-10-08 08:35:15,586 INFO Valid rate: 100.813 samples/s
+ 28: 2018-10-08 08:35:15,586 INFO All done!
+ 28: Files already downloaded and verified
+ 28: Files already downloaded and verified
+  0: 2018-10-08 08:35:15,768 INFO   Validation loss: 2.318 acc: 0.101
+ 90: 2018-10-08 08:35:15,782 INFO   Validation loss: 2.318 acc: 0.101
+ 90: 2018-10-08 08:35:15,782 INFO Finished training
+ 90: 2018-10-08 08:35:15,782 INFO Train samples 256 time 13.8681s rate 18.4597 samples/s
+ 90: 2018-10-08 08:35:15,782 INFO Valid rate: 100.559 samples/s
+ 90: 2018-10-08 08:35:15,782 INFO All done!
+ 84: 2018-10-08 08:35:15,791 INFO   Validation loss: 2.318 acc: 0.101
+ 84: 2018-10-08 08:35:15,791 INFO Finished training
+ 84: 2018-10-08 08:35:15,792 INFO Train samples 256 time 13.8681s rate 18.4596 samples/s
+ 84: 2018-10-08 08:35:15,792 INFO Valid rate: 100.558 samples/s
+ 84: 2018-10-08 08:35:15,792 INFO All done!
+ 90: Files already downloaded and verified
+ 90: Files already downloaded and verified
+ 84: Files already downloaded and verified
+ 84: Files already downloaded and verified
+100: 2018-10-08 08:35:15,825 INFO   Validation loss: 2.318 acc: 0.101
+100: 2018-10-08 08:35:15,825 INFO Finished training
+100: 2018-10-08 08:35:15,825 INFO Train samples 256 time 13.8707s rate 18.4562 samples/s
+100: 2018-10-08 08:35:15,825 INFO Valid rate: 100.472 samples/s
+100: 2018-10-08 08:35:15,825 INFO All done!
+ 11: 2018-10-08 08:35:15,827 INFO   Validation loss: 2.316 acc: 0.101
+ 11: 2018-10-08 08:35:15,827 INFO Finished training
+ 11: 2018-10-08 08:35:15,827 INFO Train samples 256 time 13.871s rate 18.4558 samples/s
+ 11: 2018-10-08 08:35:15,827 INFO Valid rate: 100.468 samples/s
+ 11: 2018-10-08 08:35:15,827 INFO All done!
+100: Files already downloaded and verified
+100: Files already downloaded and verified
+ 11: Files already downloaded and verified
+ 11: Files already downloaded and verified
+ 67: 2018-10-08 08:35:15,853 INFO   Validation loss: 2.318 acc: 0.101
+ 67: 2018-10-08 08:35:15,853 INFO Finished training
+ 67: 2018-10-08 08:35:15,853 INFO Train samples 256 time 13.8704s rate 18.4566 samples/s
+ 67: 2018-10-08 08:35:15,853 INFO Valid rate: 100.473 samples/s
+ 67: 2018-10-08 08:35:15,853 INFO All done!
+ 67: Files already downloaded and verified
+ 67: Files already downloaded and verified
+  1: 2018-10-08 08:35:15,867 INFO   Validation loss: 2.317 acc: 0.101
+  1: 2018-10-08 08:35:15,867 INFO Finished training
+  1: 2018-10-08 08:35:15,868 INFO Train samples 256 time 13.8713s rate 18.4554 samples/s
+  1: 2018-10-08 08:35:15,868 INFO Valid rate: 100.463 samples/s
+  1: 2018-10-08 08:35:15,868 INFO All done!
+  1: Files already downloaded and verified
+  1: Files already downloaded and verified
+ 41: 2018-10-08 08:35:15,932 INFO   Validation loss: 2.319 acc: 0.101
+ 41: 2018-10-08 08:35:15,932 INFO Finished training
+ 41: 2018-10-08 08:35:15,933 INFO Train samples 256 time 13.8704s rate 18.4566 samples/s
+ 41: 2018-10-08 08:35:15,933 INFO Valid rate: 100.338 samples/s
+ 41: 2018-10-08 08:35:15,933 INFO All done!
+  0: 2018-10-08 08:35:15,938 INFO Saving summaries to /global/cscratch1/sd/sfarrell/pytorch-cifar10/output/summaries.npz
+ 41: Files already downloaded and verified
+ 41: Files already downloaded and verified
+ 98: 2018-10-08 08:35:15,942 INFO   Validation loss: 2.318 acc: 0.101
+ 98: 2018-10-08 08:35:15,942 INFO Finished training
+ 98: 2018-10-08 08:35:15,943 INFO Train samples 256 time 13.8707s rate 18.4561 samples/s
+ 98: 2018-10-08 08:35:15,943 INFO Valid rate: 100.359 samples/s
+ 98: 2018-10-08 08:35:15,943 INFO All done!
+  0: 2018-10-08 08:35:15,950 INFO Finished training
+  0: 2018-10-08 08:35:15,950 INFO Train samples 256 time 13.8697s rate 18.4576 samples/s
+  0: 2018-10-08 08:35:15,950 INFO Valid rate: 100.555 samples/s
+  0: 2018-10-08 08:35:15,950 INFO All done!
+ 98: Files already downloaded and verified
+ 98: Files already downloaded and verified
+  0: Files already downloaded and verified
+  0: Files already downloaded and verified
+ 26: 2018-10-08 08:35:15,970 INFO   Validation loss: 2.317 acc: 0.101
+ 26: 2018-10-08 08:35:15,970 INFO Finished training
+ 26: 2018-10-08 08:35:15,970 INFO Train samples 256 time 13.8704s rate 18.4566 samples/s
+ 26: 2018-10-08 08:35:15,970 INFO Valid rate: 100.323 samples/s
+ 26: 2018-10-08 08:35:15,970 INFO All done!
+ 26: Files already downloaded and verified
+ 26: Files already downloaded and verified
+ 76: 2018-10-08 08:35:16,010 INFO   Validation loss: 2.318 acc: 0.101
+ 76: 2018-10-08 08:35:16,010 INFO Finished training
+ 76: 2018-10-08 08:35:16,011 INFO Train samples 256 time 13.8717s rate 18.4549 samples/s
+ 76: 2018-10-08 08:35:16,011 INFO Valid rate: 100.242 samples/s
+ 76: 2018-10-08 08:35:16,011 INFO All done!
+ 74: 2018-10-08 08:35:16,015 INFO   Validation loss: 2.316 acc: 0.101
+ 74: 2018-10-08 08:35:16,015 INFO Finished training
+ 74: 2018-10-08 08:35:16,016 INFO Train samples 256 time 13.8709s rate 18.4559 samples/s
+ 74: 2018-10-08 08:35:16,016 INFO Valid rate: 100.238 samples/s
+ 74: 2018-10-08 08:35:16,016 INFO All done!
+ 63: 2018-10-08 08:35:16,021 INFO   Validation loss: 2.319 acc: 0.101
+ 63: 2018-10-08 08:35:16,021 INFO Finished training
+ 63: 2018-10-08 08:35:16,021 INFO Train samples 256 time 13.8707s rate 18.4561 samples/s
+ 63: 2018-10-08 08:35:16,021 INFO Valid rate: 100.243 samples/s
+ 63: 2018-10-08 08:35:16,021 INFO All done!
+ 76: Files already downloaded and verified
+ 76: Files already downloaded and verified
+ 74: Files already downloaded and verified
+ 74: Files already downloaded and verified
+ 63: Files already downloaded and verified
+ 63: Files already downloaded and verified
+ 60: 2018-10-08 08:35:16,033 INFO   Validation loss: 2.318 acc: 0.101
+ 60: 2018-10-08 08:35:16,033 INFO Finished training
+ 60: 2018-10-08 08:35:16,034 INFO Train samples 256 time 13.8682s rate 18.4595 samples/s
+ 60: 2018-10-08 08:35:16,034 INFO Valid rate: 100.249 samples/s
+ 60: 2018-10-08 08:35:16,034 INFO All done!
+ 60: Files already downloaded and verified
+ 60: Files already downloaded and verified
+ 13: 2018-10-08 08:35:16,067 INFO   Validation loss: 2.319 acc: 0.101
+ 13: 2018-10-08 08:35:16,068 INFO Finished training
+ 13: 2018-10-08 08:35:16,068 INFO Train samples 256 time 13.8714s rate 18.4552 samples/s
+ 13: 2018-10-08 08:35:16,068 INFO Valid rate: 100.172 samples/s
+ 13: 2018-10-08 08:35:16,068 INFO All done!
+ 39: 2018-10-08 08:35:16,075 INFO   Validation loss: 2.318 acc: 0.101
+ 39: 2018-10-08 08:35:16,075 INFO Finished training
+ 39: 2018-10-08 08:35:16,076 INFO Train samples 256 time 13.8675s rate 18.4604 samples/s
+ 39: 2018-10-08 08:35:16,076 INFO Valid rate: 100.164 samples/s
+ 39: 2018-10-08 08:35:16,076 INFO All done!
+ 13: Files already downloaded and verified
+ 13: Files already downloaded and verified
+ 54: 2018-10-08 08:35:16,083 INFO   Validation loss: 2.319 acc: 0.101
+ 54: 2018-10-08 08:35:16,083 INFO Finished training
+ 54: 2018-10-08 08:35:16,084 INFO Train samples 256 time 13.8706s rate 18.4563 samples/s
+ 54: 2018-10-08 08:35:16,084 INFO Valid rate: 100.159 samples/s
+ 54: 2018-10-08 08:35:16,084 INFO All done!
+ 39: Files already downloaded and verified
+ 39: Files already downloaded and verified
+ 54: Files already downloaded and verified
+ 54: Files already downloaded and verified
+ 56: 2018-10-08 08:35:16,108 INFO   Validation loss: 2.317 acc: 0.101
+ 56: 2018-10-08 08:35:16,109 INFO Finished training
+ 56: 2018-10-08 08:35:16,109 INFO Train samples 256 time 13.8683s rate 18.4593 samples/s
+ 56: 2018-10-08 08:35:16,109 INFO Valid rate: 100.151 samples/s
+ 56: 2018-10-08 08:35:16,109 INFO All done!
+ 56: Files already downloaded and verified
+ 56: Files already downloaded and verified
+107: 2018-10-08 08:35:16,136 INFO   Validation loss: 2.318 acc: 0.101
+107: 2018-10-08 08:35:16,136 INFO Finished training
+107: 2018-10-08 08:35:16,136 INFO Train samples 256 time 13.8705s rate 18.4564 samples/s
+107: 2018-10-08 08:35:16,136 INFO Valid rate: 100.109 samples/s
+107: 2018-10-08 08:35:16,136 INFO All done!
+107: Files already downloaded and verified
+107: Files already downloaded and verified
+114: 2018-10-08 08:35:16,149 INFO   Validation loss: 2.318 acc: 0.101
+114: 2018-10-08 08:35:16,150 INFO Finished training
+114: 2018-10-08 08:35:16,150 INFO Train samples 256 time 13.8716s rate 18.455 samples/s
+114: 2018-10-08 08:35:16,150 INFO Valid rate: 100.075 samples/s
+114: 2018-10-08 08:35:16,150 INFO All done!
+ 46: 2018-10-08 08:35:16,151 INFO   Validation loss: 2.318 acc: 0.101
+ 46: 2018-10-08 08:35:16,151 INFO Finished training
+ 46: 2018-10-08 08:35:16,151 INFO Train samples 256 time 13.8701s rate 18.4569 samples/s
+ 46: 2018-10-08 08:35:16,151 INFO Valid rate: 100.12 samples/s
+ 46: 2018-10-08 08:35:16,151 INFO All done!
+114: Files already downloaded and verified
+114: Files already downloaded and verified
+ 46: Files already downloaded and verified
+ 46: Files already downloaded and verified
+123: 2018-10-08 08:35:16,160 INFO   Validation loss: 2.318 acc: 0.101
+123: 2018-10-08 08:35:16,160 INFO Finished training
+123: 2018-10-08 08:35:16,160 INFO Train samples 256 time 13.8708s rate 18.456 samples/s
+123: 2018-10-08 08:35:16,160 INFO Valid rate: 100.072 samples/s
+123: 2018-10-08 08:35:16,160 INFO All done!
+ 62: 2018-10-08 08:35:16,165 INFO   Validation loss: 2.318 acc: 0.101
+ 62: 2018-10-08 08:35:16,166 INFO Finished training
+ 62: 2018-10-08 08:35:16,166 INFO Train samples 256 time 13.8716s rate 18.4549 samples/s
+ 62: 2018-10-08 08:35:16,166 INFO Valid rate: 100.056 samples/s
+ 62: 2018-10-08 08:35:16,166 INFO All done!
+123: Files already downloaded and verified
+123: Files already downloaded and verified
+ 62: Files already downloaded and verified
+ 62: Files already downloaded and verified
+  7: 2018-10-08 08:35:16,218 INFO   Validation loss: 2.320 acc: 0.101
+  7: 2018-10-08 08:35:16,218 INFO Finished training
+  7: 2018-10-08 08:35:16,218 INFO Train samples 256 time 13.8705s rate 18.4565 samples/s
+  7: 2018-10-08 08:35:16,219 INFO Valid rate: 99.9871 samples/s
+  7: 2018-10-08 08:35:16,219 INFO All done!
+  7: Files already downloaded and verified
+  7: Files already downloaded and verified
+ 86: 2018-10-08 08:35:16,229 INFO   Validation loss: 2.317 acc: 0.101
+ 86: 2018-10-08 08:35:16,230 INFO Finished training
+ 86: 2018-10-08 08:35:16,230 INFO Train samples 256 time 13.8709s rate 18.4559 samples/s
+ 86: 2018-10-08 08:35:16,230 INFO Valid rate: 99.973 samples/s
+ 86: 2018-10-08 08:35:16,230 INFO All done!
+ 87: 2018-10-08 08:35:16,239 INFO   Validation loss: 2.318 acc: 0.101
+ 87: 2018-10-08 08:35:16,239 INFO Finished training
+ 87: 2018-10-08 08:35:16,240 INFO Train samples 256 time 13.8682s rate 18.4595 samples/s
+ 87: 2018-10-08 08:35:16,240 INFO Valid rate: 99.9994 samples/s
+ 87: 2018-10-08 08:35:16,240 INFO All done!
+ 86: Files already downloaded and verified
+ 86: Files already downloaded and verified
+ 65: 2018-10-08 08:35:16,242 INFO   Validation loss: 2.317 acc: 0.101
+ 65: 2018-10-08 08:35:16,242 INFO Finished training
+ 65: 2018-10-08 08:35:16,242 INFO Train samples 256 time 13.871s rate 18.4558 samples/s
+ 65: 2018-10-08 08:35:16,242 INFO Valid rate: 99.9706 samples/s
+ 65: 2018-10-08 08:35:16,242 INFO All done!
+ 87: Files already downloaded and verified
+ 87: Files already downloaded and verified
+ 65: Files already downloaded and verified
+ 65: Files already downloaded and verified
+ 66: 2018-10-08 08:35:16,283 INFO   Validation loss: 2.318 acc: 0.101
+ 66: 2018-10-08 08:35:16,283 INFO Finished training
+ 66: 2018-10-08 08:35:16,283 INFO Train samples 256 time 13.8706s rate 18.4563 samples/s
+ 66: 2018-10-08 08:35:16,283 INFO Valid rate: 99.9062 samples/s
+ 66: 2018-10-08 08:35:16,283 INFO All done!
+ 47: 2018-10-08 08:35:16,292 INFO   Validation loss: 2.318 acc: 0.101
+ 47: 2018-10-08 08:35:16,292 INFO Finished training
+ 47: 2018-10-08 08:35:16,293 INFO Train samples 256 time 13.8705s rate 18.4565 samples/s
+ 47: 2018-10-08 08:35:16,293 INFO Valid rate: 99.8967 samples/s
+ 47: 2018-10-08 08:35:16,293 INFO All done!
+ 66: Files already downloaded and verified
+ 66: Files already downloaded and verified
+ 47: Files already downloaded and verified
+ 47: Files already downloaded and verified
+ 78: 2018-10-08 08:35:16,316 INFO   Validation loss: 2.317 acc: 0.101
+ 78: 2018-10-08 08:35:16,316 INFO Finished training
+ 78: 2018-10-08 08:35:16,316 INFO Train samples 256 time 13.8707s rate 18.4562 samples/s
+ 78: 2018-10-08 08:35:16,316 INFO Valid rate: 99.9147 samples/s
+ 78: 2018-10-08 08:35:16,317 INFO All done!
+126: 2018-10-08 08:35:16,328 INFO   Validation loss: 2.318 acc: 0.101
+126: 2018-10-08 08:35:16,328 INFO Finished training
+126: 2018-10-08 08:35:16,328 INFO Train samples 256 time 13.8679s rate 18.4599 samples/s
+126: 2018-10-08 08:35:16,328 INFO Valid rate: 99.8877 samples/s
+126: 2018-10-08 08:35:16,328 INFO All done!
+ 78: Files already downloaded and verified
+ 78: Files already downloaded and verified
+116: 2018-10-08 08:35:16,332 INFO   Validation loss: 2.317 acc: 0.101
+116: 2018-10-08 08:35:16,332 INFO Finished training
+116: 2018-10-08 08:35:16,332 INFO Train samples 256 time 13.8703s rate 18.4568 samples/s
+116: 2018-10-08 08:35:16,332 INFO Valid rate: 99.8498 samples/s
+116: 2018-10-08 08:35:16,332 INFO All done!
+121: 2018-10-08 08:35:16,335 INFO   Validation loss: 2.318 acc: 0.101
+121: 2018-10-08 08:35:16,336 INFO Finished training
+121: 2018-10-08 08:35:16,336 INFO Train samples 256 time 13.8687s rate 18.4588 samples/s
+121: 2018-10-08 08:35:16,336 INFO Valid rate: 99.8938 samples/s
+121: 2018-10-08 08:35:16,336 INFO All done!
+126: Files already downloaded and verified
+126: Files already downloaded and verified
+116: Files already downloaded and verified
+116: Files already downloaded and verified
+121: Files already downloaded and verified
+121: Files already downloaded and verified
+ 68: 2018-10-08 08:35:16,347 INFO   Validation loss: 2.317 acc: 0.101
+ 68: 2018-10-08 08:35:16,347 INFO Finished training
+ 68: 2018-10-08 08:35:16,347 INFO Train samples 256 time 13.8711s rate 18.4556 samples/s
+ 68: 2018-10-08 08:35:16,347 INFO Valid rate: 99.8379 samples/s
+ 68: 2018-10-08 08:35:16,348 INFO All done!
+ 68: Files already downloaded and verified
+ 68: Files already downloaded and verified
+  2: 2018-10-08 08:35:16,358 INFO   Validation loss: 2.318 acc: 0.101
+  2: 2018-10-08 08:35:16,359 INFO Finished training
+  2: 2018-10-08 08:35:16,359 INFO Train samples 256 time 13.8717s rate 18.4548 samples/s
+  2: 2018-10-08 08:35:16,359 INFO Valid rate: 99.8174 samples/s
+  2: 2018-10-08 08:35:16,359 INFO All done!
+  2: Files already downloaded and verified
+  2: Files already downloaded and verified
+ 97: 2018-10-08 08:35:16,375 INFO   Validation loss: 2.316 acc: 0.101
+ 97: 2018-10-08 08:35:16,375 INFO Finished training
+ 97: 2018-10-08 08:35:16,376 INFO Train samples 256 time 13.8681s rate 18.4596 samples/s
+ 97: 2018-10-08 08:35:16,376 INFO Valid rate: 99.8356 samples/s
+ 97: 2018-10-08 08:35:16,376 INFO All done!
+105: 2018-10-08 08:35:16,378 INFO   Validation loss: 2.317 acc: 0.101
+105: 2018-10-08 08:35:16,378 INFO Finished training
+105: 2018-10-08 08:35:16,378 INFO Train samples 256 time 13.8709s rate 18.4559 samples/s
+105: 2018-10-08 08:35:16,378 INFO Valid rate: 99.8302 samples/s
+105: 2018-10-08 08:35:16,378 INFO All done!
+ 97: Files already downloaded and verified
+ 97: Files already downloaded and verified
+105: Files already downloaded and verified
+105: Files already downloaded and verified
+ 93: 2018-10-08 08:35:16,415 INFO   Validation loss: 2.318 acc: 0.101
+ 93: 2018-10-08 08:35:16,415 INFO Finished training
+ 93: 2018-10-08 08:35:16,415 INFO Train samples 256 time 13.8683s rate 18.4594 samples/s
+ 93: 2018-10-08 08:35:16,415 INFO Valid rate: 99.7976 samples/s
+ 93: 2018-10-08 08:35:16,415 INFO All done!
+ 31: 2018-10-08 08:35:16,422 INFO   Validation loss: 2.316 acc: 0.101
+ 31: 2018-10-08 08:35:16,422 INFO Finished training
+ 31: 2018-10-08 08:35:16,423 INFO Train samples 256 time 13.8703s rate 18.4567 samples/s
+ 31: 2018-10-08 08:35:16,423 INFO Valid rate: 99.7458 samples/s
+ 31: 2018-10-08 08:35:16,423 INFO All done!
+ 93: Files already downloaded and verified
+ 93: Files already downloaded and verified
+ 32: 2018-10-08 08:35:16,428 INFO   Validation loss: 2.317 acc: 0.101
+ 32: 2018-10-08 08:35:16,429 INFO Finished training
+ 32: 2018-10-08 08:35:16,429 INFO Train samples 256 time 13.8684s rate 18.4593 samples/s
+ 32: 2018-10-08 08:35:16,429 INFO Valid rate: 99.7763 samples/s
+ 32: 2018-10-08 08:35:16,429 INFO All done!
+ 12: 2018-10-08 08:35:16,433 INFO   Validation loss: 2.317 acc: 0.101
+ 12: 2018-10-08 08:35:16,433 INFO Finished training
+ 12: 2018-10-08 08:35:16,433 INFO Train samples 256 time 13.8708s rate 18.4561 samples/s
+ 12: 2018-10-08 08:35:16,433 INFO Valid rate: 99.7633 samples/s
+ 12: 2018-10-08 08:35:16,433 INFO All done!
+ 31: Files already downloaded and verified
+ 31: Files already downloaded and verified
+ 32: Files already downloaded and verified
+ 32: Files already downloaded and verified
+ 12: Files already downloaded and verified
+ 12: Files already downloaded and verified
+ 20: 2018-10-08 08:35:16,447 INFO   Validation loss: 2.318 acc: 0.101
+ 20: 2018-10-08 08:35:16,447 INFO Finished training
+ 20: 2018-10-08 08:35:16,447 INFO Train samples 256 time 13.8704s rate 18.4565 samples/s
+ 20: 2018-10-08 08:35:16,447 INFO Valid rate: 99.7479 samples/s
+ 20: 2018-10-08 08:35:16,447 INFO All done!
+ 20: Files already downloaded and verified
+ 20: Files already downloaded and verified
+127: 2018-10-08 08:35:16,510 INFO   Validation loss: 2.316 acc: 0.101
+127: 2018-10-08 08:35:16,510 INFO Finished training
+127: 2018-10-08 08:35:16,510 INFO Train samples 256 time 13.8706s rate 18.4563 samples/s
+127: 2018-10-08 08:35:16,511 INFO Valid rate: 99.6677 samples/s
+127: 2018-10-08 08:35:16,511 INFO All done!
+ 99: 2018-10-08 08:35:16,520 INFO   Validation loss: 2.318 acc: 0.101
+ 99: 2018-10-08 08:35:16,520 INFO Finished training
+ 99: 2018-10-08 08:35:16,520 INFO Train samples 256 time 13.8707s rate 18.4562 samples/s
+ 99: 2018-10-08 08:35:16,520 INFO Valid rate: 99.6435 samples/s
+ 99: 2018-10-08 08:35:16,520 INFO All done!
+127: Files already downloaded and verified
+127: Files already downloaded and verified
+ 99: Files already downloaded and verified
+ 99: Files already downloaded and verified
+109: 2018-10-08 08:35:16,594 INFO   Validation loss: 2.317 acc: 0.101
+109: 2018-10-08 08:35:16,594 INFO Finished training
+109: 2018-10-08 08:35:16,594 INFO Train samples 256 time 13.8707s rate 18.4562 samples/s
+109: 2018-10-08 08:35:16,594 INFO Valid rate: 99.5401 samples/s
+109: 2018-10-08 08:35:16,595 INFO All done!
+ 23: 2018-10-08 08:35:16,600 INFO   Validation loss: 2.317 acc: 0.101
+ 23: 2018-10-08 08:35:16,600 INFO Finished training
+ 23: 2018-10-08 08:35:16,601 INFO Train samples 256 time 13.8704s rate 18.4566 samples/s
+ 23: 2018-10-08 08:35:16,601 INFO Valid rate: 99.5251 samples/s
+ 23: 2018-10-08 08:35:16,601 INFO All done!
+109: Files already downloaded and verified
+109: Files already downloaded and verified
+ 23: Files already downloaded and verified
+ 23: Files already downloaded and verified
+ 44: 2018-10-08 08:35:16,617 INFO   Validation loss: 2.317 acc: 0.101
+ 44: 2018-10-08 08:35:16,618 INFO Finished training
+ 44: 2018-10-08 08:35:16,618 INFO Train samples 256 time 13.8705s rate 18.4564 samples/s
+ 44: 2018-10-08 08:35:16,618 INFO Valid rate: 99.5391 samples/s
+ 44: 2018-10-08 08:35:16,618 INFO All done!
+ 44: Files already downloaded and verified
+ 44: Files already downloaded and verified
+118: 2018-10-08 08:35:16,656 INFO   Validation loss: 2.318 acc: 0.101
+118: 2018-10-08 08:35:16,656 INFO Finished training
+118: 2018-10-08 08:35:16,656 INFO Train samples 256 time 13.8708s rate 18.4561 samples/s
+118: 2018-10-08 08:35:16,656 INFO Valid rate: 99.4638 samples/s
+118: 2018-10-08 08:35:16,656 INFO All done!
+ 82: 2018-10-08 08:35:16,665 INFO   Validation loss: 2.316 acc: 0.101
+ 82: 2018-10-08 08:35:16,666 INFO Finished training
+ 82: 2018-10-08 08:35:16,666 INFO Train samples 256 time 13.8704s rate 18.4565 samples/s
+ 82: 2018-10-08 08:35:16,666 INFO Valid rate: 99.4511 samples/s
+ 82: 2018-10-08 08:35:16,666 INFO All done!
+118: Files already downloaded and verified
+118: Files already downloaded and verified
+ 82: Files already downloaded and verified
+ 82: Files already downloaded and verified
+ 16: 2018-10-08 08:35:16,684 INFO   Validation loss: 2.318 acc: 0.101
+ 16: 2018-10-08 08:35:16,685 INFO Finished training
+ 16: 2018-10-08 08:35:16,685 INFO Train samples 256 time 13.871s rate 18.4558 samples/s
+ 16: 2018-10-08 08:35:16,685 INFO Valid rate: 99.4213 samples/s
+ 16: 2018-10-08 08:35:16,685 INFO All done!
+ 16: Files already downloaded and verified
+ 16: Files already downloaded and verified
+ 37: 2018-10-08 08:35:16,704 INFO   Validation loss: 2.317 acc: 0.101
+ 37: 2018-10-08 08:35:16,704 INFO Finished training
+ 37: 2018-10-08 08:35:16,704 INFO Train samples 256 time 13.8674s rate 18.4606 samples/s
+ 37: 2018-10-08 08:35:16,704 INFO Valid rate: 99.4414 samples/s
+ 37: 2018-10-08 08:35:16,704 INFO All done!
+112: 2018-10-08 08:35:16,707 INFO   Validation loss: 2.318 acc: 0.101
+112: 2018-10-08 08:35:16,707 INFO Finished training
+112: 2018-10-08 08:35:16,708 INFO Train samples 256 time 13.8711s rate 18.4557 samples/s
+112: 2018-10-08 08:35:16,708 INFO Valid rate: 99.3957 samples/s
+112: 2018-10-08 08:35:16,708 INFO All done!
+ 37: Files already downloaded and verified
+ 37: Files already downloaded and verified
+112: Files already downloaded and verified
+112: Files already downloaded and verified
+ 69: 2018-10-08 08:35:16,763 INFO   Validation loss: 2.318 acc: 0.101
+ 69: 2018-10-08 08:35:16,763 INFO Finished training
+ 69: 2018-10-08 08:35:16,763 INFO Train samples 256 time 13.8711s rate 18.4556 samples/s
+ 69: 2018-10-08 08:35:16,763 INFO Valid rate: 99.3265 samples/s
+ 69: 2018-10-08 08:35:16,763 INFO All done!
+ 69: Files already downloaded and verified
+ 69: Files already downloaded and verified
+ 96: 2018-10-08 08:35:16,784 INFO   Validation loss: 2.318 acc: 0.101
+ 96: 2018-10-08 08:35:16,784 INFO Finished training
+ 96: 2018-10-08 08:35:16,785 INFO Train samples 256 time 13.8706s rate 18.4563 samples/s
+ 96: 2018-10-08 08:35:16,785 INFO Valid rate: 99.3184 samples/s
+ 96: 2018-10-08 08:35:16,785 INFO All done!
+ 96: Files already downloaded and verified
+ 96: Files already downloaded and verified
+108: 2018-10-08 08:35:16,812 INFO   Validation loss: 2.317 acc: 0.101
+108: 2018-10-08 08:35:16,812 INFO Finished training
+108: 2018-10-08 08:35:16,812 INFO Train samples 256 time 13.8677s rate 18.4601 samples/s
+108: 2018-10-08 08:35:16,812 INFO Valid rate: 99.3056 samples/s
+108: 2018-10-08 08:35:16,812 INFO All done!
+108: Files already downloaded and verified
+108: Files already downloaded and verified
+ 14: 2018-10-08 08:35:16,829 INFO   Validation loss: 2.317 acc: 0.101
+ 14: 2018-10-08 08:35:16,829 INFO Finished training
+ 14: 2018-10-08 08:35:16,829 INFO Train samples 256 time 13.8679s rate 18.4599 samples/s
+ 14: 2018-10-08 08:35:16,829 INFO Valid rate: 99.245 samples/s
+ 14: 2018-10-08 08:35:16,829 INFO All done!
+ 91: 2018-10-08 08:35:16,835 INFO   Validation loss: 2.317 acc: 0.101
+ 91: 2018-10-08 08:35:16,835 INFO Finished training
+ 91: 2018-10-08 08:35:16,836 INFO Train samples 256 time 13.8679s rate 18.4599 samples/s
+ 91: 2018-10-08 08:35:16,836 INFO Valid rate: 99.2888 samples/s
+ 91: 2018-10-08 08:35:16,836 INFO All done!
+ 14: Files already downloaded and verified
+ 14: Files already downloaded and verified
+ 91: Files already downloaded and verified
+ 91: Files already downloaded and verified
+125: 2018-10-08 08:35:16,855 INFO   Validation loss: 2.319 acc: 0.101
+125: 2018-10-08 08:35:16,855 INFO Finished training
+125: 2018-10-08 08:35:16,855 INFO Train samples 256 time 13.8706s rate 18.4564 samples/s
+125: 2018-10-08 08:35:16,855 INFO Valid rate: 99.2225 samples/s
+125: 2018-10-08 08:35:16,855 INFO All done!
+ 58: 2018-10-08 08:35:16,856 INFO   Validation loss: 2.317 acc: 0.101
+ 58: 2018-10-08 08:35:16,856 INFO Finished training
+ 58: 2018-10-08 08:35:16,856 INFO Train samples 256 time 13.8679s rate 18.4599 samples/s
+ 58: 2018-10-08 08:35:16,856 INFO Valid rate: 99.2582 samples/s
+ 58: 2018-10-08 08:35:16,856 INFO All done!
+125: Files already downloaded and verified
+125: Files already downloaded and verified
+ 58: Files already downloaded and verified
+ 58: Files already downloaded and verified
+ 57: 2018-10-08 08:35:16,891 INFO   Validation loss: 2.317 acc: 0.101
+ 57: 2018-10-08 08:35:16,891 INFO Finished training
+ 57: 2018-10-08 08:35:16,892 INFO Train samples 256 time 13.8716s rate 18.455 samples/s
+ 57: 2018-10-08 08:35:16,892 INFO Valid rate: 99.1976 samples/s
+ 57: 2018-10-08 08:35:16,892 INFO All done!
+ 57: Files already downloaded and verified
+ 57: Files already downloaded and verified
+ 80: 2018-10-08 08:35:16,908 INFO   Validation loss: 2.318 acc: 0.101
+ 80: 2018-10-08 08:35:16,908 INFO Finished training
+ 80: 2018-10-08 08:35:16,908 INFO Train samples 256 time 13.8684s rate 18.4593 samples/s
+ 80: 2018-10-08 08:35:16,909 INFO Valid rate: 99.1767 samples/s
+ 59: 2018-10-08 08:35:16,908 INFO   Validation loss: 2.316 acc: 0.101
+ 80: 2018-10-08 08:35:16,909 INFO All done!
+ 59: 2018-10-08 08:35:16,908 INFO Finished training
+ 59: 2018-10-08 08:35:16,908 INFO Train samples 256 time 13.8707s rate 18.4562 samples/s
+ 59: 2018-10-08 08:35:16,908 INFO Valid rate: 99.1517 samples/s
+ 59: 2018-10-08 08:35:16,908 INFO All done!
+ 80: Files already downloaded and verified
+ 80: Files already downloaded and verified
+ 59: Files already downloaded and verified
+ 59: Files already downloaded and verified
+ 48: 2018-10-08 08:35:16,965 INFO   Validation loss: 2.317 acc: 0.101
+ 48: 2018-10-08 08:35:16,965 INFO Finished training
+ 48: 2018-10-08 08:35:16,965 INFO Train samples 256 time 13.8704s rate 18.4566 samples/s
+ 48: 2018-10-08 08:35:16,965 INFO Valid rate: 99.1081 samples/s
+ 48: 2018-10-08 08:35:16,965 INFO All done!
+ 48: Files already downloaded and verified
+ 48: Files already downloaded and verified
+ 30: 2018-10-08 08:35:16,998 INFO   Validation loss: 2.318 acc: 0.101
+ 30: 2018-10-08 08:35:17,031 INFO Finished training
+ 30: 2018-10-08 08:35:17,031 INFO Train samples 256 time 13.8706s rate 18.4563 samples/s
+ 19: 2018-10-08 08:35:17,029 INFO   Validation loss: 2.316 acc: 0.101
+ 30: 2018-10-08 08:35:17,031 INFO Valid rate: 99.0486 samples/s
+ 19: 2018-10-08 08:35:17,030 INFO Finished training
+ 30: 2018-10-08 08:35:17,031 INFO All done!
+ 19: 2018-10-08 08:35:17,030 INFO Train samples 256 time 13.8679s rate 18.4599 samples/s
+ 19: 2018-10-08 08:35:17,030 INFO Valid rate: 99.0516 samples/s
+ 19: 2018-10-08 08:35:17,030 INFO All done!
+ 30: Files already downloaded and verified
+ 30: Files already downloaded and verified
+ 19: Files already downloaded and verified
+ 19: Files already downloaded and verified
+ 94: 2018-10-08 08:35:17,087 INFO   Validation loss: 2.318 acc: 0.101
+ 94: 2018-10-08 08:35:17,087 INFO Finished training
+ 94: 2018-10-08 08:35:17,087 INFO Train samples 256 time 13.8704s rate 18.4566 samples/s
+ 94: 2018-10-08 08:35:17,087 INFO Valid rate: 98.939 samples/s
+ 94: 2018-10-08 08:35:17,087 INFO All done!
+ 94: Files already downloaded and verified
+ 94: Files already downloaded and verified
+  9: 2018-10-08 08:35:17,102 INFO   Validation loss: 2.317 acc: 0.101
+  9: 2018-10-08 08:35:17,102 INFO Finished training
+  9: 2018-10-08 08:35:17,102 INFO Train samples 256 time 13.8679s rate 18.4598 samples/s
+  9: 2018-10-08 08:35:17,103 INFO Valid rate: 98.9492 samples/s
+  9: 2018-10-08 08:35:17,103 INFO All done!
+  9: Files already downloaded and verified
+  9: Files already downloaded and verified
+ 79: 2018-10-08 08:35:17,140 INFO   Validation loss: 2.318 acc: 0.101
+ 79: 2018-10-08 08:35:17,140 INFO Finished training
+ 79: 2018-10-08 08:35:17,141 INFO Train samples 256 time 13.8674s rate 18.4605 samples/s
+ 79: 2018-10-08 08:35:17,141 INFO Valid rate: 98.8762 samples/s
+ 79: 2018-10-08 08:35:17,141 INFO All done!
+ 79: Files already downloaded and verified
+ 79: Files already downloaded and verified
+115: 2018-10-08 08:35:17,175 INFO   Validation loss: 2.318 acc: 0.101
+115: 2018-10-08 08:35:17,175 INFO Finished training
+115: 2018-10-08 08:35:17,175 INFO Train samples 256 time 13.868s rate 18.4597 samples/s
+115: 2018-10-08 08:35:17,175 INFO Valid rate: 98.8382 samples/s
+115: 2018-10-08 08:35:17,175 INFO All done!
+115: Files already downloaded and verified
+115: Files already downloaded and verified
+ 72: 2018-10-08 08:35:17,246 INFO   Validation loss: 2.316 acc: 0.101
+ 72: 2018-10-08 08:35:17,246 INFO Finished training
+ 72: 2018-10-08 08:35:17,246 INFO Train samples 256 time 13.8676s rate 18.4603 samples/s
+ 72: 2018-10-08 08:35:17,246 INFO Valid rate: 98.7731 samples/s
+ 72: 2018-10-08 08:35:17,246 INFO All done!
+ 72: Files already downloaded and verified
+ 72: Files already downloaded and verified
+ 53: 2018-10-08 08:35:17,310 INFO   Validation loss: 2.318 acc: 0.101
+ 53: 2018-10-08 08:35:17,310 INFO Finished training
+ 53: 2018-10-08 08:35:17,310 INFO Train samples 256 time 13.8709s rate 18.4559 samples/s
+ 53: 2018-10-08 08:35:17,310 INFO Valid rate: 98.6712 samples/s
+ 53: 2018-10-08 08:35:17,310 INFO All done!
+ 53: Files already downloaded and verified
+ 53: Files already downloaded and verified
+119: 2018-10-08 08:35:17,370 INFO   Validation loss: 2.318 acc: 0.101
+119: 2018-10-08 08:35:17,370 INFO Finished training
+119: 2018-10-08 08:35:17,370 INFO Train samples 256 time 13.8713s rate 18.4554 samples/s
+119: 2018-10-08 08:35:17,371 INFO Valid rate: 98.6156 samples/s
+119: 2018-10-08 08:35:17,371 INFO All done!
+119: Files already downloaded and verified
+119: Files already downloaded and verified
+  5: 2018-10-08 08:35:17,462 INFO   Validation loss: 2.317 acc: 0.101
+  5: 2018-10-08 08:35:17,462 INFO Finished training
+  5: 2018-10-08 08:35:17,462 INFO Train samples 256 time 13.871s rate 18.4558 samples/s
+  5: 2018-10-08 08:35:17,463 INFO Valid rate: 98.4933 samples/s
+  5: 2018-10-08 08:35:17,463 INFO All done!
+  5: Files already downloaded and verified
+  5: Files already downloaded and verified
+ 43: 2018-10-08 08:35:17,476 INFO   Validation loss: 2.319 acc: 0.101
+ 43: 2018-10-08 08:35:17,477 INFO Finished training
+ 43: 2018-10-08 08:35:17,477 INFO Train samples 256 time 13.8704s rate 18.4565 samples/s
+ 43: 2018-10-08 08:35:17,477 INFO Valid rate: 98.4851 samples/s
+ 43: 2018-10-08 08:35:17,477 INFO All done!
+ 43: Files already downloaded and verified
+ 43: Files already downloaded and verified
+ 40: 2018-10-08 08:35:17,520 INFO   Validation loss: 2.316 acc: 0.101
+ 40: 2018-10-08 08:35:17,520 INFO Finished training
+ 40: 2018-10-08 08:35:17,521 INFO Train samples 256 time 13.8682s rate 18.4595 samples/s
+ 40: 2018-10-08 08:35:17,521 INFO Valid rate: 98.4266 samples/s
+ 40: 2018-10-08 08:35:17,521 INFO All done!
+ 40: Files already downloaded and verified
+ 40: Files already downloaded and verified
+104: 2018-10-08 08:35:17,535 INFO   Validation loss: 2.317 acc: 0.101
+104: 2018-10-08 08:35:17,535 INFO Finished training
+104: 2018-10-08 08:35:17,535 INFO Train samples 256 time 13.8678s rate 18.46 samples/s
+104: 2018-10-08 08:35:17,535 INFO Valid rate: 98.4079 samples/s
+104: 2018-10-08 08:35:17,535 INFO All done!
+104: Files already downloaded and verified
+104: Files already downloaded and verified
+ 75: 2018-10-08 08:35:17,570 INFO   Validation loss: 2.318 acc: 0.101
+ 75: 2018-10-08 08:35:17,570 INFO Finished training
+ 75: 2018-10-08 08:35:17,570 INFO Train samples 256 time 13.8682s rate 18.4595 samples/s
+ 75: 2018-10-08 08:35:17,571 INFO Valid rate: 98.378 samples/s
+ 75: 2018-10-08 08:35:17,571 INFO All done!
+ 75: Files already downloaded and verified
+ 75: Files already downloaded and verified
+102: 2018-10-08 08:35:17,588 INFO   Validation loss: 2.318 acc: 0.101
+102: 2018-10-08 08:35:17,588 INFO Finished training
+102: 2018-10-08 08:35:17,588 INFO Train samples 256 time 13.8681s rate 18.4597 samples/s
+102: 2018-10-08 08:35:17,589 INFO Valid rate: 98.3444 samples/s
+102: 2018-10-08 08:35:17,589 INFO All done!
+ 49: 2018-10-08 08:35:17,595 INFO   Validation loss: 2.319 acc: 0.101
+ 49: 2018-10-08 08:35:17,596 INFO Finished training
+ 49: 2018-10-08 08:35:17,596 INFO Train samples 256 time 13.8679s rate 18.4598 samples/s
+ 49: 2018-10-08 08:35:17,596 INFO Valid rate: 98.3756 samples/s
+ 49: 2018-10-08 08:35:17,596 INFO All done!
+102: Files already downloaded and verified
+102: Files already downloaded and verified
+ 49: Files already downloaded and verified
+ 49: Files already downloaded and verified
+  4: 2018-10-08 08:35:17,619 INFO   Validation loss: 2.317 acc: 0.101
+  4: 2018-10-08 08:35:17,620 INFO Finished training
+  4: 2018-10-08 08:35:17,620 INFO Train samples 256 time 13.8682s rate 18.4595 samples/s
+  4: 2018-10-08 08:35:17,620 INFO Valid rate: 98.3347 samples/s
+  4: 2018-10-08 08:35:17,620 INFO All done!
+  4: Files already downloaded and verified
+  4: Files already downloaded and verified
+ 88: 2018-10-08 08:35:17,687 INFO   Validation loss: 2.317 acc: 0.101
+ 88: 2018-10-08 08:35:17,687 INFO Finished training
+ 88: 2018-10-08 08:35:17,687 INFO Train samples 256 time 13.8677s rate 18.4601 samples/s
+ 88: 2018-10-08 08:35:17,687 INFO Valid rate: 98.2524 samples/s
+ 88: 2018-10-08 08:35:17,687 INFO All done!
+ 88: Files already downloaded and verified
+ 88: Files already downloaded and verified
+  3: 2018-10-08 08:35:17,735 INFO   Validation loss: 2.317 acc: 0.101
+  3: 2018-10-08 08:35:17,735 INFO Finished training
+  3: 2018-10-08 08:35:17,735 INFO Train samples 256 time 13.8684s rate 18.4592 samples/s
+  3: 2018-10-08 08:35:17,735 INFO Valid rate: 98.2041 samples/s
+ 33: 2018-10-08 08:35:17,733 INFO   Validation loss: 2.318 acc: 0.101
+  3: 2018-10-08 08:35:17,735 INFO All done!
+ 33: 2018-10-08 08:35:17,733 INFO Finished training
+ 33: 2018-10-08 08:35:17,733 INFO Train samples 256 time 13.8704s rate 18.4566 samples/s
+ 33: 2018-10-08 08:35:17,733 INFO Valid rate: 98.1793 samples/s
+ 33: 2018-10-08 08:35:17,733 INFO All done!
+  3: Files already downloaded and verified
+  3: Files already downloaded and verified
+ 33: Files already downloaded and verified
+ 33: Files already downloaded and verified
+ 35: 2018-10-08 08:35:17,786 INFO   Validation loss: 2.318 acc: 0.101
+ 35: 2018-10-08 08:35:17,786 INFO Finished training
+ 35: 2018-10-08 08:35:17,787 INFO Train samples 256 time 13.8675s rate 18.4604 samples/s
+ 35: 2018-10-08 08:35:17,787 INFO Valid rate: 98.1139 samples/s
+ 35: 2018-10-08 08:35:17,787 INFO All done!
+ 55: 2018-10-08 08:35:17,786 INFO   Validation loss: 2.318 acc: 0.101
+ 55: 2018-10-08 08:35:17,786 INFO Finished training
+ 55: 2018-10-08 08:35:17,786 INFO Train samples 256 time 13.8683s rate 18.4594 samples/s
+ 55: 2018-10-08 08:35:17,786 INFO Valid rate: 98.1179 samples/s
+ 55: 2018-10-08 08:35:17,786 INFO All done!
+ 35: Files already downloaded and verified
+ 35: Files already downloaded and verified
+122: 2018-10-08 08:35:17,797 INFO   Validation loss: 2.317 acc: 0.101
+122: 2018-10-08 08:35:17,797 INFO Finished training
+122: 2018-10-08 08:35:17,797 INFO Train samples 256 time 13.8689s rate 18.4585 samples/s
+122: 2018-10-08 08:35:17,798 INFO Valid rate: 98.102 samples/s
+122: 2018-10-08 08:35:17,798 INFO All done!
+ 55: Files already downloaded and verified
+ 55: Files already downloaded and verified
+122: Files already downloaded and verified
+122: Files already downloaded and verified
+ 17: 2018-10-08 08:35:17,823 INFO   Validation loss: 2.318 acc: 0.101
+ 17: 2018-10-08 08:35:17,823 INFO Finished training
+ 17: 2018-10-08 08:35:17,823 INFO Train samples 256 time 13.8683s rate 18.4593 samples/s
+ 17: 2018-10-08 08:35:17,824 INFO Valid rate: 98.068 samples/s
+ 17: 2018-10-08 08:35:17,824 INFO All done!
+ 17: Files already downloaded and verified
+ 17: Files already downloaded and verified
+ 50: 2018-10-08 08:35:17,852 INFO   Validation loss: 2.317 acc: 0.101
+ 50: 2018-10-08 08:35:17,852 INFO Finished training
+ 50: 2018-10-08 08:35:17,852 INFO Train samples 256 time 13.8677s rate 18.4602 samples/s
+ 50: 2018-10-08 08:35:17,852 INFO Valid rate: 98.0418 samples/s
+ 50: 2018-10-08 08:35:17,853 INFO All done!
+ 18: 2018-10-08 08:35:17,854 INFO   Validation loss: 2.316 acc: 0.101
+ 18: 2018-10-08 08:35:17,854 INFO Finished training
+ 18: 2018-10-08 08:35:17,855 INFO Train samples 256 time 13.868s rate 18.4597 samples/s
+ 18: 2018-10-08 08:35:17,855 INFO Valid rate: 98.039 samples/s
+ 18: 2018-10-08 08:35:17,855 INFO All done!
+ 50: Files already downloaded and verified
+ 50: Files already downloaded and verified
+ 45: 2018-10-08 08:35:17,865 INFO   Validation loss: 2.317 acc: 0.101
+ 45: 2018-10-08 08:35:17,865 INFO Finished training
+ 45: 2018-10-08 08:35:17,865 INFO Train samples 256 time 13.8675s rate 18.4605 samples/s
+ 45: 2018-10-08 08:35:17,865 INFO Valid rate: 98.017 samples/s
+ 45: 2018-10-08 08:35:17,865 INFO All done!
+ 18: Files already downloaded and verified
+ 18: Files already downloaded and verified
+ 45: Files already downloaded and verified
+ 45: Files already downloaded and verified
+ 61: 2018-10-08 08:35:17,920 INFO   Validation loss: 2.319 acc: 0.101
+ 61: 2018-10-08 08:35:17,921 INFO Finished training
+ 61: 2018-10-08 08:35:17,921 INFO Train samples 256 time 13.868s rate 18.4597 samples/s
+ 61: 2018-10-08 08:35:17,921 INFO Valid rate: 97.9506 samples/s
+ 61: 2018-10-08 08:35:17,921 INFO All done!
+ 61: Files already downloaded and verified
+ 61: Files already downloaded and verified
+ 95: 2018-10-08 08:35:17,938 INFO   Validation loss: 2.319 acc: 0.101
+ 95: 2018-10-08 08:35:17,938 INFO Finished training
+ 95: 2018-10-08 08:35:17,938 INFO Train samples 256 time 13.8679s rate 18.4599 samples/s
+ 95: 2018-10-08 08:35:17,938 INFO Valid rate: 97.9288 samples/s
+ 95: 2018-10-08 08:35:17,938 INFO All done!
+ 95: Files already downloaded and verified
+ 95: Files already downloaded and verified
+110: 2018-10-08 08:35:17,965 INFO   Validation loss: 2.316 acc: 0.101
+110: 2018-10-08 08:35:17,966 INFO Finished training
+110: 2018-10-08 08:35:17,966 INFO Train samples 256 time 13.8678s rate 18.4601 samples/s
+ 64: 2018-10-08 08:35:17,966 INFO   Validation loss: 2.319 acc: 0.101
+110: 2018-10-08 08:35:17,966 INFO Valid rate: 97.8976 samples/s
+ 64: 2018-10-08 08:35:17,966 INFO Finished training
+110: 2018-10-08 08:35:17,966 INFO All done!
+ 64: 2018-10-08 08:35:17,966 INFO Train samples 256 time 13.868s rate 18.4597 samples/s
+ 64: 2018-10-08 08:35:17,967 INFO Valid rate: 97.8974 samples/s
+ 64: 2018-10-08 08:35:17,967 INFO All done!
+110: Files already downloaded and verified
+110: Files already downloaded and verified
+ 64: Files already downloaded and verified
+ 64: Files already downloaded and verified
+ 89: 2018-10-08 08:35:18,006 INFO   Validation loss: 2.319 acc: 0.101
+ 89: 2018-10-08 08:35:18,007 INFO Finished training
+ 89: 2018-10-08 08:35:18,007 INFO Train samples 256 time 13.8678s rate 18.46 samples/s
+ 89: 2018-10-08 08:35:18,007 INFO Valid rate: 97.8642 samples/s
+ 89: 2018-10-08 08:35:18,007 INFO All done!
+ 89: Files already downloaded and verified
+ 89: Files already downloaded and verified
+101: 2018-10-08 08:35:18,022 INFO   Validation loss: 2.319 acc: 0.101
+101: 2018-10-08 08:35:18,022 INFO Finished training
+101: 2018-10-08 08:35:18,022 INFO Train samples 256 time 13.8705s rate 18.4565 samples/s
+101: 2018-10-08 08:35:18,022 INFO Valid rate: 97.8334 samples/s
+101: 2018-10-08 08:35:18,022 INFO All done!
+ 52: 2018-10-08 08:35:18,028 INFO   Validation loss: 2.317 acc: 0.101
+ 52: 2018-10-08 08:35:18,028 INFO Finished training
+ 52: 2018-10-08 08:35:18,029 INFO Train samples 256 time 13.8683s rate 18.4593 samples/s
+ 52: 2018-10-08 08:35:18,029 INFO Valid rate: 97.8205 samples/s
+ 52: 2018-10-08 08:35:18,029 INFO All done!
+103: 2018-10-08 08:35:18,031 INFO   Validation loss: 2.318 acc: 0.101
+103: 2018-10-08 08:35:18,031 INFO Finished training
+103: 2018-10-08 08:35:18,031 INFO Train samples 256 time 13.8682s rate 18.4595 samples/s
+103: 2018-10-08 08:35:18,031 INFO Valid rate: 97.8728 samples/s
+103: 2018-10-08 08:35:18,032 INFO All done!
+101: Files already downloaded and verified
+101: Files already downloaded and verified
+ 52: Files already downloaded and verified
+ 52: Files already downloaded and verified
+103: Files already downloaded and verified
+103: Files already downloaded and verified
+ 25: 2018-10-08 08:35:18,101 INFO   Validation loss: 2.317 acc: 0.101
+ 25: 2018-10-08 08:35:18,101 INFO Finished training
+ 25: 2018-10-08 08:35:18,101 INFO Train samples 256 time 13.8715s rate 18.4551 samples/s
+ 25: 2018-10-08 08:35:18,101 INFO Valid rate: 97.7426 samples/s
+ 25: 2018-10-08 08:35:18,101 INFO All done!
+ 25: Files already downloaded and verified
+ 25: Files already downloaded and verified
+106: 2018-10-08 08:35:18,122 INFO   Validation loss: 2.317 acc: 0.101
+106: 2018-10-08 08:35:18,123 INFO Finished training
+106: 2018-10-08 08:35:18,123 INFO Train samples 256 time 13.8675s rate 18.4604 samples/s
+106: 2018-10-08 08:35:18,123 INFO Valid rate: 97.7405 samples/s
+106: 2018-10-08 08:35:18,123 INFO All done!
+120: 2018-10-08 08:35:18,120 INFO   Validation loss: 2.318 acc: 0.101
+120: 2018-10-08 08:35:18,120 INFO Finished training
+120: 2018-10-08 08:35:18,120 INFO Train samples 256 time 13.8682s rate 18.4595 samples/s
+120: 2018-10-08 08:35:18,121 INFO Valid rate: 97.7478 samples/s
+120: 2018-10-08 08:35:18,121 INFO All done!
+ 77: 2018-10-08 08:35:18,129 INFO   Validation loss: 2.317 acc: 0.101
+ 77: 2018-10-08 08:35:18,129 INFO Finished training
+ 77: 2018-10-08 08:35:18,129 INFO Train samples 256 time 13.8709s rate 18.4559 samples/s
+ 77: 2018-10-08 08:35:18,129 INFO Valid rate: 97.7097 samples/s
+ 77: 2018-10-08 08:35:18,130 INFO All done!
+106: Files already downloaded and verified
+106: Files already downloaded and verified
+120: Files already downloaded and verified
+120: Files already downloaded and verified
+ 77: Files already downloaded and verified
+ 77: Files already downloaded and verified
+ 22: 2018-10-08 08:35:18,197 INFO   Validation loss: 2.317 acc: 0.101
+ 22: 2018-10-08 08:35:18,197 INFO Finished training
+ 22: 2018-10-08 08:35:18,197 INFO Train samples 256 time 13.8673s rate 18.4607 samples/s
+ 22: 2018-10-08 08:35:18,198 INFO Valid rate: 97.6377 samples/s
+ 22: 2018-10-08 08:35:18,198 INFO All done!
+ 22: Files already downloaded and verified
+ 22: Files already downloaded and verified
+113: 2018-10-08 08:35:18,214 INFO   Validation loss: 2.317 acc: 0.101
+113: 2018-10-08 08:35:18,214 INFO Finished training
+113: 2018-10-08 08:35:18,215 INFO Train samples 256 time 13.8678s rate 18.4601 samples/s
+113: 2018-10-08 08:35:18,215 INFO Valid rate: 97.6348 samples/s
+113: 2018-10-08 08:35:18,215 INFO All done!
+113: Files already downloaded and verified
+113: Files already downloaded and verified
+  6: 2018-10-08 08:35:18,240 INFO   Validation loss: 2.317 acc: 0.101
+  6: 2018-10-08 08:35:18,241 INFO Finished training
+  6: 2018-10-08 08:35:18,241 INFO Train samples 256 time 13.868s rate 18.4597 samples/s
+  6: 2018-10-08 08:35:18,241 INFO Valid rate: 97.5772 samples/s
+  6: 2018-10-08 08:35:18,241 INFO All done!
+  6: Files already downloaded and verified
+  6: Files already downloaded and verified
+ 29: 2018-10-08 08:35:18,334 INFO   Validation loss: 2.317 acc: 0.101
+ 29: 2018-10-08 08:35:18,334 INFO Finished training
+ 29: 2018-10-08 08:35:18,334 INFO Train samples 256 time 13.8704s rate 18.4565 samples/s
+ 29: 2018-10-08 08:35:18,334 INFO Valid rate: 97.5061 samples/s
+ 29: 2018-10-08 08:35:18,334 INFO All done!
+ 29: Files already downloaded and verified
+ 29: Files already downloaded and verified
+ 81: 2018-10-08 08:35:18,375 INFO   Validation loss: 2.318 acc: 0.101
+ 81: 2018-10-08 08:35:18,376 INFO Finished training
+ 81: 2018-10-08 08:35:18,376 INFO Train samples 256 time 13.8708s rate 18.456 samples/s
+ 81: 2018-10-08 08:35:18,376 INFO Valid rate: 97.4336 samples/s
+ 81: 2018-10-08 08:35:18,376 INFO All done!
+ 34: 2018-10-08 08:35:18,386 INFO   Validation loss: 2.317 acc: 0.101
+ 34: 2018-10-08 08:35:18,387 INFO Finished training
+ 34: 2018-10-08 08:35:18,387 INFO Train samples 256 time 13.8682s rate 18.4595 samples/s
+ 34: 2018-10-08 08:35:18,387 INFO Valid rate: 97.409 samples/s
+ 34: 2018-10-08 08:35:18,387 INFO All done!
+ 81: Files already downloaded and verified
+ 81: Files already downloaded and verified
+ 34: Files already downloaded and verified
+ 34: Files already downloaded and verified
+ 21: 2018-10-08 08:35:18,525 INFO   Validation loss: 2.317 acc: 0.101
+ 21: 2018-10-08 08:35:18,525 INFO Finished training
+ 21: 2018-10-08 08:35:18,525 INFO Train samples 256 time 13.8677s rate 18.4602 samples/s
+ 21: 2018-10-08 08:35:18,525 INFO Valid rate: 97.2596 samples/s
+ 21: 2018-10-08 08:35:18,525 INFO All done!
+ 21: Files already downloaded and verified
+ 21: Files already downloaded and verified
+  8: 2018-10-08 08:35:18,567 INFO   Validation loss: 2.317 acc: 0.101
+  8: 2018-10-08 08:35:18,567 INFO Finished training
+  8: 2018-10-08 08:35:18,567 INFO Train samples 256 time 13.8684s rate 18.4592 samples/s
+  8: 2018-10-08 08:35:18,567 INFO Valid rate: 97.2086 samples/s
+  8: 2018-10-08 08:35:18,567 INFO All done!
+  8: Files already downloaded and verified
+  8: Files already downloaded and verified
+ 71: 2018-10-08 08:35:18,580 INFO   Validation loss: 2.317 acc: 0.101
+ 71: 2018-10-08 08:35:18,581 INFO Finished training
+ 71: 2018-10-08 08:35:18,581 INFO Train samples 256 time 13.868s rate 18.4598 samples/s
+ 71: 2018-10-08 08:35:18,581 INFO Valid rate: 97.1828 samples/s
+ 71: 2018-10-08 08:35:18,581 INFO All done!
+ 71: Files already downloaded and verified
+ 71: Files already downloaded and verified
+ 27: 2018-10-08 08:35:18,778 INFO   Validation loss: 2.318 acc: 0.101
+ 27: 2018-10-08 08:35:18,778 INFO Finished training
+ 27: 2018-10-08 08:35:18,779 INFO Train samples 256 time 13.8683s rate 18.4593 samples/s
+ 27: 2018-10-08 08:35:18,779 INFO Valid rate: 96.9619 samples/s
+ 27: 2018-10-08 08:35:18,779 INFO All done!
+ 38: 2018-10-08 08:35:18,789 INFO   Validation loss: 2.317 acc: 0.101
+ 38: 2018-10-08 08:35:18,789 INFO Finished training
+ 38: 2018-10-08 08:35:18,789 INFO Train samples 256 time 13.8674s rate 18.4606 samples/s
+ 38: 2018-10-08 08:35:18,789 INFO Valid rate: 96.9472 samples/s
+ 38: 2018-10-08 08:35:18,789 INFO All done!
+ 27: Files already downloaded and verified
+ 27: Files already downloaded and verified
+ 38: Files already downloaded and verified
+ 38: Files already downloaded and verified
+ 70: 2018-10-08 08:35:19,028 INFO   Validation loss: 2.318 acc: 0.101
+ 70: 2018-10-08 08:35:19,029 INFO Finished training
+ 70: 2018-10-08 08:35:19,029 INFO Train samples 256 time 13.8678s rate 18.4601 samples/s
+ 70: 2018-10-08 08:35:19,029 INFO Valid rate: 96.6781 samples/s
+ 70: 2018-10-08 08:35:19,029 INFO All done!
+ 73: 2018-10-08 08:35:19,031 INFO   Validation loss: 2.318 acc: 0.101
+ 73: 2018-10-08 08:35:19,031 INFO Finished training
+ 73: 2018-10-08 08:35:19,032 INFO Train samples 256 time 13.868s rate 18.4598 samples/s
+ 73: 2018-10-08 08:35:19,032 INFO Valid rate: 96.6671 samples/s
+ 73: 2018-10-08 08:35:19,032 INFO All done!
+ 85: 2018-10-08 08:35:19,034 INFO   Validation loss: 2.319 acc: 0.101
+ 85: 2018-10-08 08:35:19,035 INFO Finished training
+ 85: 2018-10-08 08:35:19,035 INFO Train samples 256 time 13.8682s rate 18.4595 samples/s
+ 85: 2018-10-08 08:35:19,035 INFO Valid rate: 96.6611 samples/s
+ 85: 2018-10-08 08:35:19,035 INFO All done!
+ 70: Files already downloaded and verified
+ 70: Files already downloaded and verified
+ 73: Files already downloaded and verified
+ 73: Files already downloaded and verified
+ 85: Files already downloaded and verified
+ 85: Files already downloaded and verified
+117: 2018-10-08 08:35:19,194 INFO   Validation loss: 2.318 acc: 0.101
+117: 2018-10-08 08:35:19,194 INFO Finished training
+117: 2018-10-08 08:35:19,194 INFO Train samples 256 time 13.8676s rate 18.4603 samples/s
+117: 2018-10-08 08:35:19,194 INFO Valid rate: 96.4787 samples/s
+117: 2018-10-08 08:35:19,194 INFO All done!
+117: Files already downloaded and verified
+117: Files already downloaded and verified
+ 10: 2018-10-08 08:35:19,313 INFO   Validation loss: 2.317 acc: 0.101
+ 10: 2018-10-08 08:35:19,313 INFO Finished training
+ 10: 2018-10-08 08:35:19,313 INFO Train samples 256 time 13.8685s rate 18.459 samples/s
+ 10: 2018-10-08 08:35:19,313 INFO Valid rate: 96.3667 samples/s
+ 10: 2018-10-08 08:35:19,313 INFO All done!
+ 36: 2018-10-08 08:35:19,315 INFO   Validation loss: 2.317 acc: 0.101
+ 36: 2018-10-08 08:35:19,315 INFO Finished training
+ 36: 2018-10-08 08:35:19,315 INFO Train samples 256 time 13.8674s rate 18.4606 samples/s
+ 36: 2018-10-08 08:35:19,315 INFO Valid rate: 96.3425 samples/s
+ 36: 2018-10-08 08:35:19,315 INFO All done!
+ 10: Files already downloaded and verified
+ 10: Files already downloaded and verified
+ 36: Files already downloaded and verified
+ 36: Files already downloaded and verified
+ 92: 2018-10-08 08:35:19,397 INFO   Validation loss: 2.318 acc: 0.101
+ 92: 2018-10-08 08:35:19,397 INFO Finished training
+ 92: 2018-10-08 08:35:19,397 INFO Train samples 256 time 13.8685s rate 18.4592 samples/s
+ 92: 2018-10-08 08:35:19,397 INFO Valid rate: 96.2584 samples/s
+ 92: 2018-10-08 08:35:19,397 INFO All done!
+ 92: Files already downloaded and verified
+ 92: Files already downloaded and verified
+ 15: 2018-10-08 08:35:19,568 INFO   Validation loss: 2.317 acc: 0.101
+ 15: 2018-10-08 08:35:19,568 INFO Finished training
+ 15: 2018-10-08 08:35:19,569 INFO Train samples 256 time 13.8678s rate 18.46 samples/s
+ 15: 2018-10-08 08:35:19,569 INFO Valid rate: 96.0609 samples/s
+ 15: 2018-10-08 08:35:19,569 INFO All done!
+ 15: Files already downloaded and verified
+ 15: Files already downloaded and verified
+ 83: 2018-10-08 08:35:19,689 INFO   Validation loss: 2.319 acc: 0.101
+ 83: 2018-10-08 08:35:19,690 INFO Finished training
+ 83: 2018-10-08 08:35:19,690 INFO Train samples 256 time 13.8676s rate 18.4603 samples/s
+ 83: 2018-10-08 08:35:19,690 INFO Valid rate: 95.9336 samples/s
+ 83: 2018-10-08 08:35:19,690 INFO All done!
+ 83: Files already downloaded and verified
+ 83: Files already downloaded and verified
+124: 2018-10-08 08:35:20,197 INFO   Validation loss: 2.318 acc: 0.101
+124: 2018-10-08 08:35:20,197 INFO Finished training
+124: 2018-10-08 08:35:20,198 INFO Train samples 256 time 13.868s rate 18.4597 samples/s
+124: 2018-10-08 08:35:20,198 INFO Valid rate: 95.364 samples/s
+124: 2018-10-08 08:35:20,198 INFO All done!
+124: Files already downloaded and verified
+124: Files already downloaded and verified
+ 24: 2018-10-08 08:35:21,735 INFO   Validation loss: 2.316 acc: 0.101
+ 24: 2018-10-08 08:35:21,735 INFO Finished training
+ 24: 2018-10-08 08:35:21,735 INFO Train samples 256 time 13.8705s rate 18.4564 samples/s
+ 24: 2018-10-08 08:35:21,735 INFO Valid rate: 93.7077 samples/s
+ 24: 2018-10-08 08:35:21,735 INFO All done!
+ 24: Files already downloaded and verified
+ 24: Files already downloaded and verified
+ 42: 2018-10-08 08:35:24,389 INFO   Validation loss: 2.319 acc: 0.101
+ 42: 2018-10-08 08:35:24,389 INFO Finished training
+ 42: 2018-10-08 08:35:24,389 INFO Train samples 256 time 13.8678s rate 18.46 samples/s
+ 42: 2018-10-08 08:35:24,390 INFO Valid rate: 90.9624 samples/s
+ 42: 2018-10-08 08:35:24,390 INFO All done!
+ 42: Files already downloaded and verified
+ 42: Files already downloaded and verified
+ 51: 2018-10-08 08:35:25,060 INFO   Validation loss: 2.316 acc: 0.101
+ 51: 2018-10-08 08:35:25,060 INFO Finished training
+ 51: 2018-10-08 08:35:25,060 INFO Train samples 256 time 13.8682s rate 18.4595 samples/s
+ 51: 2018-10-08 08:35:25,060 INFO Valid rate: 90.2883 samples/s
+ 51: 2018-10-08 08:35:25,060 INFO All done!
+ 51: Files already downloaded and verified
+ 51: Files already downloaded and verified

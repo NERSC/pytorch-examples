@@ -1,37 +1,37 @@
 *** WARNING: This is an experimental installation of pytorch built specifically for MPI / distributed running ***
-6: 2018-10-04 18:03:58,543 INFO Initializing
-5: 2018-10-04 18:03:58,546 INFO Initializing
-2: 2018-10-04 18:03:58,551 INFO Initializing
-1: 2018-10-04 18:03:58,721 INFO Initializing
-4: 2018-10-04 18:03:58,867 INFO Initializing
-0: 2018-10-04 18:03:58,867 INFO Initializing
-3: 2018-10-04 18:03:58,938 INFO Initializing
-7: 2018-10-04 18:03:59,120 INFO Initializing
-7: 2018-10-04 18:03:59,165 INFO MPI rank 7
-1: 2018-10-04 18:03:59,166 INFO MPI rank 1
-3: 2018-10-04 18:03:59,168 INFO MPI rank 3
-5: 2018-10-04 18:03:59,165 INFO MPI rank 5
-6: 2018-10-04 18:03:59,167 INFO MPI rank 6
-2: 2018-10-04 18:03:59,163 INFO MPI rank 2
-0: 2018-10-04 18:03:59,165 INFO MPI rank 0
-4: 2018-10-04 18:03:59,165 INFO MPI rank 4
-0: 2018-10-04 18:03:59,169 INFO Configuration: {'data_config': {'name': 'cifar10', 'data_path': '$SCRATCH/pytorch-cifar10/data', 'n_train': 16384, 'n_valid': 10000}, 'experiment_config': {'name': 'cifar10', 'output_dir': '$SCRATCH/pytorch-cifar10/output'}, 'model_config': {'model_type': 'resnet50_cifar10', 'optimizer': 'Adam', 'learning_rate': 0.001}, 'train_config': {'batch_size': 128, 'n_epochs': 1}}
-2: 2018-10-04 18:04:01,858 INFO Loaded 16384 training samples and 10000 validation samples
-0: 2018-10-04 18:04:01,871 INFO Loaded 16384 training samples and 10000 validation samples
-5: 2018-10-04 18:04:01,872 INFO Loaded 16384 training samples and 10000 validation samples
-3: 2018-10-04 18:04:01,875 INFO Loaded 16384 training samples and 10000 validation samples
-4: 2018-10-04 18:04:01,874 INFO Loaded 16384 training samples and 10000 validation samples
-7: 2018-10-04 18:04:01,875 INFO Loaded 16384 training samples and 10000 validation samples
-1: 2018-10-04 18:04:01,880 INFO Loaded 16384 training samples and 10000 validation samples
-6: 2018-10-04 18:04:01,888 INFO Loaded 16384 training samples and 10000 validation samples
-2: 2018-10-04 18:04:02,123 INFO Epoch 0
-5: 2018-10-04 18:04:02,125 INFO Epoch 0
-7: 2018-10-04 18:04:02,125 INFO Epoch 0
-1: 2018-10-04 18:04:02,126 INFO Epoch 0
-3: 2018-10-04 18:04:02,128 INFO Epoch 0
-6: 2018-10-04 18:04:02,127 INFO Epoch 0
-4: 2018-10-04 18:04:02,125 INFO Epoch 0
-0: 2018-10-04 18:04:02,127 INFO Model: 
+2: 2018-10-07 21:31:45,477 INFO Initializing
+5: 2018-10-07 21:31:45,479 INFO Initializing
+1: 2018-10-07 21:31:45,489 INFO Initializing
+0: 2018-10-07 21:31:45,492 INFO Initializing
+4: 2018-10-07 21:31:45,500 INFO Initializing
+7: 2018-10-07 21:31:45,505 INFO Initializing
+3: 2018-10-07 21:31:45,509 INFO Initializing
+6: 2018-10-07 21:31:45,513 INFO Initializing
+5: 2018-10-07 21:31:45,558 INFO MPI rank 5
+3: 2018-10-07 21:31:45,558 INFO MPI rank 3
+2: 2018-10-07 21:31:45,558 INFO MPI rank 2
+1: 2018-10-07 21:31:45,557 INFO MPI rank 1
+7: 2018-10-07 21:31:45,559 INFO MPI rank 7
+6: 2018-10-07 21:31:45,558 INFO MPI rank 6
+0: 2018-10-07 21:31:45,557 INFO MPI rank 0
+4: 2018-10-07 21:31:45,562 INFO MPI rank 4
+0: 2018-10-07 21:31:45,560 INFO Configuration: {'data_config': {'name': 'cifar10', 'data_path': '$SCRATCH/pytorch-cifar10/data', 'n_train': 32768, 'n_valid': 8192}, 'experiment_config': {'name': 'cifar10', 'output_dir': '$SCRATCH/pytorch-cifar10/output'}, 'model_config': {'model_type': 'resnet50_cifar10', 'optimizer': 'Adam', 'learning_rate': 0.001}, 'train_config': {'batch_size': 64, 'n_epochs': 1}}
+0: 2018-10-07 21:31:48,845 INFO Loaded 32768 training samples and 8192 validation samples
+2: 2018-10-07 21:31:48,850 INFO Loaded 32768 training samples and 8192 validation samples
+7: 2018-10-07 21:31:48,856 INFO Loaded 32768 training samples and 8192 validation samples
+5: 2018-10-07 21:31:48,863 INFO Loaded 32768 training samples and 8192 validation samples
+3: 2018-10-07 21:31:48,865 INFO Loaded 32768 training samples and 8192 validation samples
+4: 2018-10-07 21:31:48,869 INFO Loaded 32768 training samples and 8192 validation samples
+6: 2018-10-07 21:31:48,878 INFO Loaded 32768 training samples and 8192 validation samples
+1: 2018-10-07 21:31:48,889 INFO Loaded 32768 training samples and 8192 validation samples
+3: 2018-10-07 21:31:49,144 INFO Epoch 0
+2: 2018-10-07 21:31:49,143 INFO Epoch 0
+4: 2018-10-07 21:31:49,147 INFO Epoch 0
+5: 2018-10-07 21:31:49,144 INFO Epoch 0
+6: 2018-10-07 21:31:49,144 INFO Epoch 0
+7: 2018-10-07 21:31:49,144 INFO Epoch 0
+1: 2018-10-07 21:31:49,142 INFO Epoch 0
+0: 2018-10-07 21:31:49,144 INFO Model: 
 0: DistributedDataParallelCPU(
 0:   (module): ResNet(
 0:     (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
@@ -204,69 +204,69 @@
 0:   )
 0: )
 0: Parameters: 23520842
-0: 2018-10-04 18:04:02,127 INFO Epoch 0
-4: 2018-10-04 18:05:52,075 INFO   Training loss: 2.151
-6: 2018-10-04 18:05:52,077 INFO   Training loss: 2.033
-5: 2018-10-04 18:05:52,075 INFO   Training loss: 2.094
-1: 2018-10-04 18:05:52,076 INFO   Training loss: 2.077
-3: 2018-10-04 18:05:52,077 INFO   Training loss: 2.127
-2: 2018-10-04 18:05:52,075 INFO   Training loss: 2.155
-0: 2018-10-04 18:05:52,078 INFO   Training loss: 2.082
-7: 2018-10-04 18:05:52,078 INFO   Training loss: 2.104
-3: 2018-10-04 18:07:28,637 INFO   Validation loss: 2.741 acc: 0.100
-3: 2018-10-04 18:07:28,895 INFO Finished training
-3: 2018-10-04 18:07:28,895 INFO Train samples 2048 time 109.949s rate 18.6268 samples/s
-3: 2018-10-04 18:07:28,896 INFO Valid rate: 103.571 samples/s
-3: 2018-10-04 18:07:28,896 INFO All done!
-3: Files already downloaded and verified
-3: Files already downloaded and verified
-6: 2018-10-04 18:07:29,514 INFO   Validation loss: 2.735 acc: 0.100
-6: 2018-10-04 18:07:29,939 INFO Finished training
-6: 2018-10-04 18:07:29,939 INFO Train samples 2048 time 109.949s rate 18.6267 samples/s
-6: 2018-10-04 18:07:29,939 INFO Valid rate: 102.631 samples/s
-6: 2018-10-04 18:07:29,939 INFO All done!
-6: Files already downloaded and verified
-6: Files already downloaded and verified
-0: 2018-10-04 18:07:30,408 INFO   Validation loss: 2.715 acc: 0.100
-0: 2018-10-04 18:07:30,775 INFO Saving summaries to /global/cscratch1/sd/sfarrell/pytorch-cifar10/output/summaries.npz
-0: 2018-10-04 18:07:30,788 INFO Finished training
-0: 2018-10-04 18:07:30,788 INFO Train samples 2048 time 109.95s rate 18.6266 samples/s
-0: 2018-10-04 18:07:30,788 INFO Valid rate: 101.699 samples/s
-0: 2018-10-04 18:07:30,788 INFO All done!
-0: Files already downloaded and verified
-0: Files already downloaded and verified
-2: 2018-10-04 18:07:37,756 INFO   Validation loss: 2.732 acc: 0.100
-2: 2018-10-04 18:07:38,113 INFO Finished training
-2: 2018-10-04 18:07:38,113 INFO Train samples 2048 time 109.952s rate 18.6264 samples/s
-2: 2018-10-04 18:07:38,113 INFO Valid rate: 94.6254 samples/s
-2: 2018-10-04 18:07:38,113 INFO All done!
-2: Files already downloaded and verified
-2: Files already downloaded and verified
-5: 2018-10-04 18:07:38,188 INFO   Validation loss: 2.737 acc: 0.100
-5: 2018-10-04 18:07:38,537 INFO Finished training
-5: 2018-10-04 18:07:38,537 INFO Train samples 2048 time 109.949s rate 18.6268 samples/s
-5: 2018-10-04 18:07:38,537 INFO Valid rate: 94.2397 samples/s
-5: 2018-10-04 18:07:38,537 INFO All done!
+0: 2018-10-07 21:31:49,144 INFO Epoch 0
+6: 2018-10-07 21:35:08,862 INFO   Training loss: 1.693
+5: 2018-10-07 21:35:08,862 INFO   Training loss: 1.677
+7: 2018-10-07 21:35:08,863 INFO   Training loss: 1.690
+4: 2018-10-07 21:35:08,865 INFO   Training loss: 1.726
+0: 2018-10-07 21:35:08,861 INFO   Training loss: 1.662
+3: 2018-10-07 21:35:08,862 INFO   Training loss: 1.655
+1: 2018-10-07 21:35:08,861 INFO   Training loss: 1.670
+2: 2018-10-07 21:35:08,864 INFO   Training loss: 1.685
+5: 2018-10-07 21:36:33,758 INFO   Validation loss: 1.459 acc: 0.472
+5: 2018-10-07 21:36:33,758 INFO Finished training
+5: 2018-10-07 21:36:33,758 INFO Train samples 4096 time 199.718s rate 20.509 samples/s
+5: 2018-10-07 21:36:33,758 INFO Valid rate: 96.5054 samples/s
+5: 2018-10-07 21:36:33,758 INFO All done!
 5: Files already downloaded and verified
 5: Files already downloaded and verified
-4: 2018-10-04 18:07:40,906 INFO   Validation loss: 2.738 acc: 0.100
-4: 2018-10-04 18:07:41,301 INFO Finished training
-4: 2018-10-04 18:07:41,301 INFO Train samples 2048 time 109.949s rate 18.6268 samples/s
-4: 2018-10-04 18:07:41,301 INFO Valid rate: 91.8924 samples/s
-4: 2018-10-04 18:07:41,301 INFO All done!
+6: 2018-10-07 21:36:34,360 INFO   Validation loss: 1.435 acc: 0.478
+6: 2018-10-07 21:36:34,360 INFO Finished training
+6: 2018-10-07 21:36:34,361 INFO Train samples 4096 time 199.717s rate 20.509 samples/s
+6: 2018-10-07 21:36:34,361 INFO Valid rate: 95.8283 samples/s
+6: 2018-10-07 21:36:34,361 INFO All done!
+6: Files already downloaded and verified
+6: Files already downloaded and verified
+4: 2018-10-07 21:36:34,659 INFO   Validation loss: 1.460 acc: 0.468
+4: 2018-10-07 21:36:34,659 INFO Finished training
+4: 2018-10-07 21:36:34,659 INFO Train samples 4096 time 199.718s rate 20.5089 samples/s
+4: 2018-10-07 21:36:34,659 INFO Valid rate: 95.4864 samples/s
+4: 2018-10-07 21:36:34,659 INFO All done!
 4: Files already downloaded and verified
 4: Files already downloaded and verified
-7: 2018-10-04 18:07:48,206 INFO   Validation loss: 2.737 acc: 0.100
-7: 2018-10-04 18:07:48,633 INFO Finished training
-7: 2018-10-04 18:07:48,633 INFO Train samples 2048 time 109.952s rate 18.6263 samples/s
-7: 2018-10-04 18:07:48,633 INFO Valid rate: 86.1124 samples/s
-7: 2018-10-04 18:07:48,633 INFO All done!
+7: 2018-10-07 21:36:34,675 INFO   Validation loss: 1.459 acc: 0.470
+7: 2018-10-07 21:36:34,675 INFO Finished training
+7: 2018-10-07 21:36:34,676 INFO Train samples 4096 time 199.718s rate 20.509 samples/s
+7: 2018-10-07 21:36:34,676 INFO Valid rate: 95.4651 samples/s
+7: 2018-10-07 21:36:34,676 INFO All done!
 7: Files already downloaded and verified
 7: Files already downloaded and verified
-1: 2018-10-04 18:08:04,039 INFO   Validation loss: 2.701 acc: 0.100
-1: 2018-10-04 18:08:04,454 INFO Finished training
-1: 2018-10-04 18:08:04,454 INFO Train samples 2048 time 109.949s rate 18.6268 samples/s
-1: 2018-10-04 18:08:04,454 INFO Valid rate: 75.7792 samples/s
-1: 2018-10-04 18:08:04,454 INFO All done!
+3: 2018-10-07 21:36:35,183 INFO   Validation loss: 1.436 acc: 0.475
+0: 2018-10-07 21:36:35,759 INFO   Validation loss: 1.449 acc: 0.474
+3: 2018-10-07 21:36:35,183 INFO Finished training
+2: 2018-10-07 21:36:35,270 INFO   Validation loss: 1.447 acc: 0.475
+1: 2018-10-07 21:36:35,246 INFO   Validation loss: 1.463 acc: 0.469
+3: Files already downloaded and verified
+3: Files already downloaded and verified
+3: 2018-10-07 21:36:35,183 INFO Train samples 4096 time 199.718s rate 20.5089 samples/s
+2: Files already downloaded and verified
+2: Files already downloaded and verified
+2: 2018-10-07 21:36:35,270 INFO Finished training
 1: Files already downloaded and verified
 1: Files already downloaded and verified
+1: 2018-10-07 21:36:35,247 INFO Finished training
+3: 2018-10-07 21:36:35,184 INFO Valid rate: 94.9029 samples/s
+2: 2018-10-07 21:36:35,270 INFO Train samples 4096 time 199.721s rate 20.5087 samples/s
+1: 2018-10-07 21:36:35,247 INFO Train samples 4096 time 199.718s rate 20.5089 samples/s
+3: 2018-10-07 21:36:35,184 INFO All done!
+2: 2018-10-07 21:36:35,270 INFO Valid rate: 94.8245 samples/s
+1: 2018-10-07 21:36:35,247 INFO Valid rate: 94.8322 samples/s
+2: 2018-10-07 21:36:35,271 INFO All done!
+1: 2018-10-07 21:36:35,247 INFO All done!
+0: 2018-10-07 21:36:35,923 INFO Saving summaries to /global/cscratch1/sd/sfarrell/pytorch-cifar10/output/summaries.npz
+0: 2018-10-07 21:36:35,969 INFO Finished training
+0: 2018-10-07 21:36:35,969 INFO Train samples 4096 time 199.716s rate 20.5091 samples/s
+0: 2018-10-07 21:36:35,969 INFO Valid rate: 94.2725 samples/s
+0: 2018-10-07 21:36:35,970 INFO All done!
+0: Files already downloaded and verified
+0: Files already downloaded and verified
