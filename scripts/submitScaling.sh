@@ -1,17 +1,23 @@
 #!/bin/bash
 
-name=cifar10
+name=rpvgan
 config=configs/${name}.yaml
-#nodes="1 2 4 8 16"
-#nodes="32 64"
-nodes="128 256 512"
-qos="premium"
-t="45"
-
 mkdir -p logs
-
 set -ex
-for n in $nodes; do
-    sbatch -J $name -N $n -q $qos -t $t -d singleton -o "logs/$name-%j.out" \
-        scripts/batchScript.sh $config
-done
+
+function submitOne {
+    sbatch -J $name -d singleton -o "logs/$name-%j.out" $@ scripts/batchScript.sh $config
+}
+
+#submitOne -N 1 -q debug -t 30
+#submitOne -N 2 -q debug -t 30
+#submitOne -N 4 -q debug -t 30
+submitOne -N 8 -q debug -t 30
+submitOne -N 16 -q debug -t 30
+
+submitOne -N 32 -q debug -t 30
+submitOne -N 64 -q debug -t 20
+
+#submitOne -N 128 -q premium -t 15
+#submitOne -N 256 -q premium -t 10
+#submitOne -N 512 -q premium -t 10
