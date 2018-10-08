@@ -1,8 +1,8 @@
 data_config:
     name: cifar10
     data_path: $SCRATCH/pytorch-cifar10/data
-    n_train: 16384
-    n_valid: 10000
+    n_train: 32768 #50000
+    n_valid: 8192 #10000
 
 experiment_config:
     name: cifar10
@@ -19,5 +19,5 @@ model_config:
     learning_rate: 0.001
 
 train_config:
-    batch_size: 128
+    batch_size: 64
     n_epochs: 1
