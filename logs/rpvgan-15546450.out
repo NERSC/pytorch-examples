@@ -1,0 +1,399 @@
+*** WARNING: This is an experimental installation of pytorch built specifically for MPI / distributed running ***
+ 3: 2018-10-08 08:59:07,759 INFO Initializing
+ 0: 2018-10-08 08:59:07,763 INFO Initializing
+15: 2018-10-08 08:59:07,776 INFO Initializing
+ 4: 2018-10-08 08:59:07,777 INFO Initializing
+16: 2018-10-08 08:59:07,774 INFO Initializing
+ 6: 2018-10-08 08:59:07,784 INFO Initializing
+25: 2018-10-08 08:59:07,781 INFO Initializing
+ 9: 2018-10-08 08:59:07,784 INFO Initializing
+10: 2018-10-08 08:59:07,785 INFO Initializing
+21: 2018-10-08 08:59:07,789 INFO Initializing
+ 1: 2018-10-08 08:59:07,791 INFO Initializing
+12: 2018-10-08 08:59:07,793 INFO Initializing
+18: 2018-10-08 08:59:07,799 INFO Initializing
+ 2: 2018-10-08 08:59:07,797 INFO Initializing
+14: 2018-10-08 08:59:07,797 INFO Initializing
+24: 2018-10-08 08:59:07,800 INFO Initializing
+13: 2018-10-08 08:59:07,799 INFO Initializing
+11: 2018-10-08 08:59:07,800 INFO Initializing
+ 7: 2018-10-08 08:59:07,806 INFO Initializing
+17: 2018-10-08 08:59:07,808 INFO Initializing
+29: 2018-10-08 08:59:07,806 INFO Initializing
+22: 2018-10-08 08:59:07,805 INFO Initializing
+20: 2018-10-08 08:59:07,807 INFO Initializing
+23: 2018-10-08 08:59:07,807 INFO Initializing
+28: 2018-10-08 08:59:07,812 INFO Initializing
+30: 2018-10-08 08:59:07,815 INFO Initializing
+ 8: 2018-10-08 08:59:07,818 INFO Initializing
+19: 2018-10-08 08:59:07,817 INFO Initializing
+26: 2018-10-08 08:59:07,820 INFO Initializing
+27: 2018-10-08 08:59:07,823 INFO Initializing
+31: 2018-10-08 08:59:07,822 INFO Initializing
+ 5: 2018-10-08 08:59:08,130 INFO Initializing
+ 0: 2018-10-08 08:59:08,176 INFO MPI rank 0
+28: 2018-10-08 08:59:08,178 INFO MPI rank 28
+ 8: 2018-10-08 08:59:08,177 INFO MPI rank 8
+ 2: 2018-10-08 08:59:08,174 INFO MPI rank 2
+12: 2018-10-08 08:59:08,177 INFO MPI rank 12
+26: 2018-10-08 08:59:08,175 INFO MPI rank 26
+ 9: 2018-10-08 08:59:08,176 INFO MPI rank 9
+11: 2018-10-08 08:59:08,173 INFO MPI rank 11
+23: 2018-10-08 08:59:08,173 INFO MPI rank 23
+20: 2018-10-08 08:59:08,174 INFO MPI rank 20
+24: 2018-10-08 08:59:08,177 INFO MPI rank 24
+ 1: 2018-10-08 08:59:08,176 INFO MPI rank 1
+ 7: 2018-10-08 08:59:08,177 INFO MPI rank 7
+ 6: 2018-10-08 08:59:08,179 INFO MPI rank 6
+19: 2018-10-08 08:59:08,174 INFO MPI rank 19
+16: 2018-10-08 08:59:08,173 INFO MPI rank 16
+14: 2018-10-08 08:59:08,174 INFO MPI rank 14
+ 4: 2018-10-08 08:59:08,177 INFO MPI rank 4
+29: 2018-10-08 08:59:08,175 INFO MPI rank 29
+18: 2018-10-08 08:59:08,177 INFO MPI rank 18
+21: 2018-10-08 08:59:08,173 INFO MPI rank 21
+ 5: 2018-10-08 08:59:08,177 INFO MPI rank 5
+ 3: 2018-10-08 08:59:08,175 INFO MPI rank 3
+10: 2018-10-08 08:59:08,175 INFO MPI rank 10
+27: 2018-10-08 08:59:08,178 INFO MPI rank 27
+25: 2018-10-08 08:59:08,176 INFO MPI rank 25
+30: 2018-10-08 08:59:08,178 INFO MPI rank 30
+22: 2018-10-08 08:59:08,174 INFO MPI rank 22
+15: 2018-10-08 08:59:08,177 INFO MPI rank 15
+13: 2018-10-08 08:59:08,175 INFO MPI rank 13
+17: 2018-10-08 08:59:08,177 INFO MPI rank 17
+31: 2018-10-08 08:59:08,174 INFO MPI rank 31
+ 0: 2018-10-08 08:59:08,181 INFO Configuration: {'experiment_config': {'name': 'rpvgan', 'output_dir': '$SCRATCH/atlas_gan/RPV_GAN_000'}, 'data_config': {'name': 'rpv_images', 'train_file': '/global/cscratch1/sd/sfarrell/atlas_gan/data/RPV10_1400_850_01.npz', 'n_train': 65536, 'scale': 4000000.0}, 'model_config': {'n_filters': 16, 'noise_dim': 64, 'optimizer': 'Adam', 'learning_rate': 0.0001, 'label_flip_rate': 0.01}, 'train_config': {'batch_size': 64, 'n_epochs': 1}}
+14: 2018-10-08 09:00:02,426 INFO Loaded 65536 training samples
+ 6: 2018-10-08 09:00:02,732 INFO Loaded 65536 training samples
+31: 2018-10-08 09:00:05,715 INFO Loaded 65536 training samples
+ 1: 2018-10-08 09:00:05,774 INFO Loaded 65536 training samples
+ 8: 2018-10-08 09:00:06,054 INFO Loaded 65536 training samples
+22: 2018-10-08 09:00:06,580 INFO Loaded 65536 training samples
+10: 2018-10-08 09:00:07,484 INFO Loaded 65536 training samples
+17: 2018-10-08 09:00:07,570 INFO Loaded 65536 training samples
+23: 2018-10-08 09:00:09,330 INFO Loaded 65536 training samples
+ 0: 2018-10-08 09:00:09,936 INFO Loaded 65536 training samples
+20: 2018-10-08 09:00:10,175 INFO Loaded 65536 training samples
+21: 2018-10-08 09:00:10,291 INFO Loaded 65536 training samples
+ 4: 2018-10-08 09:00:10,630 INFO Loaded 65536 training samples
+25: 2018-10-08 09:00:10,650 INFO Loaded 65536 training samples
+29: 2018-10-08 09:00:10,820 INFO Loaded 65536 training samples
+13: 2018-10-08 09:00:10,871 INFO Loaded 65536 training samples
+30: 2018-10-08 09:00:11,636 INFO Loaded 65536 training samples
+28: 2018-10-08 09:00:11,673 INFO Loaded 65536 training samples
+ 2: 2018-10-08 09:00:11,712 INFO Loaded 65536 training samples
+11: 2018-10-08 09:00:11,712 INFO Loaded 65536 training samples
+ 3: 2018-10-08 09:00:11,763 INFO Loaded 65536 training samples
+16: 2018-10-08 09:00:11,800 INFO Loaded 65536 training samples
+27: 2018-10-08 09:00:11,823 INFO Loaded 65536 training samples
+ 7: 2018-10-08 09:00:11,860 INFO Loaded 65536 training samples
+24: 2018-10-08 09:00:12,312 INFO Loaded 65536 training samples
+26: 2018-10-08 09:00:12,390 INFO Loaded 65536 training samples
+19: 2018-10-08 09:00:12,463 INFO Loaded 65536 training samples
+18: 2018-10-08 09:00:12,652 INFO Loaded 65536 training samples
+12: 2018-10-08 09:00:12,828 INFO Loaded 65536 training samples
+ 9: 2018-10-08 09:00:12,845 INFO Loaded 65536 training samples
+ 5: 2018-10-08 09:00:12,950 INFO Loaded 65536 training samples
+15: 2018-10-08 09:00:13,381 INFO Loaded 65536 training samples
+ 9: 2018-10-08 09:00:13,406 INFO Epoch 0
+ 1: 2018-10-08 09:00:13,406 INFO Epoch 0
+ 2: 2018-10-08 09:00:13,405 INFO Epoch 0
+ 5: 2018-10-08 09:00:13,407 INFO Epoch 0
+ 3: 2018-10-08 09:00:13,405 INFO Epoch 0
+15: 2018-10-08 09:00:13,407 INFO Epoch 0
+13: 2018-10-08 09:00:13,405 INFO Epoch 0
+11: 2018-10-08 09:00:13,403 INFO Epoch 0
+14: 2018-10-08 09:00:13,404 INFO Epoch 0
+ 4: 2018-10-08 09:00:13,407 INFO Epoch 0
+12: 2018-10-08 09:00:13,407 INFO Epoch 0
+10: 2018-10-08 09:00:13,405 INFO Epoch 0
+ 8: 2018-10-08 09:00:13,407 INFO Epoch 0
+23: 2018-10-08 09:00:13,404 INFO Epoch 0
+20: 2018-10-08 09:00:13,404 INFO Epoch 0
+19: 2018-10-08 09:00:13,404 INFO Epoch 0
+16: 2018-10-08 09:00:13,404 INFO Epoch 0
+18: 2018-10-08 09:00:13,408 INFO Epoch 0
+21: 2018-10-08 09:00:13,404 INFO Epoch 0
+22: 2018-10-08 09:00:13,404 INFO Epoch 0
+17: 2018-10-08 09:00:13,408 INFO Epoch 0
+27: 2018-10-08 09:00:13,408 INFO Epoch 0
+25: 2018-10-08 09:00:13,407 INFO Epoch 0
+ 7: 2018-10-08 09:00:13,407 INFO Epoch 0
+ 6: 2018-10-08 09:00:13,410 INFO Epoch 0
+26: 2018-10-08 09:00:13,406 INFO Epoch 0
+29: 2018-10-08 09:00:13,405 INFO Epoch 0
+28: 2018-10-08 09:00:13,409 INFO Epoch 0
+24: 2018-10-08 09:00:13,408 INFO Epoch 0
+30: 2018-10-08 09:00:13,409 INFO Epoch 0
+31: 2018-10-08 09:00:13,405 INFO Epoch 0
+ 0: 2018-10-08 09:00:13,406 INFO Generator module: 
+ 0: DistributedDataParallelCPU(
+ 0:   (module): Generator(
+ 0:     (network): Sequential(
+ 0:       (0): ConvTranspose2d(64, 128, kernel_size=(4, 4), stride=(1, 1), bias=False)
+ 0:       (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:       (2): ReLU(inplace)
+ 0:       (3): ConvTranspose2d(128, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+ 0:       (4): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:       (5): ReLU(inplace)
+ 0:       (6): ConvTranspose2d(64, 32, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+ 0:       (7): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:       (8): ReLU(inplace)
+ 0:       (9): ConvTranspose2d(32, 16, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+ 0:       (10): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:       (11): ReLU(inplace)
+ 0:       (12): ConvTranspose2d(16, 1, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+ 0:       (13): Sigmoid()
+ 0:       (14): Threshold(threshold=0, value=0)
+ 0:     )
+ 0:   )
+ 0: )
+ 0: Parameters: 303840
+ 0: 2018-10-08 09:00:13,407 INFO Discriminator module: 
+ 0: DistributedDataParallelCPU(
+ 0:   (module): Discriminator(
+ 0:     (network): Sequential(
+ 0:       (0): Conv2d(1, 16, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+ 0:       (1): LeakyReLU(negative_slope=0.2, inplace)
+ 0:       (2): Conv2d(16, 32, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+ 0:       (3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:       (4): LeakyReLU(negative_slope=0.2, inplace)
+ 0:       (5): Conv2d(32, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+ 0:       (6): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:       (7): LeakyReLU(negative_slope=0.2, inplace)
+ 0:       (8): Conv2d(64, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+ 0:       (9): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+ 0:       (10): LeakyReLU(negative_slope=0.2, inplace)
+ 0:       (11): Conv2d(128, 1, kernel_size=(4, 4), stride=(1, 1), bias=False)
+ 0:       (12): Sigmoid()
+ 0:     )
+ 0:   )
+ 0: )
+ 0: Parameters: 174784
+ 0: 2018-10-08 09:00:13,407 INFO Epoch 0
+ 1: 2018-10-08 09:00:21,407 INFO   Avg discriminator real output: 0.6067
+21: 2018-10-08 09:00:21,405 INFO   Avg discriminator real output: 0.6061
+ 8: 2018-10-08 09:00:21,408 INFO   Avg discriminator real output: 0.6051
+15: 2018-10-08 09:00:21,408 INFO   Avg discriminator real output: 0.6051
+13: 2018-10-08 09:00:21,406 INFO   Avg discriminator real output: 0.6050
+ 9: 2018-10-08 09:00:21,407 INFO   Avg discriminator real output: 0.6067
+11: 2018-10-08 09:00:21,404 INFO   Avg discriminator real output: 0.6064
+ 1: 2018-10-08 09:00:21,408 INFO   Avg discriminator fake output: 0.1393
+ 7: 2018-10-08 09:00:21,408 INFO   Avg discriminator real output: 0.6051
+ 6: 2018-10-08 09:00:21,410 INFO   Avg discriminator real output: 0.6081
+19: 2018-10-08 09:00:21,405 INFO   Avg discriminator real output: 0.6059
+ 2: 2018-10-08 09:00:21,406 INFO   Avg discriminator real output: 0.6066
+21: 2018-10-08 09:00:21,405 INFO   Avg discriminator fake output: 0.1397
+28: 2018-10-08 09:00:21,409 INFO   Avg discriminator real output: 0.6061
+ 8: 2018-10-08 09:00:21,408 INFO   Avg discriminator fake output: 0.1397
+22: 2018-10-08 09:00:21,405 INFO   Avg discriminator real output: 0.6077
+15: 2018-10-08 09:00:21,408 INFO   Avg discriminator fake output: 0.1394
+13: 2018-10-08 09:00:21,406 INFO   Avg discriminator fake output: 0.1393
+17: 2018-10-08 09:00:21,409 INFO   Avg discriminator real output: 0.6063
+31: 2018-10-08 09:00:21,405 INFO   Avg discriminator real output: 0.6064
+ 9: 2018-10-08 09:00:21,408 INFO   Avg discriminator fake output: 0.1397
+11: 2018-10-08 09:00:21,405 INFO   Avg discriminator fake output: 0.1396
+23: 2018-10-08 09:00:21,405 INFO   Avg discriminator real output: 0.6070
+20: 2018-10-08 09:00:21,405 INFO   Avg discriminator real output: 0.6040
+24: 2018-10-08 09:00:21,408 INFO   Avg discriminator real output: 0.6059
+ 1: 2018-10-08 09:00:21,408 INFO   Avg discriminator loss: 0.3369
+ 7: 2018-10-08 09:00:21,408 INFO   Avg discriminator fake output: 0.1397
+ 6: 2018-10-08 09:00:21,411 INFO   Avg discriminator fake output: 0.1396
+19: 2018-10-08 09:00:21,405 INFO   Avg discriminator fake output: 0.1395
+ 2: 2018-10-08 09:00:21,406 INFO   Avg discriminator fake output: 0.1396
+16: 2018-10-08 09:00:21,404 INFO   Avg discriminator real output: 0.6065
+14: 2018-10-08 09:00:21,405 INFO   Avg discriminator real output: 0.6028
+ 4: 2018-10-08 09:00:21,409 INFO   Avg discriminator real output: 0.6095
+12: 2018-10-08 09:00:21,408 INFO   Avg discriminator real output: 0.6050
+29: 2018-10-08 09:00:21,406 INFO   Avg discriminator real output: 0.6058
+18: 2018-10-08 09:00:21,409 INFO   Avg discriminator real output: 0.6073
+21: 2018-10-08 09:00:21,405 INFO   Avg discriminator loss: 0.3378
+26: 2018-10-08 09:00:21,407 INFO   Avg discriminator real output: 0.6060
+ 5: 2018-10-08 09:00:21,409 INFO   Avg discriminator real output: 0.6052
+ 3: 2018-10-08 09:00:21,406 INFO   Avg discriminator real output: 0.6057
+10: 2018-10-08 09:00:21,406 INFO   Avg discriminator real output: 0.6078
+28: 2018-10-08 09:00:21,409 INFO   Avg discriminator fake output: 0.1397
+27: 2018-10-08 09:00:21,409 INFO   Avg discriminator real output: 0.6055
+25: 2018-10-08 09:00:21,407 INFO   Avg discriminator real output: 0.6068
+ 8: 2018-10-08 09:00:21,408 INFO   Avg discriminator loss: 0.3383
+30: 2018-10-08 09:00:21,410 INFO   Avg discriminator real output: 0.6083
+22: 2018-10-08 09:00:21,405 INFO   Avg discriminator fake output: 0.1395
+15: 2018-10-08 09:00:21,408 INFO   Avg discriminator loss: 0.4215
+13: 2018-10-08 09:00:21,406 INFO   Avg discriminator loss: 0.3385
+17: 2018-10-08 09:00:21,409 INFO   Avg discriminator fake output: 0.1398
+31: 2018-10-08 09:00:21,405 INFO   Avg discriminator fake output: 0.1399
+ 9: 2018-10-08 09:00:21,408 INFO   Avg discriminator loss: 0.3372
+11: 2018-10-08 09:00:21,405 INFO   Avg discriminator loss: 0.3373
+23: 2018-10-08 09:00:21,405 INFO   Avg discriminator fake output: 0.1396
+20: 2018-10-08 09:00:21,405 INFO   Avg discriminator fake output: 0.1393
+24: 2018-10-08 09:00:21,408 INFO   Avg discriminator fake output: 0.1396
+ 1: 2018-10-08 09:00:21,408 INFO   Avg generator loss: 2.3068
+ 7: 2018-10-08 09:00:21,408 INFO   Avg discriminator loss: 0.3505
+ 6: 2018-10-08 09:00:21,411 INFO   Avg discriminator loss: 0.3359
+19: 2018-10-08 09:00:21,405 INFO   Avg discriminator loss: 0.3378
+ 2: 2018-10-08 09:00:21,406 INFO   Avg discriminator loss: 0.3366
+16: 2018-10-08 09:00:21,405 INFO   Avg discriminator fake output: 0.1397
+14: 2018-10-08 09:00:21,405 INFO   Avg discriminator fake output: 0.1393
+ 4: 2018-10-08 09:00:21,409 INFO   Avg discriminator fake output: 0.1396
+12: 2018-10-08 09:00:21,409 INFO   Avg discriminator fake output: 0.1398
+29: 2018-10-08 09:00:21,406 INFO   Avg discriminator fake output: 0.1397
+18: 2018-10-08 09:00:21,409 INFO   Avg discriminator fake output: 0.1396
+21: 2018-10-08 09:00:21,405 INFO   Avg generator loss: 2.3050
+26: 2018-10-08 09:00:21,407 INFO   Avg discriminator fake output: 0.1392
+ 5: 2018-10-08 09:00:21,409 INFO   Avg discriminator fake output: 0.1397
+ 3: 2018-10-08 09:00:21,406 INFO   Avg discriminator fake output: 0.1394
+10: 2018-10-08 09:00:21,406 INFO   Avg discriminator fake output: 0.1400
+28: 2018-10-08 09:00:21,410 INFO   Avg discriminator loss: 0.3376
+27: 2018-10-08 09:00:21,409 INFO   Avg discriminator fake output: 0.1396
+25: 2018-10-08 09:00:21,408 INFO   Avg discriminator fake output: 0.1396
+ 8: 2018-10-08 09:00:21,408 INFO   Avg generator loss: 2.3055
+30: 2018-10-08 09:00:21,410 INFO   Avg discriminator fake output: 0.1394
+22: 2018-10-08 09:00:21,405 INFO   Avg discriminator loss: 0.3361
+15: 2018-10-08 09:00:21,408 INFO   Avg generator loss: 2.1617
+13: 2018-10-08 09:00:21,406 INFO   Avg generator loss: 2.3069
+17: 2018-10-08 09:00:21,409 INFO   Avg discriminator loss: 0.3374
+31: 2018-10-08 09:00:21,406 INFO   Avg discriminator loss: 0.3378
+ 9: 2018-10-08 09:00:21,408 INFO   Avg generator loss: 2.3056
+11: 2018-10-08 09:00:21,405 INFO   Avg generator loss: 2.3055
+23: 2018-10-08 09:00:21,405 INFO   Avg discriminator loss: 0.3749
+ 0: 2018-10-08 09:00:21,407 INFO   Avg discriminator real output: 0.6042
+20: 2018-10-08 09:00:21,405 INFO   Avg discriminator loss: 0.3392
+24: 2018-10-08 09:00:21,408 INFO   Avg discriminator loss: 0.3978
+ 7: 2018-10-08 09:00:21,408 INFO   Avg generator loss: 2.2719
+ 6: 2018-10-08 09:00:21,411 INFO   Avg generator loss: 2.3059
+19: 2018-10-08 09:00:21,405 INFO   Avg generator loss: 2.3069
+ 2: 2018-10-08 09:00:21,406 INFO   Avg generator loss: 2.3048
+16: 2018-10-08 09:00:21,405 INFO   Avg discriminator loss: 0.3374
+14: 2018-10-08 09:00:21,405 INFO   Avg discriminator loss: 0.3400
+ 4: 2018-10-08 09:00:21,409 INFO   Avg discriminator loss: 0.3835
+12: 2018-10-08 09:00:21,409 INFO   Avg discriminator loss: 0.3388
+29: 2018-10-08 09:00:21,406 INFO   Avg discriminator loss: 0.3378
+18: 2018-10-08 09:00:21,409 INFO   Avg discriminator loss: 0.3366
+26: 2018-10-08 09:00:21,407 INFO   Avg discriminator loss: 0.3375
+ 5: 2018-10-08 09:00:21,409 INFO   Avg discriminator loss: 0.3386
+ 3: 2018-10-08 09:00:21,406 INFO   Avg discriminator loss: 0.3869
+10: 2018-10-08 09:00:21,406 INFO   Avg discriminator loss: 0.3629
+28: 2018-10-08 09:00:21,410 INFO   Avg generator loss: 2.3049
+27: 2018-10-08 09:00:21,410 INFO   Avg discriminator loss: 0.3379
+25: 2018-10-08 09:00:21,408 INFO   Avg discriminator loss: 0.3373
+30: 2018-10-08 09:00:21,410 INFO   Avg discriminator loss: 0.3956
+22: 2018-10-08 09:00:21,405 INFO   Avg generator loss: 2.3064
+17: 2018-10-08 09:00:21,409 INFO   Avg generator loss: 2.3044
+31: 2018-10-08 09:00:21,406 INFO   Avg generator loss: 2.3038
+23: 2018-10-08 09:00:21,405 INFO   Avg generator loss: 2.2364
+ 0: 2018-10-08 09:00:21,408 INFO   Avg discriminator fake output: 0.1393
+20: 2018-10-08 09:00:21,405 INFO   Avg generator loss: 2.3063
+24: 2018-10-08 09:00:21,408 INFO   Avg generator loss: 2.2160
+16: 2018-10-08 09:00:21,405 INFO   Avg generator loss: 2.3045
+14: 2018-10-08 09:00:21,405 INFO   Avg generator loss: 2.3059
+ 4: 2018-10-08 09:00:21,409 INFO   Avg generator loss: 2.2247
+12: 2018-10-08 09:00:21,409 INFO   Avg generator loss: 2.3045
+29: 2018-10-08 09:00:21,406 INFO   Avg generator loss: 2.3062
+18: 2018-10-08 09:00:21,409 INFO   Avg generator loss: 2.3053
+26: 2018-10-08 09:00:21,407 INFO   Avg generator loss: 2.3063
+ 5: 2018-10-08 09:00:21,409 INFO   Avg generator loss: 2.3048
+ 3: 2018-10-08 09:00:21,406 INFO   Avg generator loss: 2.2258
+10: 2018-10-08 09:00:21,406 INFO   Avg generator loss: 2.2507
+27: 2018-10-08 09:00:21,410 INFO   Avg generator loss: 2.3061
+25: 2018-10-08 09:00:21,408 INFO   Avg generator loss: 2.3065
+30: 2018-10-08 09:00:21,410 INFO   Avg generator loss: 2.2166
+ 0: 2018-10-08 09:00:21,408 INFO   Avg discriminator loss: 0.3387
+ 0: 2018-10-08 09:00:21,408 INFO   Avg generator loss: 2.3062
+15: 2018-10-08 09:00:21,670 INFO Finished training
+15: 2018-10-08 09:00:21,670 INFO Train samples 2048 time 8.00079s rate 255.975 samples/s
+15: 2018-10-08 09:00:21,670 INFO All done!
+19: 2018-10-08 09:00:36,280 INFO Finished training
+19: 2018-10-08 09:00:36,280 INFO Train samples 2048 time 8.00054s rate 255.983 samples/s
+19: 2018-10-08 09:00:36,281 INFO All done!
+25: 2018-10-08 09:00:46,961 INFO Finished training
+25: 2018-10-08 09:00:46,961 INFO Train samples 2048 time 8.00053s rate 255.983 samples/s
+25: 2018-10-08 09:00:46,961 INFO All done!
+ 5: 2018-10-08 09:01:26,662 INFO Finished training
+ 5: 2018-10-08 09:01:26,663 INFO Train samples 2048 time 8.00098s rate 255.969 samples/s
+ 5: 2018-10-08 09:01:26,663 INFO All done!
+ 3: 2018-10-08 09:01:26,683 INFO Finished training
+ 3: 2018-10-08 09:01:26,684 INFO Train samples 2048 time 8.00087s rate 255.972 samples/s
+ 3: 2018-10-08 09:01:26,684 INFO All done!
+ 8: 2018-10-08 09:01:26,745 INFO Finished training
+ 8: 2018-10-08 09:01:26,745 INFO Train samples 2048 time 8.00077s rate 255.975 samples/s
+ 8: 2018-10-08 09:01:26,745 INFO All done!
+30: 2018-10-08 09:01:26,804 INFO Finished training
+30: 2018-10-08 09:01:26,805 INFO Train samples 2048 time 8.00023s rate 255.993 samples/s
+30: 2018-10-08 09:01:26,805 INFO All done!
+16: 2018-10-08 09:01:26,832 INFO Finished training
+16: 2018-10-08 09:01:26,832 INFO Train samples 2048 time 8.0005s rate 255.984 samples/s
+16: 2018-10-08 09:01:26,833 INFO All done!
+21: 2018-10-08 09:01:26,859 INFO Finished training
+21: 2018-10-08 09:01:26,859 INFO Train samples 2048 time 8.00051s rate 255.984 samples/s
+21: 2018-10-08 09:01:26,859 INFO All done!
+20: 2018-10-08 09:01:26,883 INFO Finished training
+20: 2018-10-08 09:01:26,884 INFO Train samples 2048 time 8.00063s rate 255.98 samples/s
+20: 2018-10-08 09:01:26,884 INFO All done!
+ 1: 2018-10-08 09:01:26,919 INFO Finished training
+ 1: 2018-10-08 09:01:26,919 INFO Train samples 2048 time 8.00082s rate 255.974 samples/s
+ 1: 2018-10-08 09:01:26,919 INFO All done!
+ 9: 2018-10-08 09:01:26,953 INFO Finished training
+ 9: 2018-10-08 09:01:26,953 INFO Train samples 2048 time 8.00083s rate 255.973 samples/s
+ 9: 2018-10-08 09:01:26,953 INFO All done!
+23: 2018-10-08 09:01:26,975 INFO Finished training
+23: 2018-10-08 09:01:26,975 INFO Train samples 2048 time 8.00061s rate 255.98 samples/s
+23: 2018-10-08 09:01:26,975 INFO All done!
+13: 2018-10-08 09:01:27,009 INFO Finished training
+13: 2018-10-08 09:01:27,009 INFO Train samples 2048 time 8.00073s rate 255.977 samples/s
+13: 2018-10-08 09:01:27,009 INFO All done!
+27: 2018-10-08 09:01:27,037 INFO Finished training
+27: 2018-10-08 09:01:27,037 INFO Train samples 2048 time 8.00055s rate 255.982 samples/s
+27: 2018-10-08 09:01:27,037 INFO All done!
+26: 2018-10-08 09:01:27,068 INFO Finished training
+26: 2018-10-08 09:01:27,068 INFO Train samples 2048 time 8.00047s rate 255.985 samples/s
+26: 2018-10-08 09:01:27,068 INFO All done!
+31: 2018-10-08 09:01:27,100 INFO Finished training
+31: 2018-10-08 09:01:27,100 INFO Train samples 2048 time 8.00011s rate 255.996 samples/s
+31: 2018-10-08 09:01:27,100 INFO All done!
+22: 2018-10-08 09:01:27,125 INFO Finished training
+22: 2018-10-08 09:01:27,125 INFO Train samples 2048 time 8.00047s rate 255.985 samples/s
+22: 2018-10-08 09:01:27,125 INFO All done!
+28: 2018-10-08 09:01:27,162 INFO Finished training
+28: 2018-10-08 09:01:27,162 INFO Train samples 2048 time 8.00024s rate 255.992 samples/s
+28: 2018-10-08 09:01:27,162 INFO All done!
+ 4: 2018-10-08 09:01:27,194 INFO Finished training
+ 4: 2018-10-08 09:01:27,194 INFO Train samples 2048 time 8.00113s rate 255.964 samples/s
+ 4: 2018-10-08 09:01:27,194 INFO All done!
+17: 2018-10-08 09:01:27,219 INFO Finished training
+17: 2018-10-08 09:01:27,220 INFO Train samples 2048 time 8.00058s rate 255.981 samples/s
+17: 2018-10-08 09:01:27,220 INFO All done!
+11: 2018-10-08 09:01:27,248 INFO Finished training
+11: 2018-10-08 09:01:27,248 INFO Train samples 2048 time 8.00085s rate 255.973 samples/s
+11: 2018-10-08 09:01:27,248 INFO All done!
+24: 2018-10-08 09:01:27,292 INFO Finished training
+24: 2018-10-08 09:01:27,293 INFO Train samples 2048 time 8.00021s rate 255.993 samples/s
+24: 2018-10-08 09:01:27,293 INFO All done!
+ 0: 2018-10-08 09:01:27,317 INFO Saving summaries to /global/cscratch1/sd/sfarrell/atlas_gan/RPV_GAN_000/summaries.npz
+ 0: 2018-10-08 09:01:27,321 INFO Finished training
+ 0: 2018-10-08 09:01:27,321 INFO Train samples 2048 time 7.99982s rate 256.006 samples/s
+ 0: 2018-10-08 09:01:27,321 INFO All done!
+ 2: 2018-10-08 09:01:27,348 INFO Finished training
+ 2: 2018-10-08 09:01:27,348 INFO Train samples 2048 time 8.00084s rate 255.973 samples/s
+ 2: 2018-10-08 09:01:27,348 INFO All done!
+ 6: 2018-10-08 09:01:27,385 INFO Finished training
+ 6: 2018-10-08 09:01:27,385 INFO Train samples 2048 time 8.00033s rate 255.989 samples/s
+ 6: 2018-10-08 09:01:27,385 INFO All done!
+10: 2018-10-08 09:01:27,396 INFO Finished training
+10: 2018-10-08 09:01:27,397 INFO Train samples 2048 time 8.00102s rate 255.967 samples/s
+10: 2018-10-08 09:01:27,397 INFO All done!
+ 7: 2018-10-08 09:01:27,416 INFO Finished training
+ 7: 2018-10-08 09:01:27,417 INFO Train samples 2048 time 8.00035s rate 255.989 samples/s
+ 7: 2018-10-08 09:01:27,417 INFO All done!
+29: 2018-10-08 09:01:27,448 INFO Finished training
+29: 2018-10-08 09:01:27,448 INFO Train samples 2048 time 8.00028s rate 255.991 samples/s
+29: 2018-10-08 09:01:27,448 INFO All done!
+14: 2018-10-08 09:01:27,465 INFO Finished training
+14: 2018-10-08 09:01:27,465 INFO Train samples 2048 time 8.00101s rate 255.968 samples/s
+14: 2018-10-08 09:01:27,465 INFO All done!
+18: 2018-10-08 09:01:27,505 INFO Finished training
+18: 2018-10-08 09:01:27,506 INFO Train samples 2048 time 8.00068s rate 255.978 samples/s
+18: 2018-10-08 09:01:27,506 INFO All done!
+12: 2018-10-08 09:01:27,538 INFO Finished training
+12: 2018-10-08 09:01:27,539 INFO Train samples 2048 time 8.001s rate 255.968 samples/s
+12: 2018-10-08 09:01:27,539 INFO All done!
