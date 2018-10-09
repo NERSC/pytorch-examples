@@ -80,6 +80,7 @@ class BaseTrainer(object):
                 summary.update(self.evaluate(valid_data_loader))
             # Save summary, checkpoint
             self.save_summary(summary)
-            self.write_checkpoint(checkpoint_id=i)
+            if self.output_dir is not None:
+                self.write_checkpoint(checkpoint_id=i)
 
         return self.summaries

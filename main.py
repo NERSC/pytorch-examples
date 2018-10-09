@@ -70,8 +70,12 @@ def main():
         valid_data_loader = None
 
     # Load the trainer
-    trainer = get_trainer(distributed=args.distributed,
-                          **config['experiment_config'])
+    experiment_config = config['experiment_config']
+    output_dir = experiment_config.pop('output_dir', None)
+    if args.distributed and dist.get_rank() != 0:
+        output_dir = None
+    trainer = get_trainer(distributed=args.distributed, output_dir=output_dir,
+                          **experiment_config)
     # Build the model
     trainer.build_model(**model_config)
     if not args.distributed or (dist.get_rank() == 0):
