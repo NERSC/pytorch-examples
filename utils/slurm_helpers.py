@@ -6,14 +6,16 @@ from __future__ import print_function
 import subprocess
 
 def _run_command(cmd):
-    result = subprocess.run(cmd.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    result = subprocess.run(cmd.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                            universal_newlines=True)
     if result.returncode != 0:
         print(result.stderr)
         raise Exception('Failed to run command: %s' % cmd)
     return result
 
 def _run_command_async(cmd):
-    return subprocess.Popen(cmd.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    return subprocess.Popen(cmd.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                            universal_newlines=True)
 
 class SlurmJob():
     """An object which manages a slurm allocation and submits tasks."""
