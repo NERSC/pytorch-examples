@@ -31,14 +31,13 @@ class SlurmJob():
         self.salloc_result = _run_command(cmd)
         # Extract the job ID
         self.jobid = self._extract_job_id(self.salloc_result)
-        print(self.salloc_result.stderr.decode())
+        print(self.salloc_result.stderr)
 
     def __del__(self):
         _run_command('scancel %i' % self.jobid)
 
     def _extract_job_id(self, salloc_result):
-        out_str = salloc_result.stderr.decode()
-        for line in out_str.split('\n'):
+        for line in salloc_result.stderr.split('\n'):
             if line.startswith('salloc: Granted job allocation'):
                 return int(line.split()[4])
         # Something went wrong
