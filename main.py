@@ -24,6 +24,7 @@ def parse_args():
     add_arg('config', nargs='?', default='configs/hello.yaml')
     add_arg('-d', '--distributed', action='store_true')
     add_arg('-v', '--verbose', action='store_true')
+    add_arg('--device', default='cpu')
     add_arg('--show-config', action='store_true')
     add_arg('--interactive', action='store_true')
     return parser.parse_args()
@@ -75,7 +76,7 @@ def main():
     if args.distributed and dist.get_rank() != 0:
         output_dir = None
     trainer = get_trainer(distributed=args.distributed, output_dir=output_dir,
-                          **experiment_config)
+                          device=args.device, **experiment_config)
     # Build the model
     trainer.build_model(**model_config)
     if not args.distributed or (dist.get_rank() == 0):
