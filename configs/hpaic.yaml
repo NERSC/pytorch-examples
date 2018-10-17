@@ -1,0 +1,24 @@
+data_config:
+    name: hpa
+    image_folder: /global/cscratch1/sd/sfarrell/kaggle/human-protein-atlas-image-classification/train
+    truth_file: /global/cscratch1/sd/sfarrell/kaggle/human-protein-atlas-image-classification/train.csv
+    n_train: 1024
+    n_valid: 1024
+
+experiment_config:
+    name: basic
+    output_dir: $SCRATCH/kaggle-hpaic
+
+model_config:
+    model_type: 'cnn_classifier'
+    input_shape: [1, 512, 512]
+    conv_sizes: [8, 16, 32, 64]
+    dense_sizes: [128]
+    n_classes: 28
+    loss_func: 'BCEWithLogitsLoss'
+    optimizer: 'Adam'
+    learning_rate: 0.001
+
+train_config:
+    batch_size: 32
+    n_epochs: 1
