@@ -4,7 +4,7 @@ This repository contains some PyTorch example models and training code
 with support for distributed training on NERSC systems.
 
 The layout of this package can also serve as a template for PyTorch
-projects and the provided BaseTrainer and main.py script can be used to
+projects and the provided BaseTrainer and train.py script can be used to
 reduce boiler plate.
 
 ## Package layout
@@ -17,7 +17,7 @@ The directory layout of this repo is designed to be flexible:
   `BaseTrainer` and are responsible for constructing models as well as training
   and evaluating them.
 
-All examples are run with the generic training script, `main.py`.
+All examples are run with the generic training script, `train.py`.
 
 ## Examples
 

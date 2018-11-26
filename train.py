@@ -19,7 +19,7 @@ from trainers import get_trainer
 
 def parse_args():
     """Parse command line arguments."""
-    parser = argparse.ArgumentParser('main.py')
+    parser = argparse.ArgumentParser('train.py')
     add_arg = parser.add_argument
     add_arg('config', nargs='?', default='configs/hello.yaml')
     add_arg('-d', '--distributed', action='store_true')
