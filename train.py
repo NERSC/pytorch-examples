@@ -105,7 +105,7 @@ def main():
     n_train_samples = len(train_data_loader.sampler)
     logging.info('Finished training')
     train_time = np.mean(summary['train_time'])
-    logging.info('Train samples %g time %gs rate %g samples/s',
+    logging.info('Train samples %g time %g s rate %g samples/s',
                  n_train_samples, train_time, n_train_samples / train_time)
     if valid_data_loader is not None:
         n_valid_samples = len(valid_data_loader.sampler)
