@@ -52,13 +52,12 @@ def main():
 
     # Load configuration
     config = load_config(args.config)
-    experiment_config = config['experiment_config']
     data_config = config['data_config']
     model_config = config.get('model_config', {})
     train_config = config['train_config']
 
     # Prepare output directory
-    output_dir = experiment_config.pop('output_dir', None) if rank==0 else None
+    output_dir = config.get('output_dir', None) if rank==0 else None
     if output_dir is not None:
         output_dir = os.path.expandvars(output_dir)
         os.makedirs(output_dir, exist_ok=True)
@@ -68,7 +67,6 @@ def main():
                 if output_dir is not None else None)
     config_logging(verbose=args.verbose, log_file=log_file)
     logging.info('Initialized rank %i out of %i', rank, n_ranks)
-
     if rank == 0:
         logging.info('Configuration: %s' % config)
 
@@ -86,8 +84,8 @@ def main():
         valid_data_loader = None
 
     # Load the trainer
-    trainer = get_trainer(distributed=args.distributed, output_dir=output_dir,
-                          device=args.device, **experiment_config)
+    trainer = get_trainer(name=config['trainer'], distributed=args.distributed,
+                          output_dir=output_dir, device=args.device)
     # Build the model
     trainer.build_model(**model_config)
     if rank == 0:
