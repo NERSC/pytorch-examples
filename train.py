@@ -29,6 +29,11 @@ def parse_args():
     add_arg('--interactive', action='store_true')
     return parser.parse_args()
 
+def load_config(config_file):
+    with open(config_file) as f:
+        config = yaml.load(f)
+    return config
+
 def main():
     """Main function"""
 
@@ -49,8 +54,7 @@ def main():
         logging.info('MPI rank %i' % dist.get_rank())
 
     # Load configuration
-    with open(args.config) as f:
-        config = yaml.load(f)
+    config = load_config(args.config)
     if not args.distributed or (dist.get_rank() == 0):
         logging.info('Configuration: %s' % config)
     data_config = config['data_config']
