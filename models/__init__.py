@@ -15,5 +15,11 @@ def get_model(name, **model_args):
     elif name == 'dcgan':
         from .dcgan import get_gan
         return get_gan(**model_args)
+    elif name == 'resnet50':
+        import torchvision
+        return torchvision.models.resnet50(**model_args)
+    elif name == 'inception_v3':
+        import torchvision
+        return torchvision.models.inception_v3(**model_args)
     else:
         raise Exception('Model %s unknown' % name)
