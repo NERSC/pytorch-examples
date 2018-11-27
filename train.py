@@ -16,6 +16,7 @@ from torch.utils.data.distributed import DistributedSampler
 # Locals
 from datasets import get_datasets
 from trainers import get_trainer
+from utils.logging import config_logging
 
 def parse_args():
     """Parse command line arguments."""
@@ -25,7 +26,6 @@ def parse_args():
     add_arg('-d', '--distributed', action='store_true')
     add_arg('-v', '--verbose', action='store_true')
     add_arg('--device', default='cpu')
-    add_arg('--show-config', action='store_true')
     add_arg('--interactive', action='store_true')
     return parser.parse_args()
 
@@ -45,29 +45,31 @@ def load_config(config_file):
 def main():
     """Main function"""
 
-    # Parse the command line
+    # Initialization
     args = parse_args()
-
-    # Setup logging
-    log_format = '%(asctime)s %(levelname)s %(message)s'
-    log_level = logging.DEBUG if args.verbose else logging.INFO
-    logging.basicConfig(level=log_level, format=log_format)
-    logging.info('Initializing')
-    if args.show_config:
-        logging.info('Command line config: %s' % args)
-
-    # Initialize MPI
     rank, n_ranks = init_workers(args.distributed)
-    if args.distributed:
-        logging.info('MPI rank %i' % dist.get_rank())
 
     # Load configuration
     config = load_config(args.config)
-    if not args.distributed or (dist.get_rank() == 0):
-        logging.info('Configuration: %s' % config)
+    experiment_config = config['experiment_config']
     data_config = config['data_config']
     model_config = config.get('model_config', {})
     train_config = config['train_config']
+
+    # Prepare output directory
+    output_dir = experiment_config.pop('output_dir', None) if rank==0 else None
+    if output_dir is not None:
+        output_dir = os.path.expandvars(output_dir)
+        os.makedirs(output_dir, exist_ok=True)
+
+    # Setup logging
+    log_file = (os.path.join(output_dir, 'out.log')
+                if output_dir is not None else None)
+    config_logging(verbose=args.verbose, log_file=log_file)
+    logging.info('Initialized rank %i out of %i', rank, n_ranks)
+
+    if rank == 0:
+        logging.info('Configuration: %s' % config)
 
     # Load the datasets
     train_dataset, valid_dataset = get_datasets(**data_config)
@@ -83,10 +85,6 @@ def main():
         valid_data_loader = None
 
     # Load the trainer
-    experiment_config = config['experiment_config']
-    output_dir = experiment_config.pop('output_dir', None)
-    if args.distributed and dist.get_rank() != 0:
-        output_dir = None
     trainer = get_trainer(distributed=args.distributed, output_dir=output_dir,
                           device=args.device, **experiment_config)
     # Build the model
