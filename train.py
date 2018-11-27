@@ -29,6 +29,14 @@ def parse_args():
     add_arg('--interactive', action='store_true')
     return parser.parse_args()
 
+def init_workers(distributed=False):
+    rank, n_ranks = 0, 1
+    if distributed:
+        dist.init_process_group(backend='mpi')
+        rank = dist.get_rank()
+        n_ranks = dist.get_world_size()
+    return rank, n_ranks
+
 def load_config(config_file):
     with open(config_file) as f:
         config = yaml.load(f)
@@ -49,8 +57,8 @@ def main():
         logging.info('Command line config: %s' % args)
 
     # Initialize MPI
+    rank, n_ranks = init_workers(args.distributed)
     if args.distributed:
-        dist.init_process_group(backend='mpi')
         logging.info('MPI rank %i' % dist.get_rank())
 
     # Load configuration
