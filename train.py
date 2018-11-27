@@ -91,14 +91,14 @@ def main():
                           device=args.device, **experiment_config)
     # Build the model
     trainer.build_model(**model_config)
-    if not args.distributed or (dist.get_rank() == 0):
+    if rank == 0:
         trainer.print_model_summary()
 
     # Run the training
     summary = trainer.train(train_data_loader=train_data_loader,
                             valid_data_loader=valid_data_loader,
                             **train_config)
-    if not args.distributed or (dist.get_rank() == 0):
+    if rank == 0:
         trainer.write_summaries()
 
     # Print some conclusions
@@ -114,7 +114,7 @@ def main():
                      n_valid_samples, valid_time, n_valid_samples / valid_time)
 
     # Drop to IPython interactive shell
-    if args.interactive:
+    if args.interactive and rank==0:
         logging.info('Starting IPython interactive session')
         import IPython
         IPython.embed()
