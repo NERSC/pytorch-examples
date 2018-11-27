@@ -1,12 +1,11 @@
+trainer: cifar10
+output_dir: $SCRATCH/pytorch-cifar10/output
+
 data_config:
     name: cifar10
     data_path: $SCRATCH/pytorch-cifar10/data
     n_train: 32768 #50000
     n_valid: 8192 #10000
-
-experiment_config:
-    name: cifar10
-    output_dir: $SCRATCH/pytorch-cifar10/output
 
 model_config:
     model_type: 'resnet50_cifar10'

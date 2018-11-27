@@ -1,10 +1,9 @@
+trainer: basic
+output_dir: $SCRATCH/pytorch-mnist/output
+
 data_config:
     name: mnist
     data_path: $SCRATCH/pytorch-mnist/data
-
-experiment_config:
-    name: basic
-    output_dir: $SCRATCH/pytorch-mnist/output
 
 model_config:
     model_type: 'cnn_classifier'

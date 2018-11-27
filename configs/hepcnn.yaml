@@ -1,6 +1,5 @@
-experiment_config:
-    name: hepcnn
-    output_dir: $SCRATCH/hep-cnn-pytorch
+trainer: hepcnn
+output_dir: $SCRATCH/hep-cnn-pytorch
 
 data_config:
     name: hep_images

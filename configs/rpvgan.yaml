@@ -1,6 +1,5 @@
-experiment_config:
-    name: rpvgan
-    output_dir: $SCRATCH/atlas_gan/RPV_GAN_000
+trainer: rpvgan
+output_dir: $SCRATCH/atlas_gan/RPV_GAN_000
 
 data_config:
     name: rpv_images
