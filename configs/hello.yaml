@@ -5,6 +5,7 @@ data_config:
 
 experiment_config:
     name: hello
+    output_dir: $SCRATCH/pytorch-examples/hello
 
 train_config:
     batch_size: 128
