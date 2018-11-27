@@ -3,6 +3,7 @@ Main training script for NERSC PyTorch examples
 """
 
 # System
+import os
 import argparse
 import logging
 
