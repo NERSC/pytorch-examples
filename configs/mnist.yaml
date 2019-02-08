@@ -4,6 +4,7 @@ output_dir: $SCRATCH/pytorch-mnist/output
 data_config:
     name: mnist
     data_path: $SCRATCH/pytorch-mnist/data
+    batch_size: 64
 
 model_config:
     model_type: 'cnn_classifier'
@@ -15,5 +16,4 @@ model_config:
     learning_rate: 0.001
 
 train_config:
-    batch_size: 64
     n_epochs: 1

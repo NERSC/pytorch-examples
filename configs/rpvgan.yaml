@@ -6,6 +6,7 @@ data_config:
     train_file: /global/cscratch1/sd/sfarrell/atlas_gan/data/RPV10_1400_850_01.npz
     n_train: 65536 #262144
     scale: 4.e+6
+    batch_size: 64
 
 model_config:
     n_filters: 16
@@ -15,5 +16,4 @@ model_config:
     label_flip_rate: 0.01
 
 train_config:
-    batch_size: 64
     n_epochs: 1

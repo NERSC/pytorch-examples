@@ -9,6 +9,7 @@ data_config:
     n_train: 32768 #409600 #412416
     n_valid: 32768
     #n_test: 1024
+    batch_size: 128
 
 model_config:
     input_shape: [1, 64, 64]
@@ -19,5 +20,4 @@ model_config:
     dropout: 0.2
 
 train_config:
-    batch_size: 128
     n_epochs: 2

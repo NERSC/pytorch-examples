@@ -6,6 +6,7 @@ data_config:
     data_path: $SCRATCH/pytorch-cifar10/data
     n_train: 32768 #50000
     n_valid: 8192 #10000
+    batch_size: 64
 
 model_config:
     model_type: 'resnet50_cifar10'
@@ -18,5 +19,4 @@ model_config:
     learning_rate: 0.001
 
 train_config:
-    batch_size: 64
     n_epochs: 1
