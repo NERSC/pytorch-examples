@@ -5,7 +5,7 @@ data_config:
     name: dummy
     n_train: 1024
     n_valid: 1024
+    batch_size: 128
 
 train_config:
-    batch_size: 128
     n_epochs: 1
