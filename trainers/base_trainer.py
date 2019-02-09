@@ -4,6 +4,7 @@ Common PyTorch trainer code.
 
 # System
 import os
+import time
 import logging
 
 # Externals
@@ -17,12 +18,14 @@ class BaseTrainer(object):
     logging of summaries, and checkpoints.
     """
 
-    def __init__(self, output_dir=None, device='cpu', distributed=False):
+    def __init__(self, output_dir=None, device='cpu',
+                 distributed=False, rank=0):
         self.logger = logging.getLogger(self.__class__.__name__)
         self.output_dir = (os.path.expandvars(output_dir)
                            if output_dir is not None else None)
         self.device = device
         self.distributed = distributed
+        self.rank = rank
         self.summaries = {}
 
     def print_model_summary(self):
@@ -41,7 +44,8 @@ class BaseTrainer(object):
 
     def write_summaries(self):
         assert self.output_dir is not None
-        summary_file = os.path.join(self.output_dir, 'summaries.npz')
+        summary_file = os.path.join(self.output_dir,
+                                    'summaries_%i.npz' % self.rank)
         self.logger.info('Saving summaries to %s' % summary_file)
         np.savez(summary_file, **self.summaries)
 
@@ -74,13 +78,17 @@ class BaseTrainer(object):
             self.logger.info('Epoch %i' % i)
             summary = dict(epoch=i)
             # Train on this epoch
+            start_time = time.time()
             summary.update(self.train_epoch(train_data_loader))
+            summary['train_time'] = time.time() - start_time
             # Evaluate on this epoch
             if valid_data_loader is not None:
+                start_time = time.time()
                 summary.update(self.evaluate(valid_data_loader))
+                summary['valid_time'] = time.time() - start_time
             # Save summary, checkpoint
             self.save_summary(summary)
-            if self.output_dir is not None:
+            if self.output_dir is not None and rank==0:
                 self.write_checkpoint(checkpoint_id=i)
 
         return self.summaries

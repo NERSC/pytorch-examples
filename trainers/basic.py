@@ -2,9 +2,6 @@
 This module defines a generic trainer for simple models and datasets.
 """
 
-# System
-import time
-
 # Externals
 import torch
 from torch import nn
@@ -36,7 +33,6 @@ class BasicTrainer(BaseTrainer):
         self.model.train()
         summary = dict()
         sum_loss = 0
-        start_time = time.time()
         # Loop over training batches
         for i, (batch_input, batch_target) in enumerate(data_loader):
             self.logger.debug('  batch %i', i)
@@ -48,7 +44,6 @@ class BasicTrainer(BaseTrainer):
             batch_loss.backward()
             self.optimizer.step()
             sum_loss += batch_loss.item()
-        summary['train_time'] = time.time() - start_time
         summary['train_loss'] = sum_loss / (i + 1)
         self.logger.debug(' Processed %i batches' % (i + 1))
         self.logger.info('  Training loss: %.3f' % summary['train_loss'])
@@ -61,7 +56,6 @@ class BasicTrainer(BaseTrainer):
         summary = dict()
         sum_loss = 0
         sum_correct = 0
-        start_time = time.time()
         # Loop over batches
         for i, (batch_input, batch_target) in enumerate(data_loader):
             self.logger.debug(' batch %i', i)
@@ -72,7 +66,6 @@ class BasicTrainer(BaseTrainer):
             # Count number of correct predictions
             _, batch_preds = torch.max(batch_output, 1)
             sum_correct += (batch_preds == batch_target).sum().item()
-        summary['valid_time'] = time.time() - start_time
         summary['valid_loss'] = sum_loss / (i + 1)
         summary['valid_acc'] = sum_correct / len(data_loader.sampler)
         self.logger.debug(' Processed %i samples in %i batches',
