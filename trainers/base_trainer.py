@@ -4,6 +4,7 @@ Common PyTorch trainer code.
 
 # System
 import os
+import time
 import logging
 
 # Externals
@@ -74,10 +75,14 @@ class BaseTrainer(object):
             self.logger.info('Epoch %i' % i)
             summary = dict(epoch=i)
             # Train on this epoch
+            start_time = time.time()
             summary.update(self.train_epoch(train_data_loader))
+            summary['train_time'] = time.time() - start_time
             # Evaluate on this epoch
             if valid_data_loader is not None:
+                start_time = time.time()
                 summary.update(self.evaluate(valid_data_loader))
+                summary['valid_time'] = time.time() - start_time
             # Save summary, checkpoint
             self.save_summary(summary)
             if self.output_dir is not None:
