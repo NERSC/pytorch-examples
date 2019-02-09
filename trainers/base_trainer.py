@@ -88,7 +88,7 @@ class BaseTrainer(object):
                 summary['valid_time'] = time.time() - start_time
             # Save summary, checkpoint
             self.save_summary(summary)
-            if self.output_dir is not None and rank==0:
+            if self.output_dir is not None and self.rank==0:
                 self.write_checkpoint(checkpoint_id=i)
 
         return self.summaries
