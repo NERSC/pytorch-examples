@@ -4,7 +4,6 @@ This module contains trainer functionality for basic GAN-like models.
 
 # System
 import os
-import time
 
 # Locals
 from .base_trainer import BaseTrainer
@@ -68,7 +67,6 @@ class GANTrainer(BaseTrainer):
         summary = dict()
         d_sum_loss, g_sum_loss = 0, 0
         d_sum_out_real, d_sum_out_fake = 0, 0
-        start_time = time.time()
 
         # Loop over training batches
         for i, data in enumerate(data_loader):
@@ -120,7 +118,6 @@ class GANTrainer(BaseTrainer):
 
         # TODO: save subset of generated data
         n_batches = i + 1
-        summary['train_time'] = time.time() - start_time
         summary['d_train_loss'] = d_sum_loss / n_batches
         summary['g_train_loss'] = g_sum_loss / n_batches
         summary['d_train_out_real'] = d_sum_out_real / n_batches

@@ -2,9 +2,6 @@
 Trainer code for the HEP-CNN RPV classifier.
 """
 
-# System
-import time
-
 # Externals
 import torch
 import torch.nn as nn
@@ -38,7 +35,6 @@ class HEPCNNTrainer(BaseTrainer):
         self.model.train()
         summary = dict()
         sum_loss = 0
-        start_time = time.time()
         # Loop over training batches
         for i, (batch_input, batch_target) in enumerate(data_loader):
             batch_input = batch_input.to(self.device)
@@ -49,7 +45,6 @@ class HEPCNNTrainer(BaseTrainer):
             batch_loss.backward()
             self.optimizer.step()
             sum_loss += batch_loss.item()
-        summary['train_time'] = time.time() - start_time
         summary['train_loss'] = sum_loss / (i + 1)
         self.logger.debug(' Processed %i samples in %i batches',
                           len(data_loader.sampler), i + 1)
@@ -63,7 +58,6 @@ class HEPCNNTrainer(BaseTrainer):
         summary = dict()
         sum_loss = 0
         sum_correct = 0
-        start_time = time.time()
         # Loop over batches
         for i, (batch_input, batch_target) in enumerate(data_loader):
             batch_input = batch_input.to(self.device)
@@ -73,7 +67,6 @@ class HEPCNNTrainer(BaseTrainer):
             # Count number of correct predictions
             preds, labels = batch_output > 0.5, batch_target > 0.5
             sum_correct += preds.eq(labels).sum().item()
-        summary['valid_time'] = time.time() - start_time
         summary['valid_loss'] = sum_loss / (i + 1)
         summary['valid_acc'] = sum_correct / len(data_loader.sampler)
         self.logger.debug(' Processed %i samples in %i batches',
