@@ -55,7 +55,7 @@ def main():
     train_config = config['train_config']
 
     # Prepare output directory
-    output_dir = config.get('output_dir', None) if rank==0 else None
+    output_dir = config.get('output_dir', None)
     if output_dir is not None:
         output_dir = os.path.expandvars(output_dir)
         os.makedirs(output_dir, exist_ok=True)
@@ -84,7 +84,7 @@ def main():
     summary = trainer.train(train_data_loader=train_data_loader,
                             valid_data_loader=valid_data_loader,
                             **train_config)
-    if rank == 0:
+    if output_dir is not None:
         trainer.write_summaries()
 
     # Print some conclusions
