@@ -61,7 +61,7 @@ def main():
         os.makedirs(output_dir, exist_ok=True)
 
     # Setup logging
-    log_file = (os.path.join(output_dir, 'out.log')
+    log_file = (os.path.join(output_dir, 'out_%i.log' % rank)
                 if output_dir is not None else None)
     config_logging(verbose=args.verbose, log_file=log_file)
     logging.info('Initialized rank %i out of %i', rank, n_ranks)
