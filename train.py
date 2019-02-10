@@ -74,7 +74,7 @@ def main():
 
     # Load the trainer
     trainer = get_trainer(name=config['trainer'], distributed=args.distributed,
-                          output_dir=output_dir, device=args.device)
+                          rank=rank, output_dir=output_dir, device=args.device)
     # Build the model
     trainer.build_model(**model_config)
     if rank == 0:
