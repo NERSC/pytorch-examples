@@ -10,7 +10,6 @@ import logging
 # Externals
 import yaml
 import numpy as np
-import torch.distributed as dist
 
 # Locals
 from datasets import get_data_loaders
@@ -19,7 +18,7 @@ from utils.logging import config_logging
 
 def parse_args():
     """Parse command line arguments."""
-    parser = argparse.ArgumentParser('train.py')
+    parser = argparse.ArgumentParser()
     add_arg = parser.add_argument
     add_arg('config', nargs='?', default='configs/hello.yaml')
     add_arg('-d', '--distributed', action='store_true')
