@@ -22,7 +22,8 @@ class BasicTrainer(BaseTrainer):
         """Instantiate our model"""
         self.model = get_model(name=model_type, **model_args).to(self.device)
         if self.distributed:
-            self.model = nn.parallel.DistributedDataParallelCPU(self.model)
+            device_ids = [self.gpu] if self.gpu is not None else None
+            self.model = DistributedDataParallel(self.model, device_ids=device_ids)
         # TODO: add support for more optimizers and loss functions here
         opt_type = dict(Adam=torch.optim.Adam)[optimizer]
         self.optimizer = opt_type(self.model.parameters(), lr=learning_rate)

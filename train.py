@@ -27,7 +27,12 @@ def parse_args():
             help='Specify the distributed backend to use')
     add_arg('-v', '--verbose', action='store_true',
             help='Enable verbose logging')
-    add_arg('--device', default='cpu')
+    add_arg('--gpu', type=int,
+            help='Choose a specific GPU by ID')
+    add_arg('--ranks-per-node', type=int, default=8,
+            help='Specifying number of ranks per node')
+    add_arg('--rank-gpu', action='store_true',
+            help='Choose GPU according to local rank')
     return parser.parse_args()
 
 def load_config(config_file):
@@ -68,8 +73,11 @@ def main():
         distributed=distributed, **data_config)
 
     # Load the trainer
+    gpu = (rank % args.ranks_per_node) if args.rank_gpu else args.gpu
+    if gpu is not None:
+        logging.info('Using GPU %i', gpu)
     trainer = get_trainer(name=config['trainer'], distributed=distributed,
-                          rank=rank, output_dir=output_dir, device=args.device)
+                          rank=rank, output_dir=output_dir, gpu=gpu)
     # Build the model
     trainer.build_model(**model_config)
     if rank == 0:
