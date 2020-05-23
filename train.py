@@ -15,25 +15,18 @@ import numpy as np
 from datasets import get_data_loaders
 from trainers import get_trainer
 from utils.logging import config_logging
+from utils.distributed import init_workers
 
 def parse_args():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser()
     add_arg = parser.add_argument
     add_arg('config', nargs='?', default='configs/hello.yaml')
-    add_arg('-d', '--distributed', action='store_true')
+    add_arg('-d', '--distributed-backend', choices=['mpi', 'nccl', 'gloo'],
+            help='Specify the distributed backend to use')
     add_arg('-v', '--verbose', action='store_true')
     add_arg('--device', default='cpu')
-    add_arg('--interactive', action='store_true')
     return parser.parse_args()
-
-def init_workers(distributed=False):
-    rank, n_ranks = 0, 1
-    if distributed:
-        dist.init_process_group(backend='mpi')
-        rank = dist.get_rank()
-        n_ranks = dist.get_world_size()
-    return rank, n_ranks
 
 def load_config(config_file):
     with open(config_file) as f:
@@ -45,7 +38,7 @@ def main():
 
     # Initialization
     args = parse_args()
-    rank, n_ranks = init_workers(args.distributed)
+    rank, n_ranks = init_workers(args.distributed_backend)
 
     # Load configuration
     config = load_config(args.config)
@@ -68,11 +61,12 @@ def main():
         logging.info('Configuration: %s' % config)
 
     # Load the datasets
+    distributed = args.distributed_backend is not None
     train_data_loader, valid_data_loader = get_data_loaders(
-        distributed=args.distributed, **data_config)
+        distributed=distributed, **data_config)
 
     # Load the trainer
-    trainer = get_trainer(name=config['trainer'], distributed=args.distributed,
+    trainer = get_trainer(name=config['trainer'], distributed=distributed,
                           rank=rank, output_dir=output_dir, device=args.device)
     # Build the model
     trainer.build_model(**model_config)
