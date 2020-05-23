@@ -11,7 +11,7 @@ class HelloTrainer(BaseTrainer):
     def __init__(self, **kwargs):
         super(HelloTrainer, self).__init__(**kwargs)
 
-    def build_model(self):
+    def build(self):
         pass
     
     def print_model_summary(self):

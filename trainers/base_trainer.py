@@ -63,8 +63,8 @@ class BaseTrainer(object):
         torch.save(dict(model=self.model.state_dict()),
                    os.path.join(checkpoint_dir, checkpoint_file))
 
-    def build_model(self):
-        """Virtual method to construct the model"""
+    def build(self, model_config, optimizer_config):
+        """Virtual method to build model, optimizer, etc."""
         raise NotImplementedError
 
     def train_epoch(self, data_loader):

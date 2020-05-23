@@ -16,18 +16,23 @@ class BasicTrainer(BaseTrainer):
     def __init__(self, **kwargs):
         super(BasicTrainer, self).__init__(**kwargs)
 
-    def build_model(self, model_type='cnn_classifier',
-                    optimizer='Adam', learning_rate=0.001,
-                    **model_args):
-        """Instantiate our model"""
-        self.model = get_model(name=model_type, **model_args).to(self.device)
+    def build(self, model_config, optimizer_config):
+        """Instantiate our model, optimizer, loss function"""
+
+        loss_function = model_config.pop('loss_function')
+
+        # Construct the model
+        self.model = get_model(**model_config).to(self.device)
         if self.distributed:
             device_ids = [self.gpu] if self.gpu is not None else None
             self.model = DistributedDataParallel(self.model, device_ids=device_ids)
-        # TODO: add support for more optimizers and loss functions here
-        opt_type = dict(Adam=torch.optim.Adam)[optimizer]
-        self.optimizer = opt_type(self.model.parameters(), lr=learning_rate)
-        self.loss_func = torch.nn.CrossEntropyLoss()
+
+        # Construct the optimizer
+        Optim = getattr(torch.optim, optimizer_config.pop('name'))
+        self.optimizer = Optim(self.model.parameters(), **optimizer_config)
+
+        # Construct the loss function
+        self.loss_func = getattr(torch.nn.functional, loss_function)
     
     def train_epoch(self, data_loader):
         """Train for one epoch"""

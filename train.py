@@ -79,7 +79,7 @@ def main():
     trainer = get_trainer(name=config['trainer'], distributed=distributed,
                           rank=rank, output_dir=output_dir, gpu=gpu)
     # Build the model
-    trainer.build_model(**model_config)
+    trainer.build(**model_config)
     if rank == 0:
         trainer.print_model_summary()
 
