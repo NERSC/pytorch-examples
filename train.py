@@ -10,35 +10,34 @@ import logging
 # Externals
 import yaml
 import numpy as np
-import torch.distributed as dist
 
 # Locals
 from datasets import get_data_loaders
 from trainers import get_trainer
 from utils.logging import config_logging
+from utils.distributed import init_workers
 
 def parse_args():
     """Parse command line arguments."""
-    parser = argparse.ArgumentParser('train.py')
+    parser = argparse.ArgumentParser()
     add_arg = parser.add_argument
-    add_arg('config', nargs='?', default='configs/hello.yaml')
-    add_arg('-d', '--distributed', action='store_true')
-    add_arg('-v', '--verbose', action='store_true')
-    add_arg('--device', default='cpu')
-    add_arg('--interactive', action='store_true')
+    add_arg('config', nargs='?', default='configs/hello.yaml',
+            help='YAML configuration file')
+    add_arg('-d', '--distributed-backend', choices=['mpi', 'nccl', 'gloo'],
+            help='Specify the distributed backend to use')
+    add_arg('-v', '--verbose', action='store_true',
+            help='Enable verbose logging')
+    add_arg('--gpu', type=int,
+            help='Choose a specific GPU by ID')
+    add_arg('--ranks-per-node', type=int, default=8,
+            help='Specifying number of ranks per node')
+    add_arg('--rank-gpu', action='store_true',
+            help='Choose GPU according to local rank')
     return parser.parse_args()
-
-def init_workers(distributed=False):
-    rank, n_ranks = 0, 1
-    if distributed:
-        dist.init_process_group(backend='mpi')
-        rank = dist.get_rank()
-        n_ranks = dist.get_world_size()
-    return rank, n_ranks
 
 def load_config(config_file):
     with open(config_file) as f:
-        config = yaml.load(f)
+        config = yaml.load(f, Loader=yaml.FullLoader)
     return config
 
 def main():
@@ -46,7 +45,7 @@ def main():
 
     # Initialization
     args = parse_args()
-    rank, n_ranks = init_workers(args.distributed)
+    rank, n_ranks = init_workers(args.distributed_backend)
 
     # Load configuration
     config = load_config(args.config)
@@ -69,14 +68,18 @@ def main():
         logging.info('Configuration: %s' % config)
 
     # Load the datasets
+    distributed = args.distributed_backend is not None
     train_data_loader, valid_data_loader = get_data_loaders(
-        distributed=args.distributed, **data_config)
+        distributed=distributed, **data_config)
 
     # Load the trainer
-    trainer = get_trainer(name=config['trainer'], distributed=args.distributed,
-                          rank=rank, output_dir=output_dir, device=args.device)
+    gpu = (rank % args.ranks_per_node) if args.rank_gpu else args.gpu
+    if gpu is not None:
+        logging.info('Using GPU %i', gpu)
+    trainer = get_trainer(name=config['trainer'], distributed=distributed,
+                          rank=rank, output_dir=output_dir, gpu=gpu)
     # Build the model
-    trainer.build_model(**model_config)
+    trainer.build(**model_config)
     if rank == 0:
         trainer.print_model_summary()
 
@@ -98,12 +101,6 @@ def main():
         valid_time = np.mean(summary['valid_time'])
         logging.info('Valid samples %g time %g s rate %g samples/s',
                      n_valid_samples, valid_time, n_valid_samples / valid_time)
-
-    # Drop to IPython interactive shell
-    if args.interactive and rank==0:
-        logging.info('Starting IPython interactive session')
-        import IPython
-        IPython.embed()
 
     logging.info('All done!')
 

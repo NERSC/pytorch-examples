@@ -18,12 +18,17 @@ class BaseTrainer(object):
     logging of summaries, and checkpoints.
     """
 
-    def __init__(self, output_dir=None, device='cpu',
+    def __init__(self, output_dir=None, gpu=None,
                  distributed=False, rank=0):
         self.logger = logging.getLogger(self.__class__.__name__)
         self.output_dir = (os.path.expandvars(output_dir)
                            if output_dir is not None else None)
-        self.device = device
+        self.gpu = gpu
+        if gpu is not None:
+            self.device = 'cuda:%i' % gpu
+            torch.cuda.set_device(gpu)
+        else:
+            self.device = 'cpu'
         self.distributed = distributed
         self.rank = rank
         self.summaries = {}
@@ -58,8 +63,8 @@ class BaseTrainer(object):
         torch.save(dict(model=self.model.state_dict()),
                    os.path.join(checkpoint_dir, checkpoint_file))
 
-    def build_model(self):
-        """Virtual method to construct the model"""
+    def build(self, model_config, optimizer_config):
+        """Virtual method to build model, optimizer, etc."""
         raise NotImplementedError
 
     def train_epoch(self, data_loader):

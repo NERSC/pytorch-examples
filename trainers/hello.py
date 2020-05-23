@@ -11,7 +11,7 @@ class HelloTrainer(BaseTrainer):
     def __init__(self, **kwargs):
         super(HelloTrainer, self).__init__(**kwargs)
 
-    def build_model(self):
+    def build(self):
         pass
     
     def print_model_summary(self):
@@ -24,27 +24,22 @@ class HelloTrainer(BaseTrainer):
         pass
 
     def train_epoch(self, data_loader):
-        summary = dict()
         # Loop over training batches
         for i, (batch_input, batch_target) in enumerate(data_loader):
             batch_input = batch_input.to(self.device)
             batch_target = batch_target.to(self.device)
-            self.logger.info('  Train batch input %s, target %s',
+            self.logger.info('Train batch input %s, target %s',
                              batch_input.size(), batch_target.size())
-        self.logger.info('  Processed %i training batches' % (i + 1))
-        summary['train_loss'] = 0
-        return summary
+        self.logger.info('Processed %i training batches' % (i + 1))
+        return dict(train_loss=0)
 
     def evaluate(self, data_loader):
         """"Evaluate the model"""
-        summary = dict()
         # Loop over validation batches
         for i, (batch_input, batch_target) in enumerate(data_loader):
             batch_input = batch_input.to(self.device)
             batch_target = batch_target.to(self.device)
-            self.logger.info('  Valid batch input %s, target %s',
+            self.logger.info('Valid batch input %s, target %s',
                              batch_input.size(), batch_target.size())
-        self.logger.info('  Processed %i validation batches' % (i + 1))
-        summary['valid_loss'] = 0
-        summary['valid_acc'] = 1
-        return summary
+        self.logger.info('Processed %i validation batches' % (i + 1))
+        return dict(valid_loss=0, valid_acc=1)
