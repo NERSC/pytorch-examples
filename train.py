@@ -98,12 +98,6 @@ def main():
         logging.info('Valid samples %g time %g s rate %g samples/s',
                      n_valid_samples, valid_time, n_valid_samples / valid_time)
 
-    # Drop to IPython interactive shell
-    if args.interactive and rank==0:
-        logging.info('Starting IPython interactive session')
-        import IPython
-        IPython.embed()
-
     logging.info('All done!')
 
 if __name__ == '__main__':
