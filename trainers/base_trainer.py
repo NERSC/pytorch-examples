@@ -9,6 +9,7 @@ import logging
 
 # Externals
 import numpy as np
+import pandas as pd
 import torch
 
 class BaseTrainer(object):
@@ -31,22 +32,29 @@ class BaseTrainer(object):
             self.device = 'cpu'
         self.distributed = distributed
         self.rank = rank
-        self.summaries = {}
+        self.summaries = None
 
-    # TODO: update to pandas dataframe
-    def save_summary(self, summaries):
-        """Save summary information"""
-        for (key, val) in summaries.items():
-            summary_vals = self.summaries.get(key, [])
-            self.summaries[key] = summary_vals + [val]
+    def _get_summary_file(self):
+        return os.path.join(self.output_dir, 'summaries_%i.csv' % self.rank)
 
-    # TODO: update to text file
-    def write_summaries(self):
-        assert self.output_dir is not None
-        summary_file = os.path.join(self.output_dir,
-                                    'summaries_%i.npz' % self.rank)
-        self.logger.info('Saving summaries to %s' % summary_file)
-        np.savez(summary_file, **self.summaries)
+    def save_summary(self, summary, write_file=True):
+        """Save new summary information"""
+
+        # First summary
+        if self.summaries is None:
+            self.summaries = pd.DataFrame([summary])
+
+        # Append a new summary row
+        else:
+            self.summaries = self.summaries.append([summary], ignore_index=True)
+
+        # Write current summaries to file (note: overwrites each time)
+        if write_file and self.output_dir is not None:
+            self.summaries.to_csv(self._get_summary_file(), index=False,
+                                  float_format='%.6f', sep='\t')
+
+    def load_summaries(self):
+        self.summaries = pd.read_csv(self._get_summary_file(), delim_whitespace=True)
 
     # TODO: move to derived type and utils
     def write_checkpoint(self, checkpoint_id):

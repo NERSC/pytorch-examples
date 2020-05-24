@@ -17,9 +17,6 @@ class HelloTrainer(BaseTrainer):
     def write_checkpoint(self, checkpoint_id):
         pass
 
-    def write_summaries(self):
-        pass
-
     def train_epoch(self, data_loader):
         # Loop over training batches
         for i, (batch_input, batch_target) in enumerate(data_loader):
