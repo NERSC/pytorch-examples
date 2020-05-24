@@ -90,6 +90,9 @@ class BasicTrainer(BaseTrainer):
         # Return summary
         return dict(valid_loss=valid_loss, valid_acc=valid_acc)
 
+def get_trainer(**kwargs):
+    return BasicTrainer(**kwargs)
+
 def _test():
     t = BasicTrainer(output_dir='./')
     t.build_model()

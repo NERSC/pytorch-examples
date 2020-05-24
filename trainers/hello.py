@@ -43,3 +43,6 @@ class HelloTrainer(BaseTrainer):
                              batch_input.size(), batch_target.size())
         self.logger.info('Processed %i validation batches' % (i + 1))
         return dict(valid_loss=0, valid_acc=1)
+
+def get_trainer(**kwargs):
+    return HelloTrainer(**kwargs)

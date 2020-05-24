@@ -23,7 +23,7 @@ def get_datasets(n_train=1024, n_valid=1024,
         valid_y = torch.randn([n_valid] + target_shape)
     train_dataset = TensorDataset(train_x, train_y)
     valid_dataset = TensorDataset(valid_x, valid_y)
-    return train_dataset, valid_dataset
+    return train_dataset, valid_dataset, {}
 
 def _test():
     t, v = get_datasets()
