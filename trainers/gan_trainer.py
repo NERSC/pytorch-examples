@@ -1,4 +1,7 @@
 """
+THIS CODE NEEDS TO BE UPDATED.
+IT WON'T CURRENTLY WORK WITH THE REST OF THIS REPO.
+
 This module contains trainer functionality for basic GAN-like models.
 """
 
