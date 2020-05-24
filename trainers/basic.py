@@ -16,10 +16,8 @@ class BasicTrainer(BaseTrainer):
     def __init__(self, **kwargs):
         super(BasicTrainer, self).__init__(**kwargs)
 
-    def build(self, model_config, optimizer_config):
+    def build(self, model_config, loss_config, optimizer_config):
         """Instantiate our model, optimizer, loss function"""
-
-        loss_function = model_config.pop('loss_function')
 
         # Construct the model
         self.model = get_model(**model_config).to(self.device)
@@ -32,7 +30,14 @@ class BasicTrainer(BaseTrainer):
         self.optimizer = Optim(self.model.parameters(), **optimizer_config)
 
         # Construct the loss function
-        self.loss_func = getattr(torch.nn.functional, loss_function)
+        Loss = getattr(torch.nn, loss_config.pop('name'))
+        self.loss_func = Loss(**loss_config)
+
+        # Print a model summary
+        if self.rank == 0:
+            self.logger.info(self.model)
+            self.logger.info('Number of parameters: %i',
+                             sum(p.numel() for p in self.model.parameters()))
     
     def train_epoch(self, data_loader):
         """Train for one epoch"""

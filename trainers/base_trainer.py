@@ -33,20 +33,14 @@ class BaseTrainer(object):
         self.rank = rank
         self.summaries = {}
 
-    def print_model_summary(self):
-        """Override as needed"""
-        self.logger.info(
-            'Model: \n%s\nParameters: %i' %
-            (self.model, sum(p.numel()
-             for p in self.model.parameters()))
-        )
-
+    # TODO: update to pandas dataframe
     def save_summary(self, summaries):
         """Save summary information"""
         for (key, val) in summaries.items():
             summary_vals = self.summaries.get(key, [])
             self.summaries[key] = summary_vals + [val]
 
+    # TODO: update to text file
     def write_summaries(self):
         assert self.output_dir is not None
         summary_file = os.path.join(self.output_dir,
@@ -54,6 +48,7 @@ class BaseTrainer(object):
         self.logger.info('Saving summaries to %s' % summary_file)
         np.savez(summary_file, **self.summaries)
 
+    # TODO: move to derived type and utils
     def write_checkpoint(self, checkpoint_id):
         """Write a checkpoint for the model"""
         assert self.output_dir is not None
@@ -63,7 +58,7 @@ class BaseTrainer(object):
         torch.save(dict(model=self.model.state_dict()),
                    os.path.join(checkpoint_dir, checkpoint_file))
 
-    def build(self, model_config, optimizer_config):
+    def build(self, model_config, loss_config, optimizer_config):
         """Virtual method to build model, optimizer, etc."""
         raise NotImplementedError
 
@@ -82,15 +77,18 @@ class BaseTrainer(object):
         for i in range(n_epochs):
             self.logger.info('Epoch %i' % i)
             summary = dict(epoch=i)
+
             # Train on this epoch
             start_time = time.time()
             summary.update(self.train_epoch(train_data_loader))
             summary['train_time'] = time.time() - start_time
+
             # Evaluate on this epoch
             if valid_data_loader is not None:
                 start_time = time.time()
                 summary.update(self.evaluate(valid_data_loader))
                 summary['valid_time'] = time.time() - start_time
+
             # Save summary, checkpoint
             self.save_summary(summary)
             if self.output_dir is not None and self.rank==0:
