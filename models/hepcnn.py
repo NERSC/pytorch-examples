@@ -44,3 +44,6 @@ class HEPCNNClassifier(nn.Module):
         h = self.conv_net(x)
         h = h.view(h.size(0), -1)
         return self.dense_net(h).squeeze(-1)
+
+def build_model(**kwargs):
+    return HEPCNNClassifier(**kwargs)

@@ -27,4 +27,4 @@ def get_dataset(input_file, n_samples, include_weights=False):
 def get_datasets(train_file, valid_file, n_train, n_valid):
     train_dataset = get_dataset(train_file, n_train)
     valid_dataset = get_dataset(valid_file, n_valid)
-    return train_dataset, valid_dataset
+    return train_dataset, valid_dataset, {}

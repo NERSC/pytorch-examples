@@ -38,4 +38,4 @@ def get_datasets(train_file, n_train, scale=None):
     # No validation set yet
     train_dataset = RPVImages(train_file, n_train, scale)
     valid_dataset = None
-    return train_dataset, valid_dataset
+    return train_dataset, valid_dataset, {}

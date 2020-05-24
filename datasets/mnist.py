@@ -21,4 +21,4 @@ def get_datasets(data_path):
                                                download=True, transform=transform)
     valid_dataset = torchvision.datasets.MNIST(root=data_path, train=False,
                                                download=True, transform=transform)
-    return train_dataset, valid_dataset
+    return train_dataset, valid_dataset, {}
