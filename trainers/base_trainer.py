@@ -9,6 +9,7 @@ import logging
 
 # Externals
 import numpy as np
+import pandas as pd
 import torch
 
 class BaseTrainer(object):
@@ -31,29 +32,31 @@ class BaseTrainer(object):
             self.device = 'cpu'
         self.distributed = distributed
         self.rank = rank
-        self.summaries = {}
+        self.summaries = None
 
-    def print_model_summary(self):
-        """Override as needed"""
-        self.logger.info(
-            'Model: \n%s\nParameters: %i' %
-            (self.model, sum(p.numel()
-             for p in self.model.parameters()))
-        )
+    def _get_summary_file(self):
+        return os.path.join(self.output_dir, 'summaries_%i.csv' % self.rank)
 
-    def save_summary(self, summaries):
-        """Save summary information"""
-        for (key, val) in summaries.items():
-            summary_vals = self.summaries.get(key, [])
-            self.summaries[key] = summary_vals + [val]
+    def save_summary(self, summary, write_file=True):
+        """Save new summary information"""
 
-    def write_summaries(self):
-        assert self.output_dir is not None
-        summary_file = os.path.join(self.output_dir,
-                                    'summaries_%i.npz' % self.rank)
-        self.logger.info('Saving summaries to %s' % summary_file)
-        np.savez(summary_file, **self.summaries)
+        # First summary
+        if self.summaries is None:
+            self.summaries = pd.DataFrame([summary])
 
+        # Append a new summary row
+        else:
+            self.summaries = self.summaries.append([summary], ignore_index=True)
+
+        # Write current summaries to file (note: overwrites each time)
+        if write_file and self.output_dir is not None:
+            self.summaries.to_csv(self._get_summary_file(), index=False,
+                                  float_format='%.6f', sep='\t')
+
+    def load_summaries(self):
+        self.summaries = pd.read_csv(self._get_summary_file(), delim_whitespace=True)
+
+    # TODO: move to derived type and utils
     def write_checkpoint(self, checkpoint_id):
         """Write a checkpoint for the model"""
         assert self.output_dir is not None
@@ -63,7 +66,7 @@ class BaseTrainer(object):
         torch.save(dict(model=self.model.state_dict()),
                    os.path.join(checkpoint_dir, checkpoint_file))
 
-    def build(self, model_config, optimizer_config):
+    def build(self, model_config, loss_config, optimizer_config):
         """Virtual method to build model, optimizer, etc."""
         raise NotImplementedError
 
@@ -82,15 +85,18 @@ class BaseTrainer(object):
         for i in range(n_epochs):
             self.logger.info('Epoch %i' % i)
             summary = dict(epoch=i)
+
             # Train on this epoch
             start_time = time.time()
             summary.update(self.train_epoch(train_data_loader))
             summary['train_time'] = time.time() - start_time
+
             # Evaluate on this epoch
             if valid_data_loader is not None:
                 start_time = time.time()
                 summary.update(self.evaluate(valid_data_loader))
                 summary['valid_time'] = time.time() - start_time
+
             # Save summary, checkpoint
             self.save_summary(summary)
             if self.output_dir is not None and self.rank==0:

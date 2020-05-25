@@ -1,5 +1,5 @@
 """
-This module defines a generic CNN classifier model.
+This module defines a generic CNN model.
 """
 
 # Externals
@@ -7,10 +7,10 @@ import torch.nn as nn
 
 class CNNClassifier(nn.Module):
     """
-    Generic CNN classifier model with convolutions, max-pooling,
-    fully connected layers, and a multi-class linear output (logits) layer.
+    Generic CNN model with convolutions, max-pooling, fully connected layers,
+    and a multi-class linear output (logits) layer.
     """
-    def __init__(self, input_shape, n_classes, conv_sizes, dense_sizes, dropout=0):
+    def __init__(self, input_shape, output_size, conv_sizes, fc_sizes, dropout=0):
         """Model constructor"""
         super(CNNClassifier, self).__init__()
 
@@ -26,19 +26,22 @@ class CNNClassifier(nn.Module):
         self.conv_net = nn.Sequential(*conv_layers)
 
         # Add the dense layers
-        dense_layers = []
+        fc_layers = []
         in_height = input_shape[1] // (2 ** len(conv_sizes))
         in_width = input_shape[2] // (2 ** len(conv_sizes))
         in_size = in_height * in_width * in_size
-        for dense_size in dense_sizes:
-            dense_layers.append(nn.Linear(in_size, dense_size))
-            dense_layers.append(nn.ReLU())
-            dense_layers.append(nn.Dropout(dropout))
-            in_size = dense_size
-        dense_layers.append(nn.Linear(in_size, n_classes))
-        self.dense_net = nn.Sequential(*dense_layers)
+        for fc_size in fc_sizes:
+            fc_layers.append(nn.Linear(in_size, fc_size))
+            fc_layers.append(nn.ReLU())
+            fc_layers.append(nn.Dropout(dropout))
+            in_size = fc_size
+        fc_layers.append(nn.Linear(in_size, output_size))
+        self.fc_net = nn.Sequential(*fc_layers)
 
     def forward(self, x):
         h = self.conv_net(x)
         h = h.view(h.size(0), -1)
-        return self.dense_net(h)
+        return self.fc_net(h)
+
+def build_model(**kwargs):
+    return CNNClassifier(**kwargs)

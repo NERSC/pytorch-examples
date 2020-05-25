@@ -11,16 +11,10 @@ class HelloTrainer(BaseTrainer):
     def __init__(self, **kwargs):
         super(HelloTrainer, self).__init__(**kwargs)
 
-    def build(self):
-        pass
-    
-    def print_model_summary(self):
+    def build(self, **kwargs):
         self.logger.info('Hello world')
 
     def write_checkpoint(self, checkpoint_id):
-        pass
-
-    def write_summaries(self):
         pass
 
     def train_epoch(self, data_loader):
@@ -43,3 +37,6 @@ class HelloTrainer(BaseTrainer):
                              batch_input.size(), batch_target.size())
         self.logger.info('Processed %i validation batches' % (i + 1))
         return dict(valid_loss=0, valid_acc=1)
+
+def get_trainer(**kwargs):
+    return HelloTrainer(**kwargs)

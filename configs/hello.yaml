@@ -1,11 +1,15 @@
 trainer: hello
 output_dir: $SCRATCH/pytorch-examples/hello
 
-data_config:
+data:
     name: dummy
     n_train: 1024
     n_valid: 1024
     batch_size: 128
 
-train_config:
+model: none
+loss: none
+optimizer: none
+
+train:
     n_epochs: 1
