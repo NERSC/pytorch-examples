@@ -12,6 +12,10 @@ import numpy as np
 import pandas as pd
 import torch
 
+def _format_summary(summary):
+    """Make a formatted string for logging summary info"""
+    return ' '.join(f'{k} {v:.4g}' for (k, v) in summary.items())
+
 class BaseTrainer(object):
     """
     Base class for PyTorch trainers.
@@ -98,6 +102,7 @@ class BaseTrainer(object):
                 summary['valid_time'] = time.time() - start_time
 
             # Save summary, checkpoint
+            self.logger.info('Summary: %s', _format_summary(summary))
             self.save_summary(summary)
             if self.output_dir is not None and self.rank==0:
                 self.write_checkpoint(checkpoint_id=i)

@@ -68,7 +68,6 @@ class BasicTrainer(BaseTrainer):
         train_loss = sum_loss / (i + 1)
         metrics_summary = utils.metrics.get_results(self.metrics, 'train_')
         self.logger.debug('Processed %i batches' % (i + 1))
-        self.logger.info('Training loss: %.3f' % train_loss)
 
         # Return summary
         return dict(train_loss=train_loss, **metrics_summary)
