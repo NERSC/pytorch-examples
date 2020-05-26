@@ -43,6 +43,23 @@ class BasicTrainer(BaseTrainer):
             self.logger.info('Number of parameters: %i',
                              sum(p.numel() for p in self.model.parameters()))
     
+    def state_dict(self):
+        """Trainer state dict for checkpointing"""
+        return dict(
+            model=(self.model.module.state_dict()
+                   if self.distributed
+                   else self.model.state_dict()),
+            optimizer=self.optimizer.state_dict(),
+        )
+
+    def load_state_dict(self, state_dict):
+        """Load state dict from checkpoint"""
+        if self.distributed:
+            self.model.module.load_state_dict(state_dict['model'])
+        else:
+            self.model.load_state_dict(state_dict['model'])
+        self.optimizer.load_state_dict(state_dict['optimizer'])
+
     def train_epoch(self, data_loader):
         """Train for one epoch"""
 

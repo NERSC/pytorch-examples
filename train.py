@@ -25,14 +25,16 @@ def parse_args():
             help='YAML configuration file')
     add_arg('-d', '--distributed-backend', choices=['mpi', 'nccl', 'gloo'],
             help='Specify the distributed backend to use')
-    add_arg('-v', '--verbose', action='store_true',
-            help='Enable verbose logging')
     add_arg('--gpu', type=int,
             help='Choose a specific GPU by ID')
     add_arg('--ranks-per-node', type=int, default=8,
             help='Specifying number of ranks per node')
     add_arg('--rank-gpu', action='store_true',
             help='Choose GPU according to local rank')
+    add_arg('--resume', action='store_true',
+            help='Resume training from last checkpoint')
+    add_arg('-v', '--verbose', action='store_true',
+            help='Enable verbose logging')
     return parser.parse_args()
 
 def load_config(config_file):
@@ -59,7 +61,7 @@ def main():
     # Setup logging
     log_file = (os.path.join(output_dir, 'out_%i.log' % rank)
                 if output_dir is not None else None)
-    config_logging(verbose=args.verbose, log_file=log_file)
+    config_logging(verbose=args.verbose, log_file=log_file, append=args.resume)
     logging.info('Initialized rank %i out of %i', rank, n_ranks)
     if rank == 0:
         logging.info('Configuration: %s' % config)
@@ -81,6 +83,10 @@ def main():
                   loss_config=config['loss'],
                   optimizer_config=config['optimizer'],
                   metrics_config=config['metrics'])
+
+    # Resume from checkpoint
+    if args.resume:
+        trainer.load_checkpoint()
 
     # Run the training
     summary = trainer.train(train_data_loader=train_data_loader,
