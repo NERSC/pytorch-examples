@@ -10,6 +10,7 @@ data:
 model: none
 loss: none
 optimizer: none
+metrics: none
 
 train:
     n_epochs: 1

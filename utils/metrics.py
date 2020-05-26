@@ -1,8 +1,8 @@
 """Classes and utilities for tracking metrics during training"""
 
-import abc
+import torch
 
-class Metric(abc.ABCMeta):
+class Metric():
     """Abstract base class for metrics that can be computed in batches.
 
     The interface is inspired by the Keras Metric class.
@@ -11,20 +11,14 @@ class Metric(abc.ABCMeta):
       - State should be reset with the reset method
     """
 
-    def init(self):
-        self.reset()
-
-    @abc.abstractmethod
     def update(self, outputs, targets):
         """Update results with new batch data"""
         raise NotImplementedError('Must be implemented in subclass')
 
-    @abc.abstractmethod
     def result(self):
         """Return metric result"""
         raise NotImplementedError('Must be implemented in subclass')
 
-    @abc.abstractmethod
     def reset(self):
         """Reset metric"""
         raise NotImplementedError('Must be implemented in subclass')
@@ -37,6 +31,9 @@ class Accuracy(Metric):
     I.e., won't work for binary labels.
     """
 
+    def __init__(self):
+        self.reset()
+
     def reset(self):
         self.n_correct = self.n_total = 0
 
@@ -47,3 +44,21 @@ class Accuracy(Metric):
 
     def result(self):
         return self.n_correct / self.n_total
+
+def get_metrics(metrics_config):
+    """Get a dictionary of requested metrics instances"""
+    return dict((key, globals()[m]())
+                for (key, m) in metrics_config.items())
+
+def reset_metrics(metrics):
+    """Reset all metrics in the metrics dict"""
+    for metric in metrics.values():
+        metric.reset()
+
+def update_metrics(metrics, outputs, targets):
+    for metric in metrics.values():
+        metric.update(outputs, targets)
+
+def get_results(metrics, prefix=''):
+    return dict((prefix + key, metric.result())
+                for (key, metric) in metrics.items())

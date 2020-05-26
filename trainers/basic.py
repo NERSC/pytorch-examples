@@ -9,6 +9,7 @@ from torch import nn
 # Locals
 from .base_trainer import BaseTrainer
 from models import get_model
+import utils.metrics
 
 class BasicTrainer(BaseTrainer):
     """Trainer code for basic classification problems."""
@@ -16,7 +17,7 @@ class BasicTrainer(BaseTrainer):
     def __init__(self, **kwargs):
         super(BasicTrainer, self).__init__(**kwargs)
 
-    def build(self, model_config, loss_config, optimizer_config):
+    def build(self, model_config, loss_config, optimizer_config, metrics_config):
         """Instantiate our model, optimizer, loss function"""
 
         # Construct the model
@@ -33,6 +34,9 @@ class BasicTrainer(BaseTrainer):
         Loss = getattr(torch.nn, loss_config.pop('name'))
         self.loss_func = Loss(**loss_config)
 
+        # Construct the metrics
+        self.metrics = utils.metrics.get_metrics(metrics_config)
+
         # Print a model summary
         if self.rank == 0:
             self.logger.info(self.model)
@@ -43,7 +47,10 @@ class BasicTrainer(BaseTrainer):
         """Train for one epoch"""
 
         self.model.train()
+
+        # Reset metrics
         sum_loss = 0
+        utils.metrics.reset_metrics(self.metrics)
 
         # Loop over training batches
         for i, (batch_input, batch_target) in enumerate(data_loader):
@@ -55,22 +62,26 @@ class BasicTrainer(BaseTrainer):
             batch_loss.backward()
             self.optimizer.step()
             sum_loss += batch_loss.item()
+            utils.metrics.update_metrics(self.metrics, batch_output, batch_target)
             self.logger.debug('batch %i loss %.3f', i, batch_loss.item())
 
         train_loss = sum_loss / (i + 1)
+        metrics_summary = utils.metrics.get_results(self.metrics, 'train_')
         self.logger.debug('Processed %i batches' % (i + 1))
         self.logger.info('Training loss: %.3f' % train_loss)
 
         # Return summary
-        return dict(train_loss=train_loss)
+        return dict(train_loss=train_loss, **metrics_summary)
 
     @torch.no_grad()
     def evaluate(self, data_loader):
         """"Evaluate the model"""
 
         self.model.eval()
+
+        # Reset metrics
         sum_loss = 0
-        sum_correct = 0
+        utils.metrics.reset_metrics(self.metrics)
 
         # Loop over batches
         for i, (batch_input, batch_target) in enumerate(data_loader):
@@ -79,21 +90,18 @@ class BasicTrainer(BaseTrainer):
             batch_output = self.model(batch_input)
             batch_loss = self.loss_func(batch_output, batch_target).item()
             sum_loss += batch_loss
-            # Count number of correct predictions
-            _, batch_preds = torch.max(batch_output, 1)
-            n_correct = (batch_preds == batch_target).sum().item()
-            sum_correct += n_correct
-            self.logger.debug('batch %i loss %.3f correct %i', i, batch_loss, n_correct)
+            utils.metrics.update_metrics(self.metrics, batch_output, batch_target)
+            self.logger.debug('batch %i loss %.3f', i, batch_loss)
+
+        # Summarize validation metrics
+        metrics_summary = utils.metrics.get_results(self.metrics, 'valid_')
 
         valid_loss = sum_loss / (i + 1)
-        valid_acc = sum_correct / len(data_loader.sampler)
         self.logger.debug('Processed %i samples in %i batches',
                           len(data_loader.sampler), i + 1)
-        self.logger.info('Validation loss: %.3f acc: %.3f',
-                         valid_loss, valid_acc)
 
         # Return summary
-        return dict(valid_loss=valid_loss, valid_acc=valid_acc)
+        return dict(valid_loss=valid_loss, **metrics_summary)
 
 def get_trainer(**kwargs):
     return BasicTrainer(**kwargs)

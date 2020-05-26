@@ -79,7 +79,8 @@ def main():
     # Build the model and optimizer
     trainer.build(model_config=config['model'],
                   loss_config=config['loss'],
-                  optimizer_config=config['optimizer'])
+                  optimizer_config=config['optimizer'],
+                  metrics_config=config['metrics'])
 
     # Run the training
     summary = trainer.train(train_data_loader=train_data_loader,
