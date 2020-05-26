@@ -20,5 +20,8 @@ optimizer:
     name: Adam
     lr: 0.001
 
+metrics:
+    acc: Accuracy
+
 train:
-    n_epochs: 1
+    n_epochs: 4
