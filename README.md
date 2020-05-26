@@ -30,4 +30,4 @@ To run the examples on the Cori supercomputer, you may use the provided
 example SLURM batch script. Here's how to run the Hello World example on 4
 Haswell nodes:
 
-`sbatch -N 4 scripts/batchScript.sh configs/hello.yaml`
+`sbatch -N 4 scripts/train_cori.sh configs/hello.yaml`
