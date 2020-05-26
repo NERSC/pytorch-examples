@@ -4,7 +4,7 @@ This module defines a generic trainer for simple models and datasets.
 
 # Externals
 import torch
-from torch import nn
+from torch.nn.parallel import DistributedDataParallel
 
 # Locals
 from .base_trainer import BaseTrainer
