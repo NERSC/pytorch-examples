@@ -79,10 +79,7 @@ def main():
                           rank=rank, output_dir=output_dir, gpu=gpu)
 
     # Build the model and optimizer
-    trainer.build(model_config=config['model'],
-                  loss_config=config['loss'],
-                  optimizer_config=config['optimizer'],
-                  metrics_config=config['metrics'])
+    trainer.build(config)
 
     # Resume from checkpoint
     if args.resume:

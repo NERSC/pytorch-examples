@@ -17,25 +17,27 @@ class BasicTrainer(BaseTrainer):
     def __init__(self, **kwargs):
         super(BasicTrainer, self).__init__(**kwargs)
 
-    def build(self, model_config, loss_config, optimizer_config, metrics_config):
+    def build(self, config):
         """Instantiate our model, optimizer, loss function"""
 
         # Construct the model
-        self.model = get_model(**model_config).to(self.device)
+        self.model = get_model(**config['model']).to(self.device)
         if self.distributed:
             device_ids = [self.gpu] if self.gpu is not None else None
             self.model = DistributedDataParallel(self.model, device_ids=device_ids)
 
         # Construct the optimizer
+        optimizer_config = config['optimizer']
         Optim = getattr(torch.optim, optimizer_config.pop('name'))
         self.optimizer = Optim(self.model.parameters(), **optimizer_config)
 
         # Construct the loss function
+        loss_config = config['loss']
         Loss = getattr(torch.nn, loss_config.pop('name'))
         self.loss_func = Loss(**loss_config)
 
         # Construct the metrics
-        self.metrics = utils.metrics.get_metrics(metrics_config)
+        self.metrics = utils.metrics.get_metrics(config['metrics'])
 
         # Print a model summary
         if self.rank == 0:

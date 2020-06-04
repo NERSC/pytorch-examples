@@ -97,7 +97,7 @@ class BaseTrainer(object):
         """Virtual method to load a state dict from a checkpoint"""
         raise NotImplementedError
 
-    def build(self, model_config, loss_config, optimizer_config, metrics_config):
+    def build(self, config):
         """Virtual method to build model, optimizer, etc."""
         raise NotImplementedError
 
