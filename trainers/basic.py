@@ -85,11 +85,11 @@ class BasicTrainer(BaseTrainer):
             self.logger.debug('batch %i loss %.3f', i, batch_loss.item())
 
         train_loss = sum_loss / (i + 1)
-        metrics_summary = utils.metrics.get_results(self.metrics, 'train_')
+        metrics_summary = utils.metrics.get_results(self.metrics)
         self.logger.debug('Processed %i batches' % (i + 1))
 
         # Return summary
-        return dict(train_loss=train_loss, **metrics_summary)
+        return dict(loss=train_loss, **metrics_summary)
 
     @torch.no_grad()
     def evaluate(self, data_loader):
@@ -112,14 +112,14 @@ class BasicTrainer(BaseTrainer):
             self.logger.debug('batch %i loss %.3f', i, batch_loss)
 
         # Summarize validation metrics
-        metrics_summary = utils.metrics.get_results(self.metrics, 'valid_')
+        metrics_summary = utils.metrics.get_results(self.metrics)
 
         valid_loss = sum_loss / (i + 1)
         self.logger.debug('Processed %i samples in %i batches',
                           len(data_loader.sampler), i + 1)
 
         # Return summary
-        return dict(valid_loss=valid_loss, **metrics_summary)
+        return dict(loss=valid_loss, **metrics_summary)
 
 def get_trainer(**kwargs):
     return BasicTrainer(**kwargs)
