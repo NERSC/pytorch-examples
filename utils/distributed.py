@@ -65,3 +65,10 @@ def init_workers(backend=None):
     elif backend == 'gloo':
         rank, n_ranks = init_workers_gloo_file()
     return rank, n_ranks
+
+def try_barrier():
+    """Attempt a barrier but ignore any exceptions"""
+    try:
+        dist.barrier()
+    except:
+        pass

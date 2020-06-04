@@ -12,6 +12,9 @@ import numpy as np
 import pandas as pd
 import torch
 
+# Locals
+import utils
+
 def _format_summary(summary):
     """Make a formatted string for logging summary info"""
     return ' '.join(f'{k} {v:.4g}' for (k, v) in summary.items())
@@ -97,7 +100,7 @@ class BaseTrainer(object):
         """Virtual method to load a state dict from a checkpoint"""
         raise NotImplementedError
 
-    def build(self, model_config, loss_config, optimizer_config, metrics_config):
+    def build(self, config):
         """Virtual method to build model, optimizer, etc."""
         raise NotImplementedError
 
@@ -117,21 +120,29 @@ class BaseTrainer(object):
 
         # Loop over epochs
         for i in range(start_epoch, n_epochs):
+            utils.distributed.try_barrier()
+
+            self.logger.info('Epoch %i', i)
             summary = dict(epoch=i)
 
             # Train on this epoch
             start_time = time.time()
-            summary.update(self.train_epoch(train_data_loader))
-            summary['train_time'] = time.time() - start_time
+            train_summary = self.train_epoch(train_data_loader)
+            train_summary['time'] = time.time() - start_time
+            self.logger.info('Train: %s', _format_summary(train_summary))
+            for (k, v) in train_summary.items():
+                summary[f'train_{k}'] = v
 
             # Evaluate on this epoch
             if valid_data_loader is not None:
                 start_time = time.time()
-                summary.update(self.evaluate(valid_data_loader))
-                summary['valid_time'] = time.time() - start_time
+                valid_summary = self.evaluate(valid_data_loader)
+                valid_summary['time'] = time.time() - start_time
+                self.logger.info('Valid: %s', _format_summary(valid_summary))
+                for (k, v) in valid_summary.items():
+                    summary[f'valid_{k}'] = v
 
             # Save summary, checkpoint
-            self.logger.info('Summary: %s', _format_summary(summary))
             self.save_summary(summary)
             if self.output_dir is not None and self.rank==0:
                 self.write_checkpoint(checkpoint_id=i)

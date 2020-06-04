@@ -15,7 +15,7 @@ import numpy as np
 from datasets import get_data_loaders
 from trainers import get_trainer
 from utils.logging import config_logging
-from utils.distributed import init_workers
+from utils.distributed import init_workers, try_barrier
 
 def parse_args():
     """Parse command line arguments."""
@@ -63,6 +63,7 @@ def main():
                 if output_dir is not None else None)
     config_logging(verbose=args.verbose, log_file=log_file, append=args.resume)
     logging.info('Initialized rank %i out of %i', rank, n_ranks)
+    try_barrier()
     if rank == 0:
         logging.info('Configuration: %s' % config)
 
@@ -79,10 +80,7 @@ def main():
                           rank=rank, output_dir=output_dir, gpu=gpu)
 
     # Build the model and optimizer
-    trainer.build(model_config=config['model'],
-                  loss_config=config['loss'],
-                  optimizer_config=config['optimizer'],
-                  metrics_config=config['metrics'])
+    trainer.build(config)
 
     # Resume from checkpoint
     if args.resume:
@@ -94,6 +92,7 @@ def main():
                             **config['train'])
 
     # Print some conclusions
+    try_barrier()
     n_train_samples = len(train_data_loader.sampler)
     logging.info('Finished training')
     train_time = np.mean(summary['train_time'])
