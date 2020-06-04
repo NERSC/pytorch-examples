@@ -9,7 +9,7 @@ This module contains trainer functionality for basic GAN-like models.
 import os
 
 # Locals
-from .base_trainer import BaseTrainer
+from .base import BaseTrainer
 from models import get_model
 
 # Externals

@@ -3,7 +3,7 @@ Hello world PyTorch trainer.
 """
 
 # Locals
-from .base_trainer import BaseTrainer
+from .base import BaseTrainer
 
 class HelloTrainer(BaseTrainer):
     """Hello world trainer object"""
