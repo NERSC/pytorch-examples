@@ -12,6 +12,9 @@ import numpy as np
 import pandas as pd
 import torch
 
+# Locals
+import utils
+
 def _format_summary(summary):
     """Make a formatted string for logging summary info"""
     return ' '.join(f'{k} {v:.4g}' for (k, v) in summary.items())
@@ -117,6 +120,8 @@ class BaseTrainer(object):
 
         # Loop over epochs
         for i in range(start_epoch, n_epochs):
+            utils.distributed.try_barrier()
+
             self.logger.info('Epoch %i', i)
             summary = dict(epoch=i)
 
