@@ -12,7 +12,7 @@ from models import get_model
 import utils.metrics
 
 class BasicTrainer(BaseTrainer):
-    """Trainer code for basic classification problems."""
+    """Trainer code for basic single-model problems"""
 
     def __init__(self, **kwargs):
         super(BasicTrainer, self).__init__(**kwargs)
