@@ -27,4 +27,4 @@ metrics:
     acc: Accuracy
 
 train:
-    n_epochs: 8
+    n_epochs: 4
