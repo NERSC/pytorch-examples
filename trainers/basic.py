@@ -37,7 +37,8 @@ class BasicTrainer(BaseTrainer):
         self.loss_func = Loss(**loss_config)
 
         # Construct the metrics
-        self.metrics = utils.metrics.get_metrics(config['metrics'])
+        metrics_config = config.get('metrics', {})
+        self.metrics = utils.metrics.get_metrics(metrics_config)
 
         # Print a model summary
         if self.rank == 0:
