@@ -23,6 +23,7 @@ def parse_args():
     add_arg = parser.add_argument
     add_arg('config', nargs='?', default='configs/hello.yaml',
             help='YAML configuration file')
+    add_arg('--output-dir', help='Override the output directory')
     add_arg('-d', '--distributed-backend', choices=['mpi', 'nccl', 'gloo'],
             help='Specify the distributed backend to use')
     add_arg('--gpu', type=int,
@@ -37,9 +38,11 @@ def parse_args():
             help='Enable verbose logging')
     return parser.parse_args()
 
-def load_config(config_file):
-    with open(config_file) as f:
+def load_config(args):
+    with open(args.config) as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
+    if args.output_dir is not None:
+        config['output_dir'] = args.output_dir
     return config
 
 def main():
@@ -50,7 +53,7 @@ def main():
     rank, n_ranks = init_workers(args.distributed_backend)
 
     # Load configuration
-    config = load_config(args.config)
+    config = load_config(args)
 
     # Prepare output directory
     output_dir = config.get('output_dir', None)
