@@ -4,6 +4,7 @@ This module defines a generic trainer for simple models and datasets.
 
 # Externals
 import torch
+import wandb
 from torch.nn.parallel import DistributedDataParallel
 
 # Locals
@@ -39,6 +40,9 @@ class BasicTrainer(BaseTrainer):
         # Construct the metrics
         metrics_config = config.get('metrics', {})
         self.metrics = utils.metrics.get_metrics(metrics_config)
+
+        # Setup W&B monitoring of the model
+        wandb.watch(self.model)
 
         # Print a model summary
         if self.rank == 0:

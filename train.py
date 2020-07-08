@@ -10,6 +10,7 @@ import logging
 # Externals
 import yaml
 import numpy as np
+import wandb
 
 # Locals
 from datasets import get_data_loaders
@@ -34,6 +35,7 @@ def parse_args():
             help='Choose GPU according to local rank')
     add_arg('--resume', action='store_true',
             help='Resume training from last checkpoint')
+    add_arg('--name', help='Job name for W&B logging')
     add_arg('-v', '--verbose', action='store_true',
             help='Enable verbose logging')
     return parser.parse_args()
@@ -60,6 +62,15 @@ def main():
     if output_dir is not None:
         output_dir = os.path.expandvars(output_dir)
         os.makedirs(output_dir, exist_ok=True)
+
+    # Initialize weights and biases
+    # NOTE: could use slurm jobid.stepid for group name instead
+    # FIXME: resuming doesn't work yet.
+    wandb.init(project='pytorch-examples-mnist',
+               name=f'{args.name}-{rank}',
+               group=args.name,
+               config=config,
+               resume=args.resume)
 
     # Setup logging
     log_file = (os.path.join(output_dir, 'out_%i.log' % rank)

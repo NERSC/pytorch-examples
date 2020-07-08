@@ -11,6 +11,7 @@ import logging
 import numpy as np
 import pandas as pd
 import torch
+import wandb
 
 # Locals
 import utils
@@ -59,6 +60,9 @@ class BaseTrainer(object):
         if write_file and self.output_dir is not None:
             self.summaries.to_csv(self._get_summary_file(), index=False,
                                   float_format='%.6f', sep='\t')
+
+        # Log summaries to W&B
+        wandb.log(summary)
 
     def load_summaries(self):
         self.summaries = pd.read_csv(self._get_summary_file(), delim_whitespace=True)
