@@ -65,12 +65,12 @@ def main():
 
     # Initialize weights and biases
     # NOTE: could use slurm jobid.stepid for group name instead
-    # FIXME: resuming doesn't work yet.
+    worker_name = f'{args.name}-{rank}'
     wandb.init(project='pytorch-examples-mnist',
-               name=f'{args.name}-{rank}',
+               name=worker_name,
                group=args.name,
                config=config,
-               resume=args.resume)
+               resume=worker_name)
 
     # Setup logging
     log_file = (os.path.join(output_dir, 'out_%i.log' % rank)
