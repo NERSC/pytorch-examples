@@ -38,7 +38,7 @@ def parse_args():
     add_arg('--name', help='Job name for W&B logging')
     add_arg('-v', '--verbose', action='store_true',
             help='Enable verbose logging')
-    return parser.parse_args()
+    return parser.parse_known_args()[0]
 
 def load_config(args):
     with open(args.config) as f:
@@ -65,12 +65,17 @@ def main():
 
     # Initialize weights and biases
     # NOTE: could use slurm jobid.stepid for group name instead
-    worker_name = f'{args.name}-{rank}'
+    worker_name = f'{args.name}-{rank}' if args.name is not None else None
     wandb.init(project='pytorch-examples-mnist',
                name=worker_name,
                group=args.name,
                config=config,
-               resume=worker_name)
+               resume=worker_name if args.resume else False)
+
+    # Update config from Weights&Biases
+    # Haven't yet thought of a good way to do this without hardcoding things
+    config['data']['batch_size'] = wandb.config['data.batch_size']
+    config['optimizer']['lr'] = wandb.config['optimizer.lr']
 
     # Setup logging
     log_file = (os.path.join(output_dir, 'out_%i.log' % rank)
