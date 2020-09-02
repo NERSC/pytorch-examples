@@ -4,8 +4,8 @@ output_dir: $SCRATCH/pytorch-examples/cifar10/output
 data:
     name: cifar10
     data_path: $SCRATCH/pytorch-examples/cifar10/data
-    n_train: 32768 #50000
-    n_valid: 8192 #10000
+    n_train: 8192 #32768 #50000
+    n_valid: 1024 #8192 #10000
     batch_size: 64
     num_workers: 4
 
