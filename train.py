@@ -70,6 +70,13 @@ def main():
     if rank == 0:
         logging.info('Configuration: %s' % config)
 
+    # Set multiprocessing startup method.
+    # Default `fork` method doesn't work with multiple MPI ranks on CPU.
+    # You can change to use `spawn` or `forkserver` method as below, though
+    # there will be warnings about ports being already in use.
+    #import torch
+    #torch.multiprocessing.set_start_method('spawn')
+
     # Load the datasets
     distributed = args.distributed_backend is not None
     train_data_loader, valid_data_loader = get_data_loaders(
