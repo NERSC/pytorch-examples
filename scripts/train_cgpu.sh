@@ -9,7 +9,8 @@
 #SBATCH -o logs/%x-%j.out
 
 # Setup software
-module load pytorch/v1.5.1-gpu
+module load cgpu
+module load pytorch/v1.6.0-gpu
 
 # Run the training
 srun -l -u python train.py -d nccl --rank-gpu $@
