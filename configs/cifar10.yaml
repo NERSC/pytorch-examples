@@ -7,6 +7,7 @@ data:
     n_train: 32768 #50000
     n_valid: 8192 #10000
     batch_size: 64
+    num_workers: 4
 
 model:
     name: resnet_cifar10
