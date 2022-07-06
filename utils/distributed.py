@@ -39,6 +39,19 @@ def init_workers_nccl_file():
                             init_method=sync_file)
     return rank, n_ranks
 
+def init_workers_nccl_slurm():
+    """Initialize workers with NCCL backend and SLURM env variables.
+
+    You must set the master address and port in your slurm script:
+        export MASTER_ADDR=$(hostname)
+        export MASTER_PORT=29500
+        srun ...
+    """
+    rank = int(os.environ['SLURM_PROCID'])
+    n_ranks = int(os.environ['SLURM_NTASKS'])
+    dist.init_process_group(backend='nccl', world_size=n_ranks, rank=rank)
+    return rank, n_ranks
+
 def init_workers_mpi():
     """Initialize workers with MPI backend"""
     dist.init_process_group(backend='mpi')
@@ -61,7 +74,8 @@ def init_workers(backend=None):
     elif backend == 'mpi':
         rank, n_ranks = init_workers_mpi()
     elif backend == 'nccl':
-        rank, n_ranks = init_workers_nccl_file()
+        rank, n_ranks = init_workers_nccl_slurm()
+        #rank, n_ranks = init_workers_nccl_file()
     elif backend == 'gloo':
         rank, n_ranks = init_workers_gloo_file()
     return rank, n_ranks
