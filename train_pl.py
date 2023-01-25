@@ -12,6 +12,7 @@ import yaml
 import numpy as np
 import pytorch_lightning as pl
 from pytorch_lightning.strategies import DDPStrategy
+from pytorch_lightning.callbacks import DeviceStatsMonitor
 
 # Locals
 from datasets import get_data_loaders
@@ -50,6 +51,11 @@ def main():
     # Load the PL module
     module = get_module(config['module'], config)
 
+    # Prepare callbacks
+    callbacks = [
+        DeviceStatsMonitor(),
+    ]
+
     # Create the trainer
     pl_logger = pl.loggers.CSVLogger(config['output_dir'], name=config['name'])
     num_nodes = os.environ['SLURM_JOB_NUM_NODES']
@@ -57,6 +63,7 @@ def main():
                          strategy=DDPStrategy(find_unused_parameters=False),
                          logger=pl_logger,
                          enable_progress_bar=False,
+                         callbacks=callbacks,
                          **config['trainer'])
     trainer.fit(module, train_data_loader, valid_data_loader)
 
