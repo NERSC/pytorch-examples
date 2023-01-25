@@ -13,6 +13,7 @@ import numpy as np
 import pytorch_lightning as pl
 from pytorch_lightning.strategies import DDPStrategy
 from pytorch_lightning.callbacks import DeviceStatsMonitor
+import mlflow.pytorch
 
 # Locals
 from datasets import get_data_loaders
@@ -44,6 +45,9 @@ def main():
 
     # Setup logging
     config_logging(verbose=False)
+
+    # MLFlow
+    mlflow.pytorch.autolog()
 
     # Load the datasets
     train_data_loader, valid_data_loader = get_data_loaders(**config['data'])
