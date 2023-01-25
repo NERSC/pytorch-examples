@@ -11,7 +11,7 @@ import logging
 import yaml
 import numpy as np
 import pytorch_lightning as pl
-from pytorch_lightning.plugins import DDPPlugin
+from pytorch_lightning.strategies import DDPStrategy
 
 # Locals
 from datasets import get_data_loaders
@@ -54,7 +54,7 @@ def main():
     pl_logger = pl.loggers.CSVLogger(config['output_dir'], name=config['name'])
     num_nodes = os.environ['SLURM_JOB_NUM_NODES']
     trainer = pl.Trainer(gpus=-1, num_nodes=num_nodes,
-                         strategy=DDPPlugin(find_unused_parameters=False),
+                         strategy=DDPStrategy(find_unused_parameters=False),
                          logger=pl_logger,
                          enable_progress_bar=False,
                          **config['trainer'])
