@@ -1,0 +1,29 @@
+module: basic
+output_dir: $SCRATCH/pytorch-examples/output
+name: mnist_pl
+
+data:
+    name: mnist
+    data_path: $SCRATCH/pytorch-examples/mnist/data
+    num_workers: 8
+    batch_size: 64
+
+model:
+    name: cnn
+    input_shape: [1, 28, 28]
+    conv_sizes: [8, 16]
+    fc_sizes: [32]
+    output_size: 10
+
+loss:
+    name: CrossEntropyLoss
+
+optimizer:
+    name: Adam
+    lr: 0.001
+
+metrics:
+    acc: Accuracy
+
+trainer:
+    max_epochs: 4
