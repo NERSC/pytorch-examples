@@ -28,8 +28,7 @@ This package currently contains the following examples:
 
 ## How to run
 
-To run the examples on the Cori supercomputer, you may use the provided
-example SLURM batch script. Here's how to run the ResNet50 CIFAR10 example
-on 4 Haswell nodes:
+To run the examples on the Perlmutter supercomputer, you may use the
+provided example Slurm batch script:
 
-`sbatch -N 4 scripts/train_cori.sh configs/cifar10.yaml`
+`sbatch -N 4 scripts/train_perlmutter.sh configs/cifar10.yaml`
